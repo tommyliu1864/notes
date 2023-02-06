@@ -12,6 +12,7 @@
         <module>mybatis-helloworld</module>
         <module>mybatis-parameter</module>
         <module>mybatis-resultMap</module>
+        <module>mybatis-dynamicSQL</module>
     </modules>
 
     <properties>

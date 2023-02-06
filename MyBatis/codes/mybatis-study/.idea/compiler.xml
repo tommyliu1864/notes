@@ -6,8 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mybatis-helloworld" />
         <module name="mybatis-parameter" />
+        <module name="mybatis-dynamicSQL" />
+        <module name="mybatis-helloworld" />
         <module name="mybatis-resultMap" />
       </profile>
     </annotationProcessing>

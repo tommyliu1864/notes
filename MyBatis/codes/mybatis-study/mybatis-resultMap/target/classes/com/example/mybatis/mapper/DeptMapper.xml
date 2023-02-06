@@ -4,8 +4,41 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.mybatis.mapper.DeptMapper">
 
-    <select id="getDeptByDeptId" resultType="Dept">
-        select * from t_dept where dept_id = #{deptId}
+    <!--通过collection处理一对多映射-->
+    <!--<resultMap id="deptResultMap" type="Dept">
+        <id column="dept_id" property="deptId"></id>
+        <result column="dept_name" property="deptName"></result>
+        <collection property="emps" ofType="Emp">
+            <id column="emp_id" property="empId"></id>
+            <result column="emp_name" property="empName"></result>
+            <result column="age" property="age"></result>
+            <result column="gender" property="gender"></result>
+        </collection>
+    </resultMap>-->
+
+    <resultMap id="deptResultMap" type="Dept">
+        <id column="dept_id" property="deptId"></id>
+        <result column="dept_name" property="deptName"></result>
+        <association property="emps" select="com.example.mybatis.mapper.EmpMapper.getEmpByDeptId" column="dept_id"></association>
+    </resultMap>
+
+    <!--<select id="getDeptByDeptId" resultType="Dept">
+        select *
+        from t_dept
+        where dept_id = #{deptId}
+    </select>-->
+
+    <select id="getDeptByDeptId" resultMap="deptResultMap">
+        select *
+        from t_dept
+        where dept_id = #{deptId}
     </select>
+
+    <!--<select id="getDeptByDeptId" resultMap="deptResultMap">
+        select t_dept.*, t_emp.*
+        from t_dept
+        left join t_emp on t_dept.dept_id = t_emp.dept_id
+        where t_dept.dept_id = #{deptId}
+    </select>-->
 
 </mapper>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mybatis.mapper.DynamicSQLMapper">
+
+    <!--根据条件查询员工信息-->
+    <!--<select id="getEmpByConditions" resultType="Emp">
+        select * from t_emp where
+        <if test="empName != null and empName != ''">
+            emp_name = #{empName}
+        </if>
+        <if test="age != null and age != ''">
+            and age = #{age}
+        </if>
+        <if test="gender != null and gender != ''">
+            and gender = #{gender}
+        </if>
+    </select>-->
+
+    <!--<select id="getEmpByConditions" resultType="Emp">
+        select * from t_emp
+        <where>
+            <if test="empName != null and empName != ''">
+                emp_name = #{empName}
+            </if>
+            <if test="age != null and age != ''">
+                and age = #{age}
+            </if>
+            <if test="gender != null and gender != ''">
+                and gender = #{gender}
+            </if>
+        </where>
+    </select>-->
+
+    <!--<select id="getEmpByConditions" resultType="Emp">
+        select * from t_emp
+        <trim prefix="where" prefixOverrides="and">
+            <if test="empName != null and empName != ''">
+                emp_name = #{empName}
+            </if>
+            <if test="age != null and age != ''">
+                and age = #{age}
+            </if>
+            <if test="gender != null and gender != ''">
+                and gender = #{gender}
+            </if>
+        </trim>
+    </select>-->
+
+    <select id="getEmpByConditions" resultType="Emp">
+        select * from t_emp
+        <where>
+            <choose>
+                <when test="empName != null and empName != ''">
+                    emp_name = #{empName}
+                </when>
+                <when test="age != null and age != ''">
+                    age = #{age}
+                </when>
+                <when test="gender != null and gender != ''">
+                    gender = #{gender}
+                </when>
+            </choose>
+        </where>
+    </select>
+
+</mapper>

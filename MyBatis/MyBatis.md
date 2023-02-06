@@ -823,9 +823,9 @@ Emp getEmpAndDeptByEmpId(@Param("empId") Integer empId);
 </select>
 ```
 
-## 分步查询
+### 分步查询
 
-### 查询员工信息
+#### 查询员工信息
 
 ```java
 public interface EmpMapper{
@@ -857,7 +857,7 @@ public interface EmpMapper{
 </select>
 ```
 
-### 根据员工所对应的部门id查询部门信息
+#### 根据员工所对应的部门id查询部门信息
 
 ```java
 public interface DeptMapper {
@@ -873,4 +873,267 @@ public interface DeptMapper {
     </select>
 </mapper>
 ```
+
+## 延迟加载
+
+如果我们希望只有在调用`emp.getDept()`时，才会去执行SQL加载部门信息，
+
+**全局配置**
+
+```xml
+<settings>
+  	<!--延迟加载的全局开关。当开启时，所有关联对象都会延迟加载-->
+    <setting name="lazyLoadingEnabled" value="true"/>
+  	<!--当开启时，任何方法的调用都会加载该对象的所有属性。否则，每个属性会按需加载-->
+    <setting name="aggressiveLazyLoading" value="false"/>
+</settings>
+```
+
+**单独指定**
+
+```xml
+<!--fetchType="lazy(延迟加载)|eager(立即加载)"-->
+<association 
+             fetchType="eager" 
+             property="dept" 
+             select="com.example.mybatis.mapper.DeptMapper.getDeptByDeptId" column="dept_id">
+</association>
+```
+
+## 一对多映射处理
+
+场景模拟:
+
+查询部门信息以及部门下所有的员工信息列表
+
+### 使用collection处理一对多映射
+
+```java
+// 部门信息
+public class Dept {
+    private Integer deptId;
+    private String deptName;
+    private List<Emp> emps; // 部门所包含的员工
+}
+```
+
+```java
+public interface DeptMapper {
+    Dept getDeptByDeptId(@Param("deptId") Integer deptId);
+}
+```
+
+```xml
+<resultMap id="deptResultMap" type="Dept">
+  <id column="dept_id" property="deptId"></id>
+  <result column="dept_name" property="deptName"></result>
+  <!--ofType 设置集合元素的数据类型-->
+  <collection property="emps" ofType="Emp">
+    <id column="emp_id" property="empId"></id>
+    <result column="emp_name" property="empName"></result>
+    <result column="age" property="age"></result>
+    <result column="gender" property="gender"></result>
+  </collection>
+</resultMap>
+
+<select id="getDeptByDeptId" resultMap="deptResultMap">
+  select t_dept.*, t_emp.*
+  from t_dept
+  left join t_emp on t_dept.dept_id = t_emp.dept_id
+  where t_dept.dept_id = #{deptId}
+</select>
+```
+
+### 分步查询
+
+#### 查询部门信息
+
+```java
+public interface DeptMapper {
+    Dept getDeptByDeptId(@Param("deptId") Integer deptId);
+}
+```
+
+```xml
+<resultMap id="deptResultMap" type="Dept">
+  <id column="dept_id" property="deptId"></id>
+  <result column="dept_name" property="deptName"></result>
+  <association 
+               property="emps" 
+               select="com.example.mybatis.mapper.EmpMapper.getEmpByDeptId" 
+               column="dept_id">
+  </association>
+</resultMap>
+
+<select id="getDeptByDeptId" resultMap="deptResultMap">
+  select *
+  from t_dept
+  where dept_id = #{deptId}
+</select>
+```
+
+#### 根据部门ID查询员工信息
+
+```java
+public interface EmpMapper {
+    // 根据部门ID查询员工信息
+    Emp getEmpByDeptId(@Param("deptId") Integer deptId);
+}
+```
+
+```xml
+<select id="getEmpByDeptId" resultType="Emp">
+  select *
+  from t_emp
+  where dept_id = #{deptId}
+</select>
+```
+
+# 动态SQL
+
+Mybatis框架的动态SQL技术是一种根据特定条件动态拼装SQL语句的功能，它存在的意义是为了解决拼接SQL语句字符串时的痛点问题。
+
+## if
+if标签可通过test属性的表达式进行判断，若表达式的结果为true，则标签中的内容会执行；反之标签中的内容不会执行
+
+```java
+public interface DynamicSQLMapper {
+    // 根据条件查询员工信息
+    List<Emp> getEmpByConditions(Emp emp);
+}
+```
+
+```xml
+<select id="getEmpByConditions" resultType="Emp">
+  select * from t_emp where
+  <if test="empName != null and empName != ''">
+    emp_name = #{empName}
+  </if>
+  <if test="age != null and age != ''">
+    and age = #{age}
+  </if>
+  <if test="gender != null and gender != ''">
+    and gender = #{gender}
+  </if>
+</select>
+```
+
+测试方法：
+
+```java
+public void testGetEmpByConditions() {
+  SqlSession sqlSession = SqlSessionUtil.getSqlSession();
+  DynamicSQLMapper dynamicSQLMapper = sqlSession.getMapper(DynamicSQLMapper.class);
+  Emp emp = new Emp(null, "张无忌", 18, "男", null);
+  List<Emp> emps = dynamicSQLMapper.getEmpByConditions(emp);
+  System.out.println(emps);
+  sqlSession.close();
+}
+```
+
+## where
+
+where和if一般结合使用：
+
+1）若where标签中的if条件都不满足，则where标签没有任何功能，即不会添加where关键字
+
+2）若where标签中的if条件满足，则where标签会自动添加where关键字，并将条件最前方多余的and去掉
+
+注意：where标签不能去掉条件最后多余的and
+
+```xml
+<select id="getEmpByConditions" resultType="Emp">
+  select * from t_emp
+  <where>
+    <if test="empName != null and empName != ''">
+      emp_name = #{empName}
+    </if>
+    <if test="age != null and age != ''">
+      and age = #{age}
+    </if>
+    <if test="gender != null and gender != ''">
+      and gender = #{gender}
+    </if>
+  </where>
+</select>
+```
+
+## trim
+
+trim用于去掉或添加标签中的内容
+
+常用属性:
+
+prefix：在trim标签中的内容的前面添加某些内容 
+
+prefixOverrides：在trim标签中的内容的前面去掉某些内容 
+
+suffix：在trim标签中的内容的后面添加某些内容 
+
+suffixOverrides：在trim标签中的内容的后面去掉某些内容
+
+suffixOverrides 使用：
+
+```xml
+<select id="getEmpByConditions" resultType="Emp">
+  select * from t_emp
+  <trim prefix="where" suffixOverrides="and">
+    <if test="empName != null and empName != ''">
+      emp_name = #{empName} and
+    </if>
+    <if test="age != null and age != ''">
+      age = #{age} and
+    </if>
+    <if test="gender != null and gender != ''">
+      gender = #{gender}
+    </if>
+  </trim>
+</select>
+```
+
+prefixOverrides 使用：
+
+```xml
+<select id="getEmpByConditions" resultType="Emp">
+  select * from t_emp
+  <trim prefix="where" prefixOverrides="and">
+    <if test="empName != null and empName != ''">
+      emp_name = #{empName}
+    </if>
+    <if test="age != null and age != ''">
+      and age = #{age}
+    </if>
+    <if test="gender != null and gender != ''">
+      and gender = #{gender}
+    </if>
+  </trim>
+</select>
+```
+
+## choose、when、otherwise
+
+choose、when、 otherwise 相当于 if...else if..else
+
+```xml
+<select id="getEmpByConditions" resultType="Emp">
+  select * from t_emp
+  <where>
+    <choose>
+      <when test="empName != null and empName != ''">
+        emp_name = #{empName}
+      </when>
+      <when test="age != null and age != ''">
+        age = #{age}
+      </when>
+      <when test="gender != null and gender != ''">
+        gender = #{gender}
+      </when>
+    </choose>
+  </where>
+</select>
+```
+
+## foreach
+
+批量添加
 

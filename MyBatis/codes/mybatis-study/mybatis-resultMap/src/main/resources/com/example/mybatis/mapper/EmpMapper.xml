@@ -31,7 +31,7 @@
         <result column="emp_name" property="empName"></result>
         <result column="age" property="age"></result>
         <result column="gender" property="gender"></result>
-        <association property="dept" select="com.example.mybatis.mapper.DeptMapper.getDeptByDeptId" column="dept_id"></association>
+        <association fetchType="eager" property="dept" select="com.example.mybatis.mapper.DeptMapper.getDeptByDeptId" column="dept_id"></association>
     </resultMap>
 
     <!--通过为字段起别名的方式，保证和实体类中的属性名保持一致 -->
@@ -57,6 +57,13 @@
         select *
         from t_emp
         where emp_id = #{empId}
+    </select>
+
+    <!--根据部门ID查询员工信息-->
+    <select id="getEmpByDeptId" resultType="Emp">
+        select *
+        from t_emp
+        where dept_id = #{deptId}
     </select>
 
 </mapper>

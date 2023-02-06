@@ -5,47 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fffaaf51-d05e-455f-a1af-ec8fc1a5d233" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/mybatis-helloworld/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-parameter/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-parameter/src/main/java/com/example/mybatis/mapper/SelectMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-parameter/src/main/java/com/example/mybatis/mapper/SpecialSQLMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-parameter/src/main/java/com/example/mybatis/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-parameter/src/main/java/com/example/mybatis/utils/SqlSessionUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-parameter/src/main/resources/com/example/mybatis/mapper/SelectMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-parameter/src/main/resources/com/example/mybatis/mapper/SpecialSQLMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-parameter/src/main/resources/com/example/mybatis/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-parameter/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-parameter/src/main/resources/log4j.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-parameter/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-parameter/src/test/java/com/example/mybatis/test/SelectTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-parameter/src/test/java/com/example/mybatis/test/SpecialSQLTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-parameter/src/test/java/com/example/mybatis/test/UserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-resultMap/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-resultMap/src/main/java/com/example/mybatis/mapper/DeptMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-resultMap/src/main/java/com/example/mybatis/mapper/EmpMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-resultMap/src/main/java/com/example/mybatis/pojo/Dept.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-resultMap/src/main/java/com/example/mybatis/pojo/Emp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-resultMap/src/main/java/com/example/mybatis/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-resultMap/src/main/java/com/example/mybatis/utils/SqlSessionUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-resultMap/src/main/resources/com/example/mybatis/mapper/DeptMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-resultMap/src/main/resources/com/example/mybatis/mapper/EmpMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-resultMap/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-resultMap/src/main/resources/log4j.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-resultMap/src/test/java/com/example/mybatis/test/ResultMapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-dynamicSQL/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-dynamicSQL/src/main/java/com/example/mybatis/mapper/DynamicSQLMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-dynamicSQL/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-dynamicSQL/src/main/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-dynamicSQL/src/main/resources/mybatis-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../MyBatis.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../MyBatis.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mybatis/mapper/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mybatis/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-parameter/src/main/java/com/example/mybatis/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-resultMap/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/mybatis/test/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mybatis/mapper/UserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mybatis/pojo/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mappers/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/mybatis/test/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-resultMap/src/main/java/com/example/mybatis/mapper/EmpMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-resultMap/src/main/java/com/example/mybatis/mapper/EmpMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-resultMap/src/main/java/com/example/mybatis/pojo/Dept.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-resultMap/src/main/java/com/example/mybatis/pojo/Dept.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-resultMap/src/main/resources/com/example/mybatis/mapper/DeptMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-resultMap/src/main/resources/com/example/mybatis/mapper/DeptMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-resultMap/src/main/resources/com/example/mybatis/mapper/EmpMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-resultMap/src/main/resources/com/example/mybatis/mapper/EmpMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-resultMap/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-resultMap/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-resultMap/src/test/java/com/example/mybatis/test/ResultMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-resultMap/src/test/java/com/example/mybatis/test/ResultMapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-resultMap/target/classes/com/example/mybatis/mapper/DeptMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-resultMap/target/classes/com/example/mybatis/mapper/DeptMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-resultMap/target/classes/com/example/mybatis/mapper/EmpMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-resultMap/target/classes/com/example/mybatis/mapper/EmpMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-resultMap/target/classes/com/example/mybatis/mapper/EmpMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-resultMap/target/classes/com/example/mybatis/mapper/EmpMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-resultMap/target/classes/com/example/mybatis/pojo/Dept.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-resultMap/target/classes/com/example/mybatis/pojo/Dept.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-resultMap/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-resultMap/target/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-resultMap/target/test-classes/com/example/mybatis/test/ResultMapTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-resultMap/target/test-classes/com/example/mybatis/test/ResultMapTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,21 +64,53 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis-resultMap/src/main/resources/com/example/mybatis/mapper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis-dynamicSQL/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mybatis-dynamicSQL/src/main/resources" />
       <recent name="$PROJECT_DIR$/mybatis-resultMap/src/main/resources/com/example/mybatis/mapper" />
       <recent name="$PROJECT_DIR$/mybatis-resultMap/src/main" />
       <recent name="$PROJECT_DIR$/mybatis-resultMap/src/main/resources" />
       <recent name="$PROJECT_DIR$/mybatis-parameter/src/main/resources/com/example/mybatis/mapper" />
-      <recent name="$PROJECT_DIR$/mybatis-parameter/src/test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ResultMapTest.testGetEmpAndDeptByEmpId">
+  <component name="RunManager" selected="JUnit.DynamicSQLTest.testGetEmpByConditions">
+    <configuration name="DynamicSQLTest.testGetEmpByConditions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-dynamicSQL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.example.mybatis.test.DynamicSQLTest" />
+      <option name="METHOD_NAME" value="testGetEmpByConditions" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResultMapTest.testGetDeptByDeptId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-resultMap" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.example.mybatis.test.ResultMapTest" />
+      <option name="METHOD_NAME" value="testGetDeptByDeptId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ResultMapTest.testGetEmpAndDeptByEmpId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis-resultMap" />
       <extension name="coverage">
@@ -131,38 +143,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpecialSQLTest.testDeleteAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-parameter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.mybatis.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.mybatis.test" />
-      <option name="MAIN_CLASS_NAME" value="com.example.mybatis.test.SpecialSQLTest" />
-      <option name="METHOD_NAME" value="testDeleteAll" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpecialSQLTest.testGetAllUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-parameter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.mybatis.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.mybatis.test" />
-      <option name="MAIN_CLASS_NAME" value="com.example.mybatis.test.SpecialSQLTest" />
-      <option name="METHOD_NAME" value="testGetAllUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SpecialSQLTest.testInsertUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis-parameter" />
       <extension name="coverage">
@@ -181,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DynamicSQLTest.testGetEmpByConditions" />
+        <item itemvalue="JUnit.ResultMapTest.testGetDeptByDeptId" />
         <item itemvalue="JUnit.ResultMapTest.testGetEmpAndDeptByEmpId" />
         <item itemvalue="JUnit.ResultMapTest.testGetEmpByEmpId" />
         <item itemvalue="JUnit.SpecialSQLTest.testInsertUser" />
-        <item itemvalue="JUnit.SpecialSQLTest.testGetAllUser" />
-        <item itemvalue="JUnit.SpecialSQLTest.testDeleteAll" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +177,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675304590215</updated>
-      <workItem from="1675304591518" duration="18955000" />
+      <workItem from="1675304591518" duration="23035000" />
+      <workItem from="1675649320631" duration="6572000" />
     </task>
     <servers />
   </component>
