@@ -3,6 +3,10 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.mybatis.mapper.DynamicSQLMapper">
+    
+    <sql id="empColumns">
+        emp_id, emp_name, age, gender, dept_id
+    </sql>
 
     <!--根据条件查询员工信息-->
     <!--<select id="getEmpByConditions" resultType="Emp">
@@ -49,7 +53,7 @@
     </select>-->
 
     <select id="getEmpByConditions" resultType="Emp">
-        select * from t_emp
+        select <include refid="empColumns"></include> from t_emp
         <where>
             <choose>
                 <when test="empName != null and empName != ''">
@@ -65,4 +69,24 @@
         </where>
     </select>
 
+    <insert id="insertEmps">
+        insert into t_emp values
+        <foreach collection="emps" item="emp" separator=",">
+            (null,#{emp.empName},#{emp.age},#{emp.gender},null)
+        </foreach>
+    </insert>
+
+    <!--<delete id="deleteEmps">
+        delete from t_emp where
+        <foreach collection="ids" item="id" separator="or">
+            emp_id = #{id}
+        </foreach>
+    </delete> -->
+
+    <delete id="deleteEmps">
+        delete from t_emp where emp_id in
+        <foreach collection="ids" item="id" separator="," open="(" close=")">
+            #{id}
+        </foreach>
+    </delete>
 </mapper>

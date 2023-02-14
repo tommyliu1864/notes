@@ -1137,3 +1137,90 @@ choose、when、 otherwise 相当于 if...else if..else
 
 批量添加
 
+```java
+public interface DynamicSQLMapper {
+    // 批量添加员工
+    int insertEmps(@Param("emps") List<Emp> emps);
+}
+```
+
+```xml
+<insert id="insertEmps">
+  insert into t_emp values
+  <foreach collection="emps" item="emp" separator=",">
+    (null,#{emp.empName},#{emp.age},#{emp.gender},null)
+  </foreach>
+</insert>
+```
+
+测试方法：
+
+```java
+@Test
+public void testInsertEmps() {
+  SqlSession sqlSession = SqlSessionUtil.getSqlSession();
+  DynamicSQLMapper dynamicSQLMapper = sqlSession.getMapper(DynamicSQLMapper.class);
+  List<Emp> emps = new ArrayList<>();
+  emps.add(new Emp(null, "赵四", 18, "男", null));
+  emps.add(new Emp(null, "尼古拉斯", 18, "男", null));
+  dynamicSQLMapper.insertEmps(emps);
+  sqlSession.close();
+}
+```
+
+批量删除：
+
+```java
+int deleteEmps(@Param("ids") int[] ids);
+```
+
+用 `or` 语句：
+
+```xml
+<delete id="deleteEmps">
+  delete from t_emp where
+  <foreach collection="ids" item="id" separator="or">
+    emp_id = #{id}
+  </foreach>
+</delete>
+```
+
+用 `in` 语句：
+
+```xml
+<delete id="deleteEmps">
+  delete from t_emp where emp_id in
+  <foreach collection="ids" item="id" separator="," open="(" close=")">
+    #{id}
+  </foreach>
+</delete>
+```
+
+测试方法：
+
+```java
+@Test
+public void testDeleteEmps() {
+  SqlSession sqlSession = SqlSessionUtil.getSqlSession();
+  DynamicSQLMapper dynamicSQLMapper = sqlSession.getMapper(DynamicSQLMapper.class);
+  dynamicSQLMapper.deleteEmps(new int[]{3, 2});
+  sqlSession.close();
+}
+```
+
+## SQL 片段
+
+sql片段，可以记录一段公共sql片段，在使用的地方通过include标签进行引入
+
+```xml
+<sql id="empColumns">
+  emp_id, emp_name, age, gender, dept_id
+</sql>
+
+<select id="getAllEmp" resultType="Emp">
+  select <include refid="empColumns"></include> from t_emp
+</select>  
+```
+
+
+

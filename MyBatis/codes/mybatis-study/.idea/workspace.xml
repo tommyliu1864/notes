@@ -5,27 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fffaaf51-d05e-455f-a1af-ec8fc1a5d233" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/mybatis-dynamicSQL/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-dynamicSQL/src/main/java/com/example/mybatis/mapper/DynamicSQLMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-dynamicSQL/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-dynamicSQL/src/main/resources/log4j.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-dynamicSQL/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/ssm.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../MyBatis.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../MyBatis.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-resultMap/src/main/java/com/example/mybatis/mapper/EmpMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-resultMap/src/main/java/com/example/mybatis/mapper/EmpMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-resultMap/src/main/java/com/example/mybatis/pojo/Dept.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-resultMap/src/main/java/com/example/mybatis/pojo/Dept.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-resultMap/src/main/resources/com/example/mybatis/mapper/DeptMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-resultMap/src/main/resources/com/example/mybatis/mapper/DeptMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-resultMap/src/main/resources/com/example/mybatis/mapper/EmpMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-resultMap/src/main/resources/com/example/mybatis/mapper/EmpMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-resultMap/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-resultMap/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-resultMap/src/test/java/com/example/mybatis/test/ResultMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-resultMap/src/test/java/com/example/mybatis/test/ResultMapTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-resultMap/target/classes/com/example/mybatis/mapper/DeptMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-resultMap/target/classes/com/example/mybatis/mapper/DeptMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-resultMap/target/classes/com/example/mybatis/mapper/EmpMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-resultMap/target/classes/com/example/mybatis/mapper/EmpMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-resultMap/target/classes/com/example/mybatis/mapper/EmpMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-resultMap/target/classes/com/example/mybatis/mapper/EmpMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-resultMap/target/classes/com/example/mybatis/pojo/Dept.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-resultMap/target/classes/com/example/mybatis/pojo/Dept.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-resultMap/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-resultMap/target/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-dynamicSQL/src/main/java/com/example/mybatis/mapper/DynamicSQLMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-dynamicSQL/src/main/java/com/example/mybatis/mapper/DynamicSQLMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-dynamicSQL/src/main/resources/com/example/mybatis/mapper/DynamicSQLMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-dynamicSQL/src/main/resources/com/example/mybatis/mapper/DynamicSQLMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-dynamicSQL/src/test/java/com/example/mybatis/test/DynamicSQLTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-dynamicSQL/src/test/java/com/example/mybatis/test/DynamicSQLTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-dynamicSQL/target/classes/com/example/mybatis/mapper/DynamicSQLMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-dynamicSQL/target/classes/com/example/mybatis/mapper/DynamicSQLMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-dynamicSQL/target/classes/com/example/mybatis/mapper/DynamicSQLMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-dynamicSQL/target/classes/com/example/mybatis/mapper/DynamicSQLMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-dynamicSQL/target/test-classes/com/example/mybatis/test/DynamicSQLTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-dynamicSQL/target/test-classes/com/example/mybatis/test/DynamicSQLTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis-resultMap/target/test-classes/com/example/mybatis/test/ResultMapTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-resultMap/target/test-classes/com/example/mybatis/test/ResultMapTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,25 +49,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis-dynamicSQL/src/main/resources" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/chenliang/notes/notes/MyBatis/codes/mybatis-study/sql",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sql" />
       <recent name="$PROJECT_DIR$/mybatis-dynamicSQL/src/main/resources" />
       <recent name="$PROJECT_DIR$/mybatis-resultMap/src/main/resources/com/example/mybatis/mapper" />
       <recent name="$PROJECT_DIR$/mybatis-resultMap/src/main" />
       <recent name="$PROJECT_DIR$/mybatis-resultMap/src/main/resources" />
-      <recent name="$PROJECT_DIR$/mybatis-parameter/src/main/resources/com/example/mybatis/mapper" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.DynamicSQLTest.testGetEmpByConditions">
+    <configuration name="DynamicSQLTest.testDeleteEmps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-dynamicSQL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.example.mybatis.test.DynamicSQLTest" />
+      <option name="METHOD_NAME" value="testDeleteEmps" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DynamicSQLTest.testGetEmpByConditions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis-dynamicSQL" />
       <extension name="coverage">
@@ -90,6 +100,22 @@
       <option name="PACKAGE_NAME" value="com.example.mybatis.test" />
       <option name="MAIN_CLASS_NAME" value="com.example.mybatis.test.DynamicSQLTest" />
       <option name="METHOD_NAME" value="testGetEmpByConditions" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DynamicSQLTest.testInsertEmps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-dynamicSQL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.example.mybatis.test.DynamicSQLTest" />
+      <option name="METHOD_NAME" value="testInsertEmps" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -127,45 +153,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResultMapTest.testGetEmpByEmpId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-resultMap" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.mybatis.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.mybatis.test" />
-      <option name="MAIN_CLASS_NAME" value="com.example.mybatis.test.ResultMapTest" />
-      <option name="METHOD_NAME" value="testGetEmpByEmpId" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpecialSQLTest.testInsertUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-parameter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.mybatis.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.mybatis.test" />
-      <option name="MAIN_CLASS_NAME" value="com.example.mybatis.test.SpecialSQLTest" />
-      <option name="METHOD_NAME" value="testInsertUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.DynamicSQLTest.testGetEmpByConditions" />
+        <item itemvalue="JUnit.DynamicSQLTest.testInsertEmps" />
+        <item itemvalue="JUnit.DynamicSQLTest.testDeleteEmps" />
         <item itemvalue="JUnit.ResultMapTest.testGetDeptByDeptId" />
         <item itemvalue="JUnit.ResultMapTest.testGetEmpAndDeptByEmpId" />
-        <item itemvalue="JUnit.ResultMapTest.testGetEmpByEmpId" />
-        <item itemvalue="JUnit.SpecialSQLTest.testInsertUser" />
       </list>
     </recent_temporary>
   </component>
@@ -179,10 +173,15 @@
       <updated>1675304590215</updated>
       <workItem from="1675304591518" duration="23035000" />
       <workItem from="1675649320631" duration="6572000" />
+      <workItem from="1676359502174" duration="7166000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
