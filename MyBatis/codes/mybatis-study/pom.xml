@@ -13,6 +13,8 @@
         <module>mybatis-parameter</module>
         <module>mybatis-resultMap</module>
         <module>mybatis-dynamicSQL</module>
+        <module>mybatis-cache</module>
+        <module>mybatis-reverse</module>
     </modules>
 
     <properties>

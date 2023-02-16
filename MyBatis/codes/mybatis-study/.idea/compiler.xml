@@ -8,7 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mybatis-parameter" />
         <module name="mybatis-dynamicSQL" />
+        <module name="mybatis-reverse" />
         <module name="mybatis-helloworld" />
+        <module name="mybatis-cache" />
         <module name="mybatis-resultMap" />
       </profile>
     </annotationProcessing>
