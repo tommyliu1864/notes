@@ -11,6 +11,7 @@
     <modules>
         <module>spring-helloworld</module>
         <module>spring-ioc-xml</module>
+        <module>spring-ioc-annotation</module>
     </modules>
 
     <properties>

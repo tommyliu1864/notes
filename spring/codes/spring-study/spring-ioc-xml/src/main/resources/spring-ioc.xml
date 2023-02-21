@@ -4,41 +4,41 @@
        xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
 
-    <bean id="studentA" class="com.example.mybatis.pojo.Student">
+    <bean id="studentA" class="com.example.spring.pojo.Student">
         <property name="id" value="1"/>
         <property name="name" value="张三"/>
         <property name="age" value="18"/>
         <property name="sex" value="男"/>
     </bean>
 
-    <bean id="studentB" class="com.example.mybatis.pojo.Student">
+    <bean id="studentB" class="com.example.spring.pojo.Student">
         <constructor-arg name="id" value="1"/>
         <constructor-arg name="name" value="李四"/>
         <constructor-arg name="age" value="20"/>
         <constructor-arg name="sex" value="女"/>
     </bean>
 
-    <bean id="school" class="com.example.mybatis.pojo.School">
+    <bean id="school" class="com.example.spring.pojo.School">
         <property name="schoolId" value="1"/>
         <property name="schoolName" value="哈佛大学"/>
     </bean>
 
-    <bean id="teacherA" class="com.example.mybatis.pojo.Teacher">
+    <bean id="teacherA" class="com.example.spring.pojo.Teacher">
         <property name="name" value="乔峰"/>
         <property name="age" value="30"/>
     </bean>
 
-    <bean id="teacherB" class="com.example.mybatis.pojo.Teacher">
+    <bean id="teacherB" class="com.example.spring.pojo.Teacher">
         <property name="name" value="段誉"/>
         <property name="age" value="20"/>
     </bean>
 
-    <bean id="teacherC" class="com.example.mybatis.pojo.Teacher">
+    <bean id="teacherC" class="com.example.spring.pojo.Teacher">
         <property name="name" value="张三丰"/>
         <property name="age" value="80"/>
     </bean>
 
-    <bean id="studentC" class="com.example.mybatis.pojo.Student">
+    <bean id="studentC" class="com.example.spring.pojo.Student">
         <property name="id" value="1"/>
         <property name="name" value="张三"/>
         <property name="age" value="18"/>
@@ -75,20 +75,20 @@
         </property>
     </bean>
 
-    <bean id="studentD" class="com.example.mybatis.pojo.Student">
+    <bean id="studentD" class="com.example.spring.pojo.Student">
         <property name="id" value="1"/>
         <property name="name" value="张三"/>
         <property name="age" value="18"/>
         <property name="sex" value="男"/>
         <property name="school">
-            <bean class="com.example.mybatis.pojo.School">
+            <bean class="com.example.spring.pojo.School">
                 <property name="schoolId" value="1"/>
                 <property name="schoolName" value="哈佛大学"/>
             </bean>
         </property>
     </bean>
 
-    <bean id="studentE" class="com.example.mybatis.pojo.Student">
+    <bean id="studentE" class="com.example.spring.pojo.Student">
         <property name="id" value="1"/>
         <property name="name" value="张三"/>
         <property name="age" value="18"/>
@@ -126,7 +126,7 @@
         </entry>
     </util:map>
 
-    <bean id="studentF" class="com.example.mybatis.pojo.Student">
+    <bean id="studentF" class="com.example.spring.pojo.Student">
         <property name="id" value="1"/>
         <property name="name" value="张三"/>
         <property name="age" value="18"/>
@@ -143,7 +143,7 @@
         <property name="favoriteTeachers" ref="teacherMap"/>
     </bean>
 
-    <bean id="studentG" class="com.example.mybatis.pojo.Student"
+    <bean id="studentG" class="com.example.spring.pojo.Student"
           p:id="2"
           p:name="张三"
           p:age="18"

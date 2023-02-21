@@ -1,6 +1,6 @@
 package com.example.spring.test;
 
-import com.example.mybatis.pojo.Student;
+import com.example.spring.pojo.Student;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

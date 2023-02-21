@@ -290,7 +290,7 @@ public class Student {
 2. 配置bean时为属性赋值
 
 ```xml
-<bean id="studentA" class="com.example.mybatis.pojo.Student">
+<bean id="studentA" class="com.example.spring.pojo.Student">
   <!-- property标签：通过组件类的setXxx()方法给组件对象设置属性 -->
 	<!-- name属性：指定属性名(这个属性名是getXxx()、setXxx()方法定义的，和成员变量无关)-->
 	<!-- value属性：指定属性值 -->
@@ -328,7 +328,7 @@ public Student(Integer id, String name, Integer age, String sex) {
 2. 配置bean
 
 ```xml
-<bean id="studentB" class="com.example.mybatis.pojo.Student">
+<bean id="studentB" class="com.example.spring.pojo.Student">
   <constructor-arg name="id" value="1"/>
   <constructor-arg name="name" value="李四"/>
   <constructor-arg name="age" value="20"/>
@@ -451,7 +451,7 @@ public void setSchool(School school) {
 配置School类型的bean：
 
 ```xml
-<bean id="school" class="com.example.mybatis.pojo.School">
+<bean id="school" class="com.example.spring.pojo.School">
   <property name="schoolId" value="1"/>
   <property name="schoolName" value="哈佛大学"/>
 </bean>
@@ -460,7 +460,7 @@ public void setSchool(School school) {
 为Student中的school属性赋值：
 
 ```xml
-<bean id="studentC" class="com.example.mybatis.pojo.Student">
+<bean id="studentC" class="com.example.spring.pojo.Student">
   <property name="id" value="1"/>
   <property name="name" value="张三"/>
   <property name="age" value="18"/>
@@ -473,7 +473,7 @@ public void setSchool(School school) {
 4. 方式二：内部bean
 
 ```xml
-<bean id="studentD" class="com.example.mybatis.pojo.Student">
+<bean id="studentD" class="com.example.spring.pojo.Student">
   <property name="id" value="1"/>
   <property name="name" value="张三"/>
   <property name="age" value="18"/>
@@ -481,7 +481,7 @@ public void setSchool(School school) {
   <property name="school">
     <!-- 在一个bean中再声明一个bean就是内部bean -->
 		<!-- 内部bean只能用于给属性赋值，不能在外部通过IOC容器获取，因此可以省略id属性 -->
-    <bean class="com.example.mybatis.pojo.School">      
+    <bean class="com.example.spring.pojo.School">      
       <property name="schoolId" value="1"/>
       <property name="schoolName" value="哈佛大学"/>
     </bean>
@@ -492,7 +492,7 @@ public void setSchool(School school) {
 5. 方式三：级联属性赋值
 
 ```xml
-<bean id="studentE" class="com.example.mybatis.pojo.Student">
+<bean id="studentE" class="com.example.spring.pojo.Student">
   <property name="id" value="1"/>
   <property name="name" value="张三"/>
   <property name="age" value="18"/>
@@ -525,7 +525,7 @@ public void setHobbies(String[] hobbies) {
 2. 配置bean
 
 ```xml
-<bean id="studentC" class="com.example.mybatis.pojo.Student">
+<bean id="studentC" class="com.example.spring.pojo.Student">
   <property name="id" value="1"/>
   <property name="name" value="张三"/>
   <property name="age" value="18"/>
@@ -605,22 +605,22 @@ public class Teacher {
 配置bean
 
 ```xml
-<bean id="teacherA" class="com.example.mybatis.pojo.Teacher">
+<bean id="teacherA" class="com.example.spring.pojo.Teacher">
   <property name="name" value="乔峰"/>
   <property name="age" value="30"/>
 </bean>
 
-<bean id="teacherB" class="com.example.mybatis.pojo.Teacher">
+<bean id="teacherB" class="com.example.spring.pojo.Teacher">
   <property name="name" value="段誉"/>
   <property name="age" value="20"/>
 </bean>
 
-<bean id="teacherC" class="com.example.mybatis.pojo.Teacher">
+<bean id="teacherC" class="com.example.spring.pojo.Teacher">
   <property name="name" value="张三丰"/>
   <property name="age" value="80"/>
 </bean>
 
-<bean id="studentC" class="com.example.mybatis.pojo.Student">
+<bean id="studentC" class="com.example.spring.pojo.Student">
   <property name="id" value="1"/>
   <property name="name" value="张三"/>
   <property name="age" value="18"/>
@@ -665,7 +665,7 @@ public void setFavoriteTeachers(Map<String, Teacher> favoriteTeachers) {
 配置bean：
 
 ```xml
-<bean id="studentC" class="com.example.mybatis.pojo.Student">
+<bean id="studentC" class="com.example.spring.pojo.Student">
   <property name="id" value="1"/>
   <property name="name" value="张三"/>
   <property name="age" value="18"/>
@@ -734,7 +734,7 @@ public void setFavoriteTeachers(Map<String, Teacher> favoriteTeachers) {
   </entry>
 </util:map>
 
-<bean id="studentF" class="com.example.mybatis.pojo.Student">
+<bean id="studentF" class="com.example.spring.pojo.Student">
   <property name="id" value="1"/>
   <property name="name" value="张三"/>
   <property name="age" value="18"/>
@@ -759,7 +759,7 @@ public void setFavoriteTeachers(Map<String, Teacher> favoriteTeachers) {
 引入p命名空间后，可以通过以下方式为bean的各个属性赋值
 
 ```xml
-<bean id="studentG" class="com.example.mybatis.pojo.Student"
+<bean id="studentG" class="com.example.spring.pojo.Student"
       p:id="2"
       p:name="张三"
       p:age="18"
@@ -829,4 +829,696 @@ public void testDatasource() throws SQLException {
   System.out.println(connection);
 }
 ```
+
+### 实验十一：bean的作用域
+
+1. 概念
+
+在Spring中可以通过配置bean标签的scope属性来指定bean的作用域范围，各取值含义参加下表：
+
+| 取值            | 含义                                    | 创建对象的时机  |
+| --------------- | --------------------------------------- | --------------- |
+| singleton(默认) | 在IOC容器中，这个bean的对象始终为单实例 | IOC容器初始化时 |
+| prototype       | 这个bean在IOC容器中有多个实例           | 获取bean时      |
+
+如果是在WebApplicationContext环境下还会有另外两个作用域(但不常用)：
+
+| 取值    | 含义                 |
+| ------- | -------------------- |
+| request | 在一个请求范围内有效 |
+| session | 在一个会话范围内有效 |
+
+2. 创建类User
+
+```java
+public class User {
+
+    private Integer id;
+    private String username;
+    private String password;
+    private Integer age;
+
+    public User(){}
+
+    public User(Integer id, String username, String password, Integer age) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+        this.age = age;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", age=" + age +
+                '}';
+    }
+}
+```
+
+3. 配置bean
+
+```xml
+<!-- scope属性：取值singleton(默认值)，bean在IOC容器中只有一个实例，IOC容器初始化时创建对象 -->
+<!-- scope属性：取值prototype，bean在IOC容器中可以有多个实例，getBean()时创建对象 -->
+<bean class="com.example.spring.pojo.User" scope="singleton"/>
+```
+
+4. 测试
+
+```java
+@Test
+public void testBeanScope(){
+  ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-scope.xml");
+  User user1 = applicationContext.getBean(User.class);
+  User user2 = applicationContext.getBean(User.class);
+  System.out.println(user1 == user2);
+}
+```
+
+### 实验十二：bean的生命周期
+
+1. 具体的生命周期过程
+
+- bean对象创建(调用无参构造器) 
+- 给bean对象设置属性 
+- bean对象初始化之前操作(由bean的后置处理器负责) 
+- bean对象初始化(需在配置bean时指定初始化方法) 
+- bean对象初始化之后操作(由bean的后置处理器负责) 
+- bean对象就绪可以使用 
+- bean对象销毁(需在配置bean时指定销毁方法) 
+- IOC容器关闭
+
+2. 修改类User
+
+```java
+public class User {
+
+    private Integer id;
+    private String username;
+    private String password;
+    private Integer age;
+
+    public User(){
+        System.out.println("生命周期：1、创建对象");
+    }
+
+    public User(Integer id, String username, String password, Integer age) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+        this.age = age;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        System.out.println("生命周期：2、依赖注入");
+        this.id = id;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    public void initMethod(){
+        System.out.println("生命周期：3、初始化");
+    }
+
+    public void destroyMethod(){
+        System.out.println("生命周期：5、销毁");
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", age=" + age +
+                '}';
+    }
+}
+```
+
+注意其中的initMethod()和destroyMethod()，可以通过配置bean指定为初始化和销毁的方法
+
+3. 配置bean
+
+```xml
+<!-- 使用init-method属性指定初始化方法 -->
+<!-- 使用destroy-method属性指定销毁方法 -->
+<bean class="com.example.spring.pojo.User" scope="singleton" init-method="initMethod"
+          destroy-method="destroyMethod">
+  <property name="id" value="1"/>
+  <property name="username" value="张三"/>
+  <property name="password" value="123456"/>
+  <property name="age" value="20"/>
+</bean>
+```
+
+4. 测试
+
+```java
+@Test
+public void testBeanLifeCycle() {
+  ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-scope.xml");
+  User user1 = applicationContext.getBean(User.class);
+  User user2 = applicationContext.getBean(User.class);
+  System.out.println(user1 == user2);
+  System.out.println("生命周期:4、通过IOC容器获取bean并使用");
+  applicationContext.close();
+}
+```
+
+5. bean 的后置处理器
+
+bean的后置处理器会在生命周期的初始化前后添加额外的操作，需要实现BeanPostProcessor接口， 且配置到IOC容器中，需要注意的是，bean后置处理器不是单独针对某一个bean生效，而是针对IOC容器中所有bean都会执行
+
+创建bean的后置处理器:
+
+```java
+package com.example.spring.process;
+
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.config.BeanPostProcessor;
+
+public class MyBeanProcessor implements BeanPostProcessor {
+
+    @Override
+    public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
+        System.out.println("bean = " + bean + ", beanName = " + beanName);
+        return bean;
+    }
+
+    @Override
+    public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
+        System.out.println("bean = " + bean + ", beanName = " + beanName);
+        return bean;
+    }
+}
+```
+
+在IOC容器中配置后置处理器：
+
+```xml
+<!-- bean的后置处理器要放入IOC容器才能生效 -->
+<bean id="myBeanProcessor" class="com.example.spring.process.MyBeanProcessor"/>
+```
+
+### 实验十三：FactoryBean
+
+1. 简介
+
+FactoryBean是Spring提供的一种整合第三方框架的常用机制。和普通的bean不同，配置一个 FactoryBean类型的bean，在获取bean的时候得到的并不是class属性中配置的这个类的对象，而是 getObject()方法的返回值。通过这种机制，Spring可以帮我们把复杂组件创建的详细过程和繁琐细节都 屏蔽起来，只把最简洁的使用界面展示给我们。
+
+将来我们整合Mybatis时，Spring就是通过FactoryBean机制来帮我们创建SqlSessionFactory对象的。
+
+2. 创建类UserFactoryBean
+
+```java
+public class UserFactoryBean implements FactoryBean<User> {
+    @Override
+    public User getObject() throws Exception {
+        return new User();
+    }
+
+    @Override
+    public Class<?> getObjectType() {
+        return User.class;
+    }
+}
+```
+
+3. 配置bean
+
+```xml
+<bean id="user" class="com.example.spring.factory.UserFactoryBean"/>
+```
+
+4. 测试
+
+```java
+public void testUserFactoryBean(){
+  ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-factory.xml");
+  User user = (User) applicationContext.getBean("user");
+  System.out.println(user);
+}
+```
+
+### 实验十四：基于xml的自动装配
+
+自动装配，根据指定的策略，在IOC容器中匹配某一个bean，自动为指定的bean中所依赖的类类型或接口类型属性赋值
+
+1. 场景模拟
+
+创建类UserController
+
+```java
+public class UserController {
+
+    private UserService userService;
+
+    public void save(){
+        User user = new User("admin", "123456", 20);
+        userService.save(user);
+    }
+
+    public void setUserService(UserService userService) {
+        this.userService = userService;
+    }
+}
+```
+
+创建接口UserService
+
+```java
+public interface UserService {
+
+    void save(User user);
+
+}
+```
+
+创建类UserServiceImpl实现接口UserService
+
+```java
+public class UserServiceImpl implements UserService {
+
+    private UserDao userDao;
+
+    @Override
+    public void save(User user) {
+        userDao.save(user);
+        System.out.println("UserServiceImpl save user = " + user);
+    }
+
+    public void setUserDao(UserDao userDao) {
+        this.userDao = userDao;
+    }
+}
+```
+
+创建接口UserDao
+
+```java
+public interface UserDao {
+
+    void save(User user);
+
+}
+```
+
+创建类UserDaoImpl实现接口UserDao
+
+```java
+public class UserDaoImpl implements UserDao {
+    @Override
+    public void save(User user) {
+        System.out.println("UserDaoImpl save user = " + user);
+    }
+}
+```
+
+2. 配置bean
+
+使用bean标签的autowire属性设置自动装配效果
+
+自动装配方式：byType
+
+byType：根据类型匹配IOC容器中的某个兼容类型的bean，为属性自动赋值
+
+若在IOC中，没有任何一个兼容类型的bean能够为属性赋值，则该属性不装配，即值为默认值 null
+
+若在IOC中，有多个兼容类型的bean能够为属性赋值，则抛出异常 NoUniqueBeanDefinitionException
+
+```xml
+<bean id="userController" class="com.example.spring.controller.UserController" autowire="byType"/>
+
+<bean id="userService" class="com.example.spring.service.impl.UserServiceImpl" autowire="byType"/>
+
+<bean id="userDao" class="com.example.spring.dao.impl.UserDaoImpl"/>
+```
+
+自动装配方式：byName 
+
+byName：将自动装配的属性的属性名，作为bean的id在IOC容器中匹配相对应的bean进行赋值
+
+```xml
+<bean id="userController" class="com.example.spring.controller.UserController" autowire="byName"/>
+
+<bean id="userService" class="com.example.spring.service.impl.UserServiceImpl" autowire="byName"/>
+
+<bean id="userDao" class="com.example.spring.dao.impl.UserDaoImpl"/>
+```
+
+3. 测试
+
+```java
+@Test
+public void testAutoWireByXML(){
+  ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-autowire.xml");
+  UserController userController = applicationContext.getBean(UserController.class);
+  userController.save();
+}
+```
+
+## 基于注解管理bean
+
+### 实验一：标记与扫描
+
+1. 注解
+
+和 XML 配置文件一样，注解本身并不能执行，注解本身仅仅只是做一个标记，具体的功能是框架检测到注解标记的位置，然后针对这个位置按照注解标记的功能来执行具体操作。
+
+本质上：所有一切的操作都是Java代码来完成的，XML和注解只是告诉框架中的Java代码如何执行。 
+
+举例：元旦联欢会要布置教室，蓝色的地方贴上元旦快乐四个字，红色的地方贴上拉花，黄色的地方贴上气球。
+
+![标记与扫描](./images/标记与扫描.png)
+
+班长做了所有标记，同学们来完成具体工作。墙上的标记相当于我们在代码中使用的注解，后面同学们做的工作，相当于框架的具体操作。
+
+2. 扫描
+
+Spring 为了知道程序员在哪些地方标记了什么注解，就需要通过扫描的方式，来进行检测。然后根据注解进行后续操作。
+
+3. 标识组件的常用注解
+
+@Component：将类标识为普通组件 
+
+@Controller：将类标识为控制层组件 
+
+@Service：将类标 识为业务层组件 
+
+@Repository：将类标识为持久层组件
+
+问：以上四个注解有什么关系和区别?
+
+![Component组件与Controller组件关系](./images/Component组件与Controller组件关系.png)
+
+通过查看源码我们得知，@Controller、@Service、@Repository这三个注解只是在@Component注解 的基础上起了三个新的名字。
+
+对于Spring使用IOC容器管理这些组件来说没有区别。所以@Controller、@Service、@Repository这三个注解只是给开发人员看的，让我们能够便于分辨组件的作用。
+
+注意：虽然它们本质上一样，但是为了代码的可读性，为了程序结构严谨我们肯定不能随便胡乱标记。
+
+4. 创建组件
+
+创建控制层组件
+
+```java
+@Controller
+public class UserController {
+
+}
+```
+
+创建接口UserService
+
+```java
+public interface UserService {
+
+}
+```
+
+创建业务层组件UserServiceImpl
+
+```java
+@Service
+public class UserServiceImpl implements UserService {
+
+}
+```
+
+创建接口UserDao
+
+```java
+public interface UserDao {
+
+}
+```
+
+创建持久层组件UserDaoImpl
+
+```java
+@Repository
+public class UserDaoImpl implements UserDao {
+}
+```
+
+5. 扫描组件
+
+情况一：最基本的扫描方式
+
+```xml
+<context:component-scan base-package="com.example.spring"/>
+```
+
+情况二：指定要排除的组件
+
+```xml
+<!-- context:exclude-filter标签:指定排除规则 -->
+<!--
+	type:设置排除或包含的依据
+  type="annotation"，根据注解排除，expression中设置要排除的注解的全类名
+  type="assignable"，根据类型排除，expression中设置要排除的类型的全类名
+-->
+<context:component-scan base-package="com.example.spring">
+  <!--<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>-->
+  <context:exclude-filter type="assignable" expression="com.example.spring.controller.UserController"/>
+</context:component-scan>
+```
+
+情况三：仅扫描指定组件
+
+```xml
+<context:component-scan base-package="com.example.spring" use-default-filters="false">
+  <!-- context:include-filter标签：指定在原有扫描规则的基础上追加的规则 -->
+  <!-- use-default-filters属性：取值false表示关闭默认扫描规则 -->
+  <!-- 此时必须设置use-default-filters="false"，因为默认规则即扫描指定包下所有类 -->
+  <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+</context:component-scan>
+```
+
+8. 测试
+
+```java
+@Test
+public void testAutowireByAnnotation() {
+  ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-ioc-annotation.xml");
+  UserController userController = applicationContext.getBean(UserController.class);
+  System.out.println(userController);
+  UserService userService = applicationContext.getBean(UserService.class);
+  System.out.println(userService);
+  UserDao userDao = applicationContext.getBean(UserDao.class);
+  System.out.println(userDao);
+}
+```
+
+9. 组件所对应的bean的id
+
+在我们使用XML方式管理bean的时候，每个bean都有一个唯一标识，便于在其他地方引用。现在使用注解后，每个组件仍然应该有一个唯一标识。
+
+- 默认情况
+
+类名首字母小写就是bean的id。例如：UserController类对应的bean的id就是userController。
+
+- 自定义bean的id
+
+可通过标识组件的注解的value属性设置自定义的bean的id
+
+```java
+@Service("userService")//默认为userServiceImpl 
+public class UserServiceImpl implements UserService {
+  
+}
+```
+
+### 实验二：基于注解的自动装配
+
+1. 场景模拟
+
+参考基于xml的自动装配 
+
+在UserController中声明UserService对象 
+
+在UserServiceImpl中声明UserDao对象
+
+2. @Autowired 注解
+
+在成员变量上直接标记@Autowired注解即可完成自动装配，不需要提供setXxx()方法。以后我们在项 目中的正式用法就是这样。
+
+```java
+@Controller
+public class UserController {
+
+    @Autowired
+    private UserService userService;
+
+    public void save(){
+        User user = new User("Jack", "123456", 20);
+        userService.save(user);
+    }
+}
+```
+
+
+
+```java
+@Service
+public class UserServiceImpl implements UserService {
+
+    @Autowired
+    private UserDao userDao;
+    @Override
+    public void save(User user) {
+        System.out.println("UserServiceImpl save user = " + user);
+        userDao.save(user);
+    }
+}
+```
+
+
+
+```java
+@Repository
+public class UserDaoImpl implements UserDao {
+    @Override
+    public void save(User user) {
+        System.out.println("UserDaoImpl save user = " + user);
+    }
+}
+```
+
+3. @Autowired注解其他细节
+
+@Autowired注解可以标记在构造器和set方法上
+
+```java
+@Controller
+public class UserController {
+
+    private UserService userService;
+
+    @Autowired
+    public UserController(UserService userService){
+        this.userService = userService;
+    }
+  
+    public void save(){
+        User user = new User("Jack", "123456", 20);
+        userService.save(user);
+    }
+}
+```
+
+
+
+```java
+@Controller
+public class UserController {
+
+    private UserService userService;
+
+    @Autowired
+    public void setUserService(UserService userService) {
+        this.userService = userService;
+    }
+
+    public void save(){
+        User user = new User("Jack", "123456", 20);
+        userService.save(user);
+    }
+}
+```
+
+4. @Autowired工作流程
+
+<img src="./images/Autowired工作流程.png" alt="Autowired工作流程" style="zoom:80%;" />
+
+- 首先根据所需要的组件类型到IOC容器中查找 
+  - 能够找到唯一的bean：直接执行装配 
+  - 如果完全找不到匹配这个类型的bean：装配失败 
+  - 和所需类型匹配的bean不止一个
+    - 没有@Qualifier注解：根据@Autowired标记位置成员变量的变量名作为bean的id进行匹配
+      - 能够找到：执行装配
+      - 找不到：装配失败 
+    - 使用@Qualifier注解：根据@Qualifier注解中指定的名称作为bean的id进行匹配
+      - 能够找到：执行装配
+      - 找不到：装配失败
+
+```java
+@Controller
+public class UserController {
+
+    @Autowired
+    @Qualifier("userServiceImpl")
+    private UserService userService;
+  
+  	public void save(){
+        User user = new User("Jack", "123456", 20);
+        userService.save(user);
+    }	
+}
+```
+
+@Autowired中有属性required，默认值为true，因此在自动装配无法找到相应的bean时，会装配失败，可以将属性required的值设置为true，则表示能装就装，装不上就不装，此时自动装配的属性为默认值，但是实际开发时，基本上所有需要装配组件的地方都是必须装配的，用不上这个属性。
 
