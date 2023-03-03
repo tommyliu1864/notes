@@ -16,7 +16,7 @@
     -->
     <!--<context:component-scan base-package="com.example.spring">
         &lt;!&ndash;<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>&ndash;&gt;
-        <context:exclude-filter type="assignable" expression="com.example.spring.controller.UserController"/>
+        <context:exclude-filter type="assignable" expression="controller.com.example.spring.aop.UserController"/>
     </context:component-scan>-->
 
     <!-- 仅扫描指定组件 -->
@@ -27,6 +27,6 @@
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>-->
 
-    <bean id="userServiceImpl1" class="com.example.spring.service.impl.UserServiceImpl"/>
-    <bean id="userServiceImpl2" class="com.example.spring.service.impl.UserServiceImpl"/>
+    <bean id="userServiceImpl1" class="impl.service.com.example.spring.io.UserServiceImpl"/>
+    <bean id="userServiceImpl2" class="impl.service.com.example.spring.io.UserServiceImpl"/>
 </beans>

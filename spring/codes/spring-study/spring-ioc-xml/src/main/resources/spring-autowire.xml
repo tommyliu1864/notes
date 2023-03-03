@@ -3,10 +3,10 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="userController" class="com.example.spring.controller.UserController" autowire="byName"/>
+    <bean id="userController" class="controller.com.example.spring.io.UserController" autowire="byName"/>
 
-    <bean id="userService" class="com.example.spring.service.impl.UserServiceImpl" autowire="byName"/>
+    <bean id="userService" class="impl.service.com.example.spring.io.UserServiceImpl" autowire="byName"/>
 
-    <bean id="userDao" class="com.example.spring.dao.impl.UserDaoImpl"/>
+    <bean id="userDao" class="impl.dao.com.example.spring.io.UserDaoImpl"/>
 
 </beans>

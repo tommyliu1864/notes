@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean class="com.example.spring.pojo.User" scope="singleton" init-method="initMethod"
+    <bean class="pojo.com.example.spring.io.User" scope="singleton" init-method="initMethod"
           destroy-method="destroyMethod">
         <property name="id" value="1"/>
         <property name="username" value="张三"/>
@@ -11,5 +11,5 @@
         <property name="age" value="20"/>
     </bean>
 
-    <bean id="myBeanProcessor" class="com.example.spring.process.MyBeanProcessor"/>
+    <bean id="myBeanProcessor" class="com.example.spring.aop.process.MyBeanProcessor"/>
 </beans>

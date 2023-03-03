@@ -12,6 +12,9 @@
         <module>spring-helloworld</module>
         <module>spring-ioc-xml</module>
         <module>spring-ioc-annotation</module>
+        <module>spring-proxy</module>
+        <module>spring-aop</module>
+        <module>spring-transaction</module>
     </modules>
 
     <properties>

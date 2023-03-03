@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-ioc-xml" />
+        <module name="spring-proxy" />
         <module name="spring-ioc-annotation" />
+        <module name="spring-transaction" />
+        <module name="spring-aop" />
+        <module name="spring-ioc-xml" />
         <module name="spring-helloworld" />
       </profile>
     </annotationProcessing>
