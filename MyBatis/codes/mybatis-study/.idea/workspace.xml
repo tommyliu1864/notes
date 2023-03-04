@@ -5,25 +5,78 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fffaaf51-d05e-455f-a1af-ec8fc1a5d233" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-cache/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-cache/src/main/java/com/example/mybatis/mapper/CacheMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-cache/src/main/resources/ecache.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-cache/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-cache/src/main/resources/log4j.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-cache/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-cache/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-reverse/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-reverse/src/main/java/com/example/mybatis/utils/SqlSessionUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-reverse/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-reverse/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-reverse/src/main/resources/log4j.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-reverse/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-reverse/src/test/java/com/example/mybatis/test/ReverseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-aop/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-aop/src/main/java/com/example/spring/aop/annotation/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-aop/src/main/java/com/example/spring/aop/annotation/CalculatorPureImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-aop/src/main/java/com/example/spring/aop/annotation/LogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-aop/src/main/java/com/example/spring/aop/annotation/ValidateAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-aop/src/main/java/com/example/spring/aop/xml/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-aop/src/main/java/com/example/spring/aop/xml/CalculatorPureImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-aop/src/main/java/com/example/spring/aop/xml/LogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-aop/src/main/java/com/example/spring/aop/xml/ValidateAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-aop/src/main/resources/spring-aop.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-aop/src/main/resources/spring-xml-aop.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-aop/src/test/java/com/example/spring/aop/AOPByXMLTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-aop/src/test/java/com/example/spring/aop/AOPTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-annotation/src/main/java/com/example/spring/aop/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-annotation/src/main/java/com/example/spring/aop/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/java/com/example/spring/aop/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/java/com/example/spring/aop/pojo/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/java/com/example/spring/aop/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-proxy/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-proxy/src/main/java/com/example/spring/aop/proxy/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-proxy/src/main/java/com/example/spring/aop/proxy/CalculatorLogImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-proxy/src/main/java/com/example/spring/aop/proxy/CalculatorPureImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-proxy/src/main/java/com/example/spring/aop/proxy/CalculatorStaticProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-proxy/src/main/java/com/example/spring/aop/proxy/ProxyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-proxy/src/test/java/com/example/spring/aop/proxy/ProxyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-transaction/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-transaction/src/main/java/com/example/spring/pojo/Emp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-transaction/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-transaction/src/main/resources/spring-jdbc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-transaction/src/test/java/com/example/spring/test/JDBCTemplateTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../MyBatis.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../MyBatis.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-helloworld/src/main/java/com/example/spring/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-helloworld/src/main/java/com/example/spring/aop/HelloWorld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-helloworld/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-helloworld/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-helloworld/src/test/java/com/example/spring/test/HelloWorldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-helloworld/src/test/java/com/example/spring/aop/test/HelloWorldTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-annotation/src/main/java/com/example/spring/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-annotation/src/main/java/com/example/spring/aop/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-annotation/src/main/java/com/example/spring/dao/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-annotation/src/main/java/com/example/spring/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-annotation/src/main/java/com/example/spring/aop/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-annotation/src/main/java/com/example/spring/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/java/com/example/spring/aop/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-annotation/src/main/java/com/example/spring/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-annotation/src/main/java/com/example/spring/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-annotation/src/main/java/com/example/spring/aop/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-annotation/src/main/resources/spring-ioc-annotation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-annotation/src/main/resources/spring-ioc-annotation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-annotation/src/test/java/com/example/spring/test/IOCAnnotationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-annotation/src/test/java/com/example/spring/aop/test/IOCAnnotationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/java/com/example/spring/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/java/com/example/spring/aop/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/java/com/example/spring/dao/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/java/com/example/spring/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/java/com/example/spring/aop/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/java/com/example/spring/factory/UserFactoryBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/java/com/example/spring/aop/factory/UserFactoryBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/java/com/example/spring/pojo/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/java/com/example/spring/pojo/School.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/java/com/example/spring/aop/pojo/School.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/java/com/example/spring/pojo/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/java/com/example/spring/aop/pojo/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/java/com/example/spring/pojo/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/java/com/example/spring/aop/pojo/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/java/com/example/spring/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-annotation/src/main/java/com/example/spring/aop/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/java/com/example/spring/process/MyBeanProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/java/com/example/spring/aop/process/MyBeanProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/java/com/example/spring/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/java/com/example/spring/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/java/com/example/spring/aop/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/resources/spring-autowire.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/resources/spring-autowire.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/resources/spring-factory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/resources/spring-factory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/resources/spring-ioc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/resources/spring-ioc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/resources/spring-scope.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/main/resources/spring-scope.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/test/java/com/example/spring/test/AutoWireTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/test/java/com/example/spring/aop/test/AutoWireTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/test/java/com/example/spring/test/BeanScopeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/test/java/com/example/spring/aop/test/BeanScopeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/test/java/com/example/spring/test/IOCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/test/java/com/example/spring/aop/test/IOCTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/test/java/com/example/spring/test/UserFactoryBeanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/codes/spring-study/spring-ioc-xml/src/test/java/com/example/spring/aop/test/UserFactoryBeanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../spring/spring.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../spring/spring.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,32 +118,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "/Users/chenliang/notes/notes/MyBatis/codes/mybatis-study/mybatis-reverse/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/chenliang/notes/notes/MyBatis/codes/mybatis-study/tangren-reverse/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tangren-reverse/src/main/resources" />
       <recent name="$PROJECT_DIR$/mybatis-reverse/src/main/resources" />
       <recent name="$PROJECT_DIR$/mybatis-cache/src/main/resources" />
       <recent name="$PROJECT_DIR$/mybatis-cache" />
       <recent name="$PROJECT_DIR$/sql" />
-      <recent name="$PROJECT_DIR$/mybatis-dynamicSQL/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/mybatis-reverse/src/main/resources" />
@@ -204,7 +257,15 @@
       <workItem from="1676359502174" duration="8013000" />
       <workItem from="1676378513671" duration="10196000" />
       <workItem from="1676461447879" duration="216000" />
-      <workItem from="1676521924321" duration="7070000" />
+      <workItem from="1676521924321" duration="9758000" />
+      <workItem from="1676556283273" duration="4000" />
+      <workItem from="1676557109046" duration="5000" />
+      <workItem from="1676623309185" duration="186000" />
+      <workItem from="1676904451703" duration="13000" />
+      <workItem from="1677125233953" duration="261000" />
+      <workItem from="1677132837310" duration="652000" />
+      <workItem from="1677684232706" duration="8000" />
+      <workItem from="1677686146135" duration="619000" />
     </task>
     <servers />
   </component>

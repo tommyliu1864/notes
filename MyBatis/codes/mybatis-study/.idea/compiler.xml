@@ -14,5 +14,8 @@
         <module name="mybatis-resultMap" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="tangren-reverse" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

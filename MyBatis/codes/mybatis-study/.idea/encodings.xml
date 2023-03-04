@@ -3,5 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/mybatis-reverse/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mybatis-reverse/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tangren-reverse/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tangren-reverse/src/main/resources" charset="UTF-8" />
   </component>
 </project>

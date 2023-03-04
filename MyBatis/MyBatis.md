@@ -1694,3 +1694,14 @@ PageInfo{
 - hasPreviousPage/hasNextPage：是否存在上一页/下一页 
 - navigatePages：导航分页的页码数
 - navigatepageNums：导航分页的页码，[1,2,3,4,5]
+
+
+
+
+
+server.port=8082
+
+spring.datasource.url=jdbc:mysql://216.83.46.65:3306/tangren
+spring.datasource.username=root
+spring.datasource.password=Nanakokosuke7.
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
