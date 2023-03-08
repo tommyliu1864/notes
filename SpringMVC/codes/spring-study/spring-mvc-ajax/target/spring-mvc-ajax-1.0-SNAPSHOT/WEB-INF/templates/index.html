@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>success</title>
+</head>
+<body>
+<div id="app">
+    <input type="button" value="测试@RequestBody获取json格式的请求参数" @click="testRequestBody()"><br/>
+    <input type="button" value="测试@ResponseBody响应报文的响应体" @click="testResponseBody()"><br/>
+    <input type="button" value="测试@ResponseBody响应json" @click="testResponseBodyJson()"><br/>
+</div>
+
+<script type="text/javascript" th:src="@{/static/js/vue.js}"></script>
+<script type="text/javascript" th:src="@{/static/js/axios.min.js}"></script>
+<script type="text/javascript">
+    var vue = new Vue({
+        el: "#app",
+        methods: {
+            testRequestBody() {
+                axios.post(
+                    "/SpringMVC/test/RequestBody/json",
+                    {username: "admin", password: "123456"}
+                ).then(response => {
+                    console.log(response.data);
+                });
+            },
+
+            testResponseBody() {
+                axios.post(
+                    "/SpringMVC/test/ResponseBody"
+                ).then(response => {
+                    console.log(response.data);
+                });
+            },
+
+            testResponseBodyJson() {
+                axios.post(
+                    "/SpringMVC/test/ResponseBody/json"
+                ).then(response => {
+                    console.log(response.data);
+                });
+            }
+        }
+    });
+</script>
+</body>
+</html>
