@@ -120,6 +120,22 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <finalName>ssm</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.1</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+            </plugin>
+        </plugins>
+    </build>
+
     <properties>
         <spring.version>5.3.1</spring.version>
         <maven.compiler.source>11</maven.compiler.source>
