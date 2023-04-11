@@ -77,6 +77,13 @@ yum install -y zlib zlib-devel
 
 ## 防火墙
 
+- 查看防火墙状态及端口列表
+
+```shell
+firewall-cmd --state
+firewall-cmd --list-all
+```
+
 - 放行端口
 
 ```shell
@@ -343,7 +350,9 @@ nginx: [error] open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file 
 ./nginx -c /usr/local/nginx/conf/nginx.conf
 ```
 
-# 反向代理
+# 负载均衡
+
+## 反向代理
 
 ```shell
 server {
@@ -363,39 +372,133 @@ server {
 }
 ```
 
-- 基于反向代理的负载均衡
+## 基于反向代理的负载均衡
 
 ```shell
-worker_processes  1;
+worker_processes 1;
 events {
-    worker_connections  1024;
+    worker_connections 1024;
 }
 
 
 http {
-    include       mime.types;
-    default_type  application/octet-stream;
-    sendfile        on;
-    
+    include mime.types;
+    default_type application/octet-stream;
+    sendfile on;
+
     # 负载均衡基本配置
     upstream httpds {
-    	server 172.16.147.129:80;
-    	server 172.16.147.130:80;
-    }
-    
-    server {
-        listen       80; 
-        server_name  localhost;
-        location / {
-        		# httpds 为别名，可以是任意名字
-            proxy_pass http://httpds;
-        }
-        error_page   500 502 503 504  /50x.html;
-        location = /50x.html {
-            root   html;
-        }
+        server 172.16.147.129:80;
+        server 172.16.147.130:80;
     }
 
+    server {
+        listen 80;
+        server_name localhost;
+        location / {
+            # httpds 为别名，可以是任意名字
+            proxy_pass http://httpds;
+        }
+        error_page 500 502 503 504 /50x.html;
+        location = /50x.html {
+            root html;
+        }
+    }
+}
+```
+
+## 负载均衡策略
+
+### 轮询
+
+默认情况下使用轮询方式，逐一转发，这种方式适用于无状态请求。
+
+### 权重
+
+指定轮询机率，weight和访问比率成正比，用于后端服务器性能不均的情况。
+
+```shell
+upstream httpds {
+		# 129访问10次之后，130有一次访问机会
+		server 172.16.147.129:80 weight=10 down;
+		server 172.16.147.130:80 weight=1;
+}
+```
+
+- weight：默认为1，weight越大，负载的权重越大。
+- down：下线，表示当前的server暂时不参与负载。
+- backup：其它所有的非backup机器down或者忙的时候，请求backup机器。
+
+### ip_hash 
+
+根据客户端的ip地址转发同一台服务器，可以保持回话。
+
+### least_conn
+
+最少连接访问
+
+### url_hash 
+
+根据用户访问的url定向转发请求
+
+### fair
+
+根据后端服务器响应时间转发请求
+
+# 动静分离
+
+```shell
+worker_processes 1;
+
+
+events {
+    worker_connections 1024;
+}
+
+
+http {
+    include mime.types;
+    default_type application/octet-stream;
+
+
+    sendfile on;
+    #tcp_nopush     on;
+
+    keepalive_timeout 65;
+
+    server {
+        listen 80;
+        server_name localhost;
+
+        location / {
+            proxy_pass http://172.16.147.129:8080;
+            root   html;
+    				index  index.html index.htm;
+        }
+				
+				# 静态资源在本机上，动态代码在129这台机器上
+				# 通配符匹配
+        location ~*/(css|images|js) {
+            root html;
+            index index.html index.htm;
+        }
+
+        error_page 500 502 503 504 /50x.html;
+        location = /50x.html {
+            root html;
+        }
+    }
+}
+```
+
+# UrlRewrite 伪静态配置
+
+不需要使用这样的访问路径 `http://172.16.147.128/ssm/employee/page/1`，直接使用 `http://172.16.147.128/1.html` 就可以访问。
+
+```shell
+location / {
+		rewrite ^/([0-9]+).html$ /ssm/employee/page/$1 break;
+		proxy_pass http://172.16.147.129:8080;
 }
 ```
 
