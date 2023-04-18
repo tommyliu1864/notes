@@ -226,7 +226,7 @@ nginx的主程序
 
 # 最小配置
 
-```shell
+```nginx
 # 默认为1，表示开启一个业务进程
 worker_processes  1;
 # 单个业务进程可接受连接数
@@ -275,7 +275,7 @@ http {
 
 # 虚拟主机配置
 
-```shell
+```nginx
 server {
   # 监听端口号
   listen       80;
@@ -354,7 +354,7 @@ nginx: [error] open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file 
 
 ## 反向代理
 
-```shell
+```nginx
 server {
 		listen       80;
 		server_name  www.qzmrss.com;
@@ -374,7 +374,7 @@ server {
 
 ## 基于反向代理的负载均衡
 
-```shell
+```nginx
 worker_processes 1;
 events {
     worker_connections 1024;
@@ -417,7 +417,7 @@ http {
 
 指定轮询机率，weight和访问比率成正比，用于后端服务器性能不均的情况。
 
-```shell
+```nginx
 upstream httpds {
 		# 129访问10次之后，130有一次访问机会
 		server 172.16.147.129:80 weight=10 down;
@@ -447,7 +447,7 @@ upstream httpds {
 
 # 动静分离
 
-```shell
+```nginx
 worker_processes 1;
 
 
@@ -500,5 +500,183 @@ location / {
 		rewrite ^/([0-9]+).html$ /ssm/employee/page/$1 break;
 		proxy_pass http://172.16.147.129:8080;
 }
+```
+
+## 应用服务器防火墙配置
+
+- 开启防火墙
+
+```shell
+systemctl start firewalld
+```
+
+- 重启防火墙
+
+```shell
+systemctl restart firewalld
+```
+
+- 重载规则
+
+```shell
+firewall-cmd --reload
+```
+
+- 查看已配置规则
+
+```shell
+firewall-cmd --list-all
+```
+
+- 指定端口和ip访问
+
+```shell
+firewall-cmd --permanent --add-rich-rule="rule family="ipv4" source address="192.168.44.101" port protocol="tcp" port="8080" accept"
+```
+
+- 移除规则
+
+```shell
+firewall-cmd --permanent --remove-rich-rule="rule family="ipv4" source address="192.168.44.101" port port="8080" protocol="tcp" accept"
+```
+
+## 网关配置
+
+```nginx
+
+worker_processes 1;
+
+
+events {
+    worker_connections 1024;
+}
+
+
+http {
+    include mime.types;
+    default_type application/octet-stream;
+
+
+    sendfile on;
+    #tcp_nopush     on;
+
+    keepalive_timeout 65;
+
+    upstream httpds {
+        server 192.168.172.11:8080 weight=10;
+        server 192.168.172.12:8080 weight=1;
+    }
+
+    server {
+        listen 80;
+        server_name localhost;
+
+
+        location / {
+            rewrite ^/([0-9]+).html$ /ssm/employee/page/$1 break;
+            proxy_pass http://httpds;
+        }
+
+        location ~*/(css|images|js) {
+            root html;
+            index index.html index.htm;
+        }
+
+        error_page 500 502 503 504 /50x.html;
+        location = /50x.html {
+            root html;
+        }
+    }
+}
+```
+
+# 防盗链配置
+
+防盗链就是防止其他网站盗用我们自己网站的静态资源，因为浏览器访问网页资源都会带上`Referer`请求头
+
+- 如果访问路径为 `http://192.168.172.11/ssm/static/images/body1.jpg`,请求头信息为：`http://192.168.172.11/ssm/static/images/body1.jpg`
+- 如果访问路径为 `http://192.168.172.10/ssm/static/images/body1.jpg`,请求头信息为：`http://192.168.172.10/ssm/static/images/body1.jpg`
+
+Nginx 可以根据`Referer`请求头来判断，是否盗用网站资源
+
+```nginx
+
+worker_processes 1;
+
+events {
+    worker_connections 1024;
+}
+
+
+http {
+    include mime.types;
+    default_type application/octet-stream;
+
+    sendfile on;
+
+    keepalive_timeout 65;
+
+    server {
+        listen 80;
+        server_name localhost;
+
+        location / {
+      			# 默认访问tomcat页面
+            proxy_pass http://127.0.0.1:8080;
+            root html;
+            index index.html index.htm;
+        }
+
+        location ~*/(css|images|js) {
+            proxy_pass http://127.0.0.1:8080;
+      			# 只允许192.168.172.11 ip下访问静态资源，其他ip为非法ip，返回403状态
+            valid_referers none 192.168.172.11;
+            if ($invalid_referer) {
+                return 403;
+            }
+            root html;
+            index index.html index.htm;
+        }
+
+        error_page 500 502 503 504 /50x.html;
+        location = /50x.html {
+            root html;
+        }
+    }
+}
+```
+
+- 使用curl测试防盗链
+
+```shell
+curl -I http://192.168.172.11/ssm/static/images/body1.jpg
+```
+
+```
+HTTP/1.1 200 
+Server: nginx/1.22.1
+Date: Tue, 18 Apr 2023 11:52:12 GMT
+Content-Type: image/jpeg;charset=UTF-8
+Content-Length: 923736
+Connection: keep-alive
+Accept-Ranges: bytes
+ETag: W/"923736-1681180082052"
+Last-Modified: Tue, 11 Apr 2023 02:28:02 GMT
+```
+
+带Referer
+
+```shell
+curl -e "https://www.baidu.com" -I http://192.168.172.11/ssm/static/images/body1.jpg
+```
+
+```
+atic/images/body1.jpg
+HTTP/1.1 403 Forbidden
+Server: nginx/1.22.1
+Date: Tue, 18 Apr 2023 11:52:44 GMT
+Content-Type: text/html
+Content-Length: 153
+Connection: keep-alive
 ```
 
