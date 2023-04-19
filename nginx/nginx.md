@@ -196,7 +196,17 @@ tcp        0      0 ::1:631                     :::*                        LIST
 kill 2347
 ```
 
+## nginx.pid 找不到 
 
+错误：nginx: [error] open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory)
+
+解决方案：
+
+```shell
+/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
+```
+
+使用-c 参数指定nginx.conf文件的位置
 
 # 目录结构
 
@@ -762,5 +772,62 @@ vrrp_instance atguigu {
 
 ```shell
 systemctl start keepalived
+```
+
+# HTTPS 证书
+
+- Nginx SSL 模块安装
+
+```shell
+./configure --prefix=/usr/local/nginx --with-http_stub_status_module --with-http_ssl_module
+```
+
+- 配置
+
+```nginx
+
+worker_processes 1;
+
+
+events {
+    worker_connections 1024;
+}
+
+
+http {
+    include mime.types;
+    default_type application/octet-stream;
+
+    sendfile on;
+
+    keepalive_timeout 65;
+
+  	# HTTPS 证书配置，记得开放防火墙443端口
+    server {
+        listen 443 ssl;
+        server_name www.jinshuwang.cn;
+    
+        ssl_certificate /usr/local/nginx/crt/jinshuwang.cn_ssl.crt;
+        ssl_certificate_key /usr/local/nginx/crt/jinshuwang.cn_ssl.key;
+
+        location / {
+            root html;
+            index index.html index.htm;
+        }
+
+        error_page 500 502 503 504 /50x.html;
+        location = /50x.html {
+            root html;
+        }
+    }
+
+    server {
+        listen 80;
+        server_name www.jinshuwang.cn;
+				# HTTP 协议全部转发到HTTPS协议
+        return 301 https://$server_name$request_uri;
+        root html;
+    }
+}
 ```
 
