@@ -447,6 +447,10 @@ upstream httpds {
 
 # 动静分离
 
+为了提高网站的响应速度，减轻程序服务器（Tomcat，Jboss等）的负载，对于静态资源，如图片、js、css等文件，可以在反向代理服务器中进行缓存，这样浏览器在请求一个静态资源时，代理服务器就可以直接处理，而不用将请求转发给后端服务器。对于用户请求的动态文件，如servlet、jsp，则转发给Tomcat，Jboss服务器处理，这就是动静分离。即动态文件与静态文件的分离。
+
+<img src="./images/动静分离.png" alt="动静分离" style="zoom:80%;" />
+
 ```nginx
 worker_processes 1;
 
@@ -678,5 +682,85 @@ Date: Tue, 18 Apr 2023 11:52:44 GMT
 Content-Type: text/html
 Content-Length: 153
 Connection: keep-alive
+```
+
+- 配置
+
+```
+valid_referers none | blocked | server_names | strings ....;
+```
+
+- none， 检测 Referer 头域不存在的情况。
+
+- blocked，检测 Referer 头域的值被防火墙或者代理服务器删除或伪装的情况。这种情况该头域的值不以 “http://” 或 “https://” 开头。
+
+- server_names ，设置一个或多个 URL ，检测 Referer 头域的值是否是这些 URL 中的某一个。
+
+# Keepalived
+
+Keepalived一个基于VRRP 协议来实现的 LVS 服务高可用方案，可以利用其来解决单点故障。一个LVS服务会有2台服务器运行Keepalived，一台为主服务器（MASTER），一台为备份服务器（BACKUP），但是对外表现为一个虚拟IP，主服务器会发送特定的消息给备份服务器，当备份服务器收不到这个消息的时候，即主服务器宕机的时候， 备份服务器就会接管虚拟IP，继续提供服务，从而保证了高可用性。
+
+<img src="./images/keepalived 原理.png" alt="keepalived 原理" style="zoom: 50%;" />
+
+- 安装
+
+```shell
+yum install keepalived
+```
+
+- 配置
+
+配置文件在：`/etc/keepalived/keepalived.conf`
+
+- 主服务器配置
+
+```nginx
+! Configuration File for keepalived
+global_defs {
+    router_id lb111
+}
+vrrp_instance atguigu {
+    state MASTER
+    interface ens160
+    virtual_router_id 51   
+    priority 100
+    advert_int 1
+    authentication {
+        auth_type PASS
+        auth_pass 1111
+    }
+    virtual_ipaddress {
+        192.168.172.200
+    }
+}
+```
+
+- 备份服务器
+
+```nginx
+! Configuration File for keepalived
+global_defs {
+    router_id lb111
+}
+vrrp_instance atguigu {
+    state BACKUP
+    interface ens160
+    virtual_router_id 51
+    priority 50
+    advert_int 1
+    authentication {
+        auth_type PASS
+        auth_pass 1111
+    }
+    virtual_ipaddress {
+        192.168.172.200
+    }
+}
+```
+
+- 启动服务
+
+```shell
+systemctl start keepalived
 ```
 
