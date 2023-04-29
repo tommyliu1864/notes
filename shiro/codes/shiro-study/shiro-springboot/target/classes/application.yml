@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: dev
+
+mybatis-plus:
+  configuration:
+    # 打印sql语句到控制台
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
