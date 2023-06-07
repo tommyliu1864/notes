@@ -15,6 +15,12 @@
         <module>spring-proxy</module>
         <module>spring-aop</module>
         <module>spring-transaction</module>
+        <module>spring-mvc-helloworld</module>
+        <module>spring-mvc-demo</module>
+        <module>spring-mvc-rest</module>
+        <module>spring-mvc-ajax</module>
+        <module>spring-mvc-extension</module>
+        <module>spring-mvc-config</module>
     </modules>
 
     <properties>

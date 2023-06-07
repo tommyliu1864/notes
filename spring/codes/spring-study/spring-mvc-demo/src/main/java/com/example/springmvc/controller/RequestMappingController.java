@@ -1,5 +1,6 @@
-package com.example.springmvc;
+package com.example.springmvc.controller;
 
+import com.example.springmvc.pojo.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -57,6 +58,12 @@ public class RequestMappingController {
         System.out.println("username = " + username + ",password:" + password);
         //System.out.println("referer = " + referer);
         System.out.println("jsessionId = " + jsessionId);
+        return "success";
+    }
+
+    @RequestMapping("/testpojo")
+    public String testPOJO(User user) {
+        System.out.println("user = " + user);
         return "success";
     }
 }

@@ -1,4 +1,4 @@
-package com.example.springmvc;
+package com.example.springmvc.config;
 
 import com.example.springmvc.interceptor.FirstInterceptor;
 import org.springframework.context.annotation.Bean;

@@ -1,4 +1,4 @@
-package com.example.springmvc;
+package com.example.springmvc.config;
 
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.filter.HiddenHttpMethodFilter;

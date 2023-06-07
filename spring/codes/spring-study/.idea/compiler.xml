@@ -7,11 +7,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-proxy" />
-        <module name="spring-ioc-annotation" />
+        <module name="spring-mvc-helloworld" />
+        <module name="spring-mvc-rest" />
         <module name="spring-transaction" />
+        <module name="spring-mvc-config" />
+        <module name="spring-helloworld" />
+        <module name="spring-ioc-annotation" />
+        <module name="spring-mvc-demo" />
+        <module name="spring-mvc-extension" />
         <module name="spring-aop" />
         <module name="spring-ioc-xml" />
-        <module name="spring-helloworld" />
+        <module name="spring-mvc-ajax" />
       </profile>
     </annotationProcessing>
   </component>

@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/spring-mvc-ajax" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-mvc-config" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-mvc-demo" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-mvc-extension" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-mvc-helloworld" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-mvc-rest" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -8,7 +16,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
