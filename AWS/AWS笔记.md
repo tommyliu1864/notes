@@ -6,9 +6,13 @@ https://awspolicygen.s3.amazonaws.com/policygen.html
 
 ![生成策略](./images/生成策略.png)
 
+ARN值为下图中的`存储桶ARN`
+
 ## 编辑存储桶策略
 
 ![编辑存储桶策略](./images/编辑存储桶策略.png)
+
+`bucket-0704-test1/*`，代表桶中所有的文件
 
 ## 公共访问权限
 
