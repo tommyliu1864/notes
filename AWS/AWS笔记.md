@@ -14,6 +14,26 @@ ARN值为下图中的`存储桶ARN`
 
 `bucket-0704-test1/*`，代表桶中所有的文件
 
+```json
+{
+  "Id": "Policy1688695638862",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1688695632792",
+      "Action": [
+        "s3:GetObject"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::bucket-0704-test1/*",
+      "Principal": "*"
+    }
+  ]
+}
+```
+
+
+
 ## 公共访问权限
 
 ![公共访问权限](./images/公共访问权限.png)
@@ -84,4 +104,58 @@ class AwsStudyApplicationTests {
 ![访问密钥](./images/创建访问密钥.png)
 
 ![获取访问密钥](./images/获取访问密钥.png)
+
+
+
+# 同账号桶复制
+
+## IAM 设置
+
+### 创建角色
+
+![创建角色](./images/创建角色.png)
+
+
+
+### 添加权限
+
+添加权限就是指定角色能做什么，这里添加两个权限： `AmazonS3FullAccess`  `AWSBatchServiceRole`
+
+![给角色添加权限](./images/给角色添加权限.png)
+
+
+
+### 信任关系
+
+信任关系是指定哪些服务可以使用当前角色（跟权限一起，双向确认）
+
+![信任关系](./images/信任关系.png)
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Service": [
+                    "s3.amazonaws.com",
+                    "batchoperations.s3.amazonaws.com"
+                ]
+            },
+            "Action": "sts:AssumeRole"
+        }
+    ]
+}
+```
+
+## 创建复制规则
+
+![创建复制规则](./images/创建复制规则.png)
+
+### 选择IAM角色
+
+![选择IAM角色](./images/选择IAM角色.png)
+
+选中`从现有IAM角色中选择`，选择之前创建的角色`S3BatchoperationsWithFullAccess`
 
