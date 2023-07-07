@@ -119,7 +119,7 @@ class AwsStudyApplicationTests {
 
 ### 添加权限
 
-添加权限就是指定角色能做什么，这里添加两个权限： `AmazonS3FullAccess`  `AWSBatchServiceRole`
+添加权限就是指定角色能做什么，这里添加两个权限： `AmazonS3FullAccess`  `AWSBatchServiceRole` （或者 `AWSBatchFullAccess`更好）
 
 ![给角色添加权限](./images/给角色添加权限.png)
 
@@ -159,3 +159,59 @@ class AwsStudyApplicationTests {
 
 选中`从现有IAM角色中选择`，选择之前创建的角色`S3BatchoperationsWithFullAccess`
 
+# 不同账号桶复制
+
+和同账号桶复制类似，只是需要在控制台中，在`目标`桶上添加桶策略，以允许`源` 桶的拥有者复制对象。
+
+![AWS S3不同账号桶迁移](./images/AWS S3不同账号桶迁移.png)
+
+## 源桶账号创建IAM角色
+
+操作配置和前面一样（记得配置信任关系）
+
+![IAM创建角色](./images/IAM创建角色.png)
+
+
+
+## 目标桶账号配置桶策略
+
+- `arn:aws:iam::547980484223:role/source-acct-IAM-role` 为源桶账号上创建的角色ARN
+- `arn:aws:s3:::bucket-0707-dest-test1` 为目标桶ARN
+
+```json
+{
+    "Version": "2012-10-17",
+    "Id": "",
+    "Statement": [        
+        {
+            "Sid": "Set permissions for objects",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::547980484223:role/source-acct-IAM-role"
+            },
+            "Action": [
+                "s3:ReplicateObject",
+                "s3:ReplicateDelete"
+            ],
+            "Resource": "arn:aws:s3:::bucket-0707-dest-test1/*"
+        },
+        {
+            "Sid": "Set permissions on bucket",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::547980484223:role/source-acct-IAM-role"
+            },
+            "Action": [
+                "s3:List*",
+                "s3:GetBucketVersioning",
+                "s3:PutBucketVersioning"
+            ],
+            "Resource": "arn:aws:s3:::bucket-0707-dest-test1"
+        }
+    ]
+}
+```
+
+## 源桶创建复制规则
+
+参考同账号桶复制
