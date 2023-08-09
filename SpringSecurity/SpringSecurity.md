@@ -1161,3 +1161,13 @@ void testCustomClaims() {
 claims.get("role");
 ```
 
+# 微服务项目-使用Security+JWT实现权限管理
+
+## 前后端分离的权限管理
+
+![Spring Security + jwt 前后端分离的权限系统的时序图](./images/Spring Security + jwt 前后端分离的权限系统的时序图.png)
+
+## 引入依赖
+
+
+

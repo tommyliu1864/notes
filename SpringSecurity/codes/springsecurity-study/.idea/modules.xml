@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/jwt-study/jwt-study.iml" filepath="$PROJECT_DIR$/jwt-study/jwt-study.iml" />
       <module fileurl="file://$PROJECT_DIR$/springsecurity-auth/springsecurity-auth.iml" filepath="$PROJECT_DIR$/springsecurity-auth/springsecurity-auth.iml" />
       <module fileurl="file://$PROJECT_DIR$/springsecurity-basic/springsecurity-basic.iml" filepath="$PROJECT_DIR$/springsecurity-basic/springsecurity-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springsecurity-demo/springsecurity-demo.iml" filepath="$PROJECT_DIR$/springsecurity-demo/springsecurity-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/springsecurity-jwt/springsecurity-jwt.iml" filepath="$PROJECT_DIR$/springsecurity-jwt/springsecurity-jwt.iml" />
       <module fileurl="file://$PROJECT_DIR$/springsecurity-permit/springsecurity-permit.iml" filepath="$PROJECT_DIR$/springsecurity-permit/springsecurity-permit.iml" />
       <module fileurl="file://$PROJECT_DIR$/springsecurity-study.iml" filepath="$PROJECT_DIR$/springsecurity-study.iml" />
