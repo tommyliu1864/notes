@@ -16,7 +16,7 @@
 
 - 将关键词和搜索下拉的词组合，成为两个关键词组合的标题
 
-![百度搜索下拉](/Users/chenliang/notes/notes/SEO/images/百度搜索下拉.png)
+![百度搜索下拉](./images/百度搜索下拉.png)
 
-![双标题工具](/Users/chenliang/notes/notes/SEO/images/双标题工具.png)
+![双标题工具](./images/双标题工具.png)
 
