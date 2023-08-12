@@ -20,3 +20,88 @@
 
 ![双标题工具](./images/双标题工具.png)
 
+# 小旋风蜘蛛池安装
+
+## 域名解析
+
+提前进行域名解析，*代表泛二级域名
+
+![域名解析](./images/域名解析.png)
+
+## 宝塔配置
+
+### 环境安装
+
+确保宝塔安装了蜘蛛池运行所需的软件，Nginx、MySQL、PHP（7.2）
+
+![蜘蛛池运行所需的软件](./images/蜘蛛池运行所需的软件.png)
+
+### 添加站点
+
+记得选择PHP版本
+
+![宝塔添加站点](./images/宝塔添加站点.png)
+
+### 添加域名
+
+点击`网站名`，添加域名，这里添加了 `*.s1u.cn`，支持二级域名访问
+
+![添加域名](./images/添加域名.png)
+
+### 上传蜘蛛池程序
+
+点击 `/www/wwwroot/s1u.cn`，上传文件
+
+![上传蜘蛛池程序](./images/上传蜘蛛池程序.png)
+
+- 解压安装包
+
+![解压蜘蛛池安装包](./images/解压蜘蛛池安装包.png)
+
+## 安装蜘蛛池
+
+![安装蜘蛛池1](./images/安装蜘蛛池1.png)
+
+![安装蜘蛛池2](./images/安装蜘蛛池2.png)
+
+## 配置网站域名
+
+这里配置前面解析的`s1u.cn`域名
+
+![蜘蛛池配置网站域名](./images/蜘蛛池配置网站域名.png)
+
+## Nginx 伪静态配置
+
+- 打开宝塔目录`/www/wwwroot/s1u.cn/temp/rewrite`下文件`nginx的伪静态规则.txt`，并复制
+
+```nginx
+rewrite ^/template/(.*)\.html$ /index.php last;
+rewrite ^/temp/(data|db|robotlog|tplrules|errpage|logs|session)/(.*)$ /index.php last;
+rewrite ^/(temp|template|core|static)/(.*)\.php$ /index.php last;
+if (!-e $request_filename){
+  rewrite ^/(.*)$ /index.php?$1 last;
+}
+```
+
+![nginx伪静态规则](./images/nginx伪静态规则.png)
+
+- 添加站点的nginx伪静态配置
+
+![伪静态配置](./images/伪静态配置.png)
+
+
+
+## 开启蜘蛛池状态
+
+![开启蜘蛛池状态](./images/开启蜘蛛池状态.png)
+
+## 访问网站
+
+- http://www.s1u.cn/
+
+![访问网站1](./images/访问网站1.png)
+
+- http://bbs.s1u.cn/
+
+![访问网站2](./images/访问网站2.png)
+

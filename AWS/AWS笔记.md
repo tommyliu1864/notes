@@ -32,6 +32,28 @@ ARN值为下图中的`存储桶ARN`
 }
 ```
 
+# 跨域设置
+
+```json
+[
+    {
+        "AllowedHeaders": [
+            "*"
+        ],
+        "AllowedMethods": [
+            "PUT",
+            "POST",
+          	"GET",
+            "DELETE"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": []
+    }
+]
+```
+
 
 
 ## 公共访问权限
