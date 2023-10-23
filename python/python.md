@@ -465,6 +465,122 @@ print(number)
 200
 ```
 
+## 函数的多返回值
+
+```python
+# 一次性返回多个值
+def mutil_result():
+    return 1, "Hello", True
+
+
+x, y, z = mutil_result()
+print(x, y, z)
+```
+
+## 函数参数
+
+### 关键字参数
+
+```python
+def user_info(name, age, gender):
+    print(f"姓名是：{name}，年龄是：{age}，性别是：{gender}")
+
+# 位置参数，默认使用形式
+user_info('小明', 20, '男')
+
+# 关键字参数
+user_info(name='小王', age=11, gender='女')
+user_info(name='小王', gender='女', age=11)
+```
+
+### 缺损参数
+
+```python
+# 缺损参数
+def user_info(name, age, gender='男'):
+    print(f"姓名是：{name}，年龄是：{age}，性别是：{gender}")
+
+user_info('小明', 20)
+user_info('小红', 20, gender='女')
+```
+
+### 不定长参数
+
+不定长参数：不定长参数也叫可变参数，用于不确定调用的时候会传递多少个参数（不传参也可以）的场景。
+
+作用：当调用函数时不确定参数个数时，可以使用不定长参数。
+
+不定长参数的类型：
+
+1）位置传递
+
+2）关键字传递
+
+#### 位置传递
+
+传进的所有参数都会被args变量收集，它会根据传进参数的位置合并为一个元组，args是元组类型
+
+```python
+def user_info(*args):
+    print(type(args))
+    print(args)
+
+user_info('TOM', 18)
+```
+
+输出结果：
+
+```
+<class 'tuple'>
+('TOM', 18)
+```
+
+#### 关键字传递
+
+参数是“键=值”形式的情况下，所有的“键=值”都会被kwargs接受，同时会根据“键=值”组成字典
+
+```python
+def user_info(**kwargs):
+    print(type(kwargs))
+    print(kwargs)
+
+user_info(name='TOM', age=18, id=100)
+```
+
+输出结果：
+
+```
+<class 'dict'>
+{'name': 'TOM', 'age': 18, 'id': 100}
+```
+
+## 函数作为参数传递
+
+这是一种计算逻辑的传递，而非数据的传递。
+
+```python
+def algorithm(compute):
+    result = compute(1, 2)
+    print(result)
+    
+def add(x, y):
+    return x + y
+
+algorithm(add)
+```
+
+## lambda 匿名函数
+
+无名称的匿名函数，只能临时使用一次。
+
+```python
+def algorithm(compute):
+    result = compute(1, 2)
+    print(result)
+
+algorithm(lambda x, y: x + y)
+```
+
 # 列表
 
 ## 定义
@@ -857,5 +973,474 @@ while index < len(my_str):
 # for 循环遍历
 for c in my_str:
     print(c)
+```
+
+# 序列
+
+序列是指：内容连续、有序，可使用下标索引的一类数据容器
+
+**列表、元组、字符串，均可以视为序列。**
+
+**序列的常用操作 - 切片**
+
+序列支持切片，即：列表、元组、字符串，均支持进行切片操作。
+
+切片：从一个序列中，取出一个字序列。
+
+语法：序列[起始下标:结束下标:步长]
+
+表示从序列中，从指定位置开始，依次取出元素，到指定位置结束，得到一个新序列：
+
+- 起始下标表示从何处开始，可以留空，留空视作从头开始
+- 结束下标（不含）表示何处结束，可以留空，留空视作截取到结尾
+- 步长表示依次取元素的间隔
+  - 步长1表示，一个个取元素
+  - 步长2表示，每次跳过一个元素取
+  - 步长N表示，每次跳过N-1个元素取
+  - 步长为负数表示，反向取（注意，起始下标和结束下标也要反向标记）
+
+```python
+# 对list进行切片，从1开始，4结束，步长1
+my_list = [0, 1, 2, 3, 4, 5, 6]
+print(f'结果1:{my_list[1:4]}')
+
+# 对tuple进行切片，从头开始，到最后结束，步长1
+my_tuple = (0, 1, 2, 3, 4, 5, 6)
+print(f'结果2:{my_tuple[:]}')
+
+# 对str进行切片，从头开始，到最后结束，步长-1
+my_str = "0123456789"
+# 9876543210，等同于将字符串反转了
+print(f'结果3:{my_str[::-1]}')
+
+# 对列表进行切片，从3开始，到1结束，步长-1
+my_list = [0, 1, 2, 3, 4, 5, 6]
+print(f'结果4:{my_list[3:1:-1]}')
+
+# 对元组进行切片，从头开始，到尾结束，步长-2
+my_tuple = (0, 1, 2, 3, 4, 5, 6)
+print(f'结果5:{my_tuple[::-2]}')
+```
+
+输出结果：
+
+```
+结果1:[1, 2, 3]
+结果2:(0, 1, 2, 3, 4, 5, 6)
+结果3:9876543210
+结果4:[3, 2]
+结果5:(6, 4, 2, 0)
+```
+
+# 集合
+
+集合（set）是一个无序的不重复元素序列。集合中的元素不会重复，并且可以进行交集、并集、差集等常见的集合操作。
+
+可以使用大括号 **{ }** 创建集合，元素之间用逗号 **,** 分隔， 或者也可以使用 **set()** 函数创建集合。
+
+```python
+# 定义集合
+my_set = {"Toyota", "Volkswagen", "Ford", "Honda", "Chevrolet", "Toyota", "Volkswagen"}
+print(f'集合类型：{type(my_set)}')
+print(f'集合内容：{my_set}')
+
+# 添加新元素
+my_set.add("Ford")
+print(f'集合添加元素后：{my_set}')
+
+# 移除元素
+my_set.remove("Honda")
+print(f'移除元素后：{my_set}')
+
+# 随机取出一个元素
+print(f'随机取出一个元素：{my_set.pop()}')
+print(f'随机取出一个元素之后的集合：{my_set}')
+
+# 清空集合
+my_set.clear()
+print(f'集合被清空之后：{my_set}')
+```
+
+输出结果：
+
+```
+集合类型：<class 'set'>
+集合内容：{'Chevrolet', 'Volkswagen', 'Ford', 'Toyota', 'Honda'}
+集合添加元素后：{'Chevrolet', 'Volkswagen', 'Ford', 'Toyota', 'Honda'}
+移除元素后：{'Chevrolet', 'Volkswagen', 'Ford', 'Toyota'}
+随机取出一个元素：Chevrolet
+随机取出一个元素之后的集合：{'Volkswagen', 'Ford', 'Toyota'}
+集合被清空之后：set()
+```
+
+- 取两个集合的差集（集合1有而集合2没有的）
+
+  结果：得到一个新集合，集合1和集合2不变
+
+```python
+set1 = {1, 2, 3}
+set2 = {1, 5, 6}
+set3 = set1.difference(set2)
+print(set3)
+print(set1)
+print(set2)
+```
+
+输出结果：
+
+```	
+{2, 3}
+{1, 2, 3}
+{1, 5, 6}
+```
+
+- 消除两个集合的差集（对比集合1和集合2，在集合1内，删除和集合2相同的元素）
+
+  结果：集合1被修改，集合2不变
+
+```python
+set1 = {1, 2, 3}
+set2 = {1, 5, 6}
+set1.difference_update(set2)
+print(set1)
+print(set2)
+```
+
+输出结果：
+
+```
+{2, 3}
+{1, 5, 6}
+```
+
+- 两个集合合并（将集合1和集合2组合成新集合）
+
+  结果：得到新集合，集合1和集合2不变
+
+```python
+set1 = {1, 2, 3}
+set2 = {1, 5, 6}
+set3 = set1.union(set2)
+print(set3)
+print(set1)
+print(set2)
+```
+
+输出结果：
+
+```
+{1, 2, 3, 5, 6}
+{1, 2, 3}
+{1, 5, 6}
+```
+
+# 容器的比较
+
+## 比较
+
+<img src="./images/容器比较.png" alt="容器比较" style="zoom:67%;" />
+
+## 通用功能
+
+<img src="./images/容器的通用功能.png" alt="容器的通用功能" style="zoom:67%;" />
+
+# 文件
+
+## 读取
+
+- open 
+
+打开文件
+
+```python
+open(name, mode, encoding)
+```
+
+name：要打开的目标文件名
+
+mode：设置要打开文件的模式（访问模式）：只读、写入、追加等。
+
+encoding：编码格式（推荐使用UTF-8）
+
+- close 
+
+关闭文件
+
+- read() 方法
+
+```python
+f.read(num)
+```
+
+num 表示要从文件中读取的数据长度（单位是字节），如果没有传入num，那么就表示读取文件中所有的数据。
+
+- readlines() 方法
+
+按照行的方式把整个文件中的内容进行一次性读取，并且返回的是一个列表，其中每一行的数据为一个元素。
+
+- readline() 方法
+
+一次性读取一行内容
+
+```python
+# 打开文件
+f = open('/Users/chenliang/test.txt', 'r', encoding="UTF-8")
+print(f'读取10个字节：{f.read(10)}')
+print(f'读取所有内容：{f.read()}')
+
+# 一次性读取所有行
+lines = f.readlines()
+print(type(lines))
+print(lines)
+
+# 单行读取
+line1 = f.readline()
+print(f'第一行数据：{line1}')
+line2 = f.readline()
+print(f'第二行数据：{line2}')
+line3 = f.readline()
+print(f'第三行数据：{line3}')
+
+# for 循环读取文件行
+for line in f:
+    print(line)
+
+# 关闭文件
+f.close()
+```
+
+- with 语法操作文件
+
+```python
+with open('/Users/chenliang/test.txt', 'r', encoding="UTF-8") as f:
+    for line in f:
+        print(line)
+```
+
+## 写出
+
+```python
+# 新建文件，或者覆盖
+# f = open('/Users/chenliang/test.txt', 'w', encoding="UTF-8")
+# 追加
+f = open('/Users/chenliang/test.txt', 'a', encoding="UTF-8")
+f.write("中国")
+# 刷新缓存，写入磁盘
+# f.flush()
+f.close()
+```
+
+# 异常
+
+## 基本捕获语法
+
+```python
+try:
+    f = open('D:/a.txt', 'r', encoding='UTF-8')
+except:
+    print('出现异常了，因为文件不存在')
+```
+
+## 捕获指定异常
+
+```python
+try:
+    1 / 0
+except ZeroDivisionError as e:
+    print('出现了除以零异常')
+    print(e)
+```
+
+## 捕获多个异常
+
+```python
+try:
+    f = open('D:/a.txt', 'r', encoding='UTF-8')
+    1 / 0
+except (FileNotFoundError, ZeroDivisionError) as e:
+    print(e)
+```
+
+## 捕获所有异常
+
+```python
+try:
+    f = open('D:/a.txt', 'r', encoding='UTF-8')
+except Exception as e:
+    print(e)
+```
+
+## else finally
+
+```python
+try:
+    f = open('/Users/chenliang/a.txt', 'r', encoding='UTF-8')
+except Exception as e:
+    f = open('/Users/chenliang/a.txt', 'w', encoding='UTF-8')
+    print('没有文件，并新建了一个文件')
+else:
+    print('已经有文件了，没有出现异常')
+finally:
+    f.close()
+    print('始终都要关闭文件')
+```
+
+## 异常的传递性
+
+```python
+def func1():
+    1 / 0
+
+def func2():
+    func1()
+
+def func3():
+    # 在func1中发生的异常传递到了func3中，并被捕获
+    try:
+        func2()
+    except ZeroDivisionError as e:
+        print('除以零异常')
+
+func3()
+```
+
+# 模块
+
+Python 模块（Module），是一个Python文件，以.py结尾。模块能定义函数、类和变量，模块里也能包含可执行的代码。
+
+模块的作用：python中有很多各种不同的模块，每一个模块都可以帮助我们快速的实现一些功能，比如实现和时间相关的功能就可以使用time模块。我们可以认为一个模块就是一个工具包，每一个工具包中都有各种不同的工具供我们使用，进而实现各种不同的功能。
+
+## 模块的导入方式
+
+模块在使用前需要先导入，导入的语法如下：
+
+[from 模块名] import [模块 ｜ 类 ｜ 变量 ｜ 函数 ｜ *] [as 别名]
+
+常用的组合形式如：
+
+- import 模块名
+
+  ```python
+  import time
+  time.sleep(5)
+  ```
+
+- from 模块名 import 类、变量、方法等
+
+  ```python
+  from time import sleep
+  sleep(5)
+  ```
+
+- from 模块名 import *
+
+  ```python
+  from time import *
+  sleep(5)
+  ```
+
+- import 模块名 as 别名
+
+  ```python
+  import time as t
+  t.sleep(5)
+  ```
+
+- from 模块名 import 功能名 as 别名
+
+  ```python
+  from time import sleep as s
+  s(5)
+  ```
+
+## 自定义模块导入
+
+- 导入模块
+
+<img src="./images/制作自定义模块.png" alt="制作自定义模块" style="zoom:67%;" />
+
+- 导入不同模块的同名功能时，当调用同名功能的时候，调用到的是后面导入的模块功能
+
+<img src="./images/不同模块的同名功能.png" alt="不同模块的同名功能" style="zoom:67%;" />
+
+## `__main__`
+
+`my_module1.py`
+
+```python
+def test(a, b):
+    print(a + b)
+
+# 只有在运行当前文件时，才会执行test函数，导入文件时，不会执行
+if __name__ == '__main__':
+    test(5,55)
+```
+
+`test_my_module.py`
+
+```python
+import my_module1
+```
+
+## `__all__`
+
+如果一个模块文件中`__all__`变量，当使用`from xxx import *`导入时，只能导入这个列表中的元素
+
+<img src="./images/__all__.png" alt="__all__" style="zoom: 50%;" />
+
+# 包
+
+从物理上看，包就是一个文件夹，在该文件夹下包含了一个`__init__.py`文件，该文件夹可用于包含多个模块文件
+
+从逻辑上看，包的本质依然是模块
+
+<img src="./images/包.png" alt="包" style="zoom:67%;" />
+
+包的作用：当我们的模块文件越来越多时，包可以帮助我们管理这些模块，包的作用就是包含多个模块，但包的本质依然是模块
+
+三种不同的导入方式：
+
+```python
+# 第一种方式导入
+import my_package.my_module1
+import my_package.my_module2
+
+my_package.my_module1.info_print1()
+my_package.my_module2.info_print2()
+
+# 第二种方式导入
+from my_package import my_module1
+from my_package import my_module2
+
+my_module1.info_print1()
+my_module2.info_print2()
+
+# 第三种方式导入
+from my_package.my_module1 import info_print1
+from my_package.my_module2 import info_print2
+
+info_print1()
+info_print2()
+```
+
+- 通过`__all__`变量，控制`import *`
+
+在`__init__.py`中设置`__all__`变量
+
+```python
+__all__=['my_module1']
+```
+
+表示`import*` 时，只能导入`my_module1`
+
+```python
+from my_package import *
+my_module1.info_print1()
+```
+
+- 安装第三方包
+
+```shell
+pip install numpy
 ```
 
