@@ -73,7 +73,7 @@ docker run -d \
 
 运行效果如图：
 
-![MySQL安装](.\images\MySQL安装.PNG)
+![MySQL安装](./images/MySQL安装.PNG)
 
 要知道，不同操作系统下其安装包、运行环境是都不相同的！如果是手动安装，必须手动解决安装包不同、环境不同的、配置不同的问题！
 
@@ -96,7 +96,7 @@ Docker官方提供了一个专门管理、存储镜像的网站，并对外开�
 
 官方仓库在国外，下载速度较慢，一般我们都会使用第三方仓库提供的镜像加速功能，提高下载速度。而企业内部的机密项目，往往会采用私有镜像仓库。
 
-![Docker下载镜像的流程](.\images\Docker下载镜像的流程.png)
+![Docker下载镜像的流程](./images/Docker下载镜像的流程.png)
 
 ## 命令解读
 
@@ -156,7 +156,7 @@ Docker中的常见命令，可以参考官方文档：
 
 用一副图来表示这些命令的关系：
 
-![Docker常见命令](.\images\Docker常见命令.png)
+![Docker常见命令](./images/Docker常见命令.png)
 
 默认情况下，每次重启虚拟机我们都需要手动启动Docker和Docker中的容器。通过命令可以实现开机自启：
 
@@ -274,7 +274,7 @@ source /root/.bashrc
 
 但遗憾的是，容器运行的Nginx所有的文件都在容器内部。所以我们必须利用数据卷将两个目录与宿主机目录关联，方便我们操作。如图：
 
-![数据卷](.\images\数据卷.png)
+![数据卷](./images/数据卷.png)
 
 在上图中：
 
@@ -563,7 +563,7 @@ show tables;
 
 例如，第一步中需要的Linux运行环境，通用性就很强，所以Docker官方就制作了这样的只包含Linux运行环境的镜像。我们在制作java镜像时，就无需重复制作，直接使用Docker官方提供的CentOS或Ubuntu镜像作为基础镜像。然后再搭建其它层即可，这样逐层搭建，最终整个Java项目的镜像结构如图所示：
 
-![镜像结构](.\images\镜像结构.png)
+![镜像结构](./images/镜像结构.png)
 
 ## Dockerfile
 
@@ -654,7 +654,7 @@ docker build -t docker-demo:1.0 /root/demo
 
 结果：
 
-![构建镜像结果](.\images\构建镜像结果.png)
+![构建镜像结果](./images/构建镜像结果.png)
 
 查看镜像列表：
 
@@ -810,35 +810,35 @@ mysql容器中已经准备好了商城的数据，所以就不再删除了。
 
 `hmall`项目是一个maven聚合项目，使用IDEA打开`hmall`项目，查看项目结构如图：
 
-![hmall项目结构](.\images\hmall项目结构.png)
+![hmall项目结构](./images/hmall项目结构.png)
 
 我们要部署的就是其中的`hm-service`，其中的配置文件采用了多环境的方式：
 
-![hm-service配置文件](.\images\hm-service配置文件.png)
+![hm-service配置文件](./images/hm-service配置文件.png)
 
 其中的`application-dev.yaml`是部署到开发环境的配置，`application-local.yaml`是本地运行时的配置。
 
 查看application.yaml，你会发现其中的JDBC地址并未写死，而是读取变量：
 
-![application.yaml](.\images\application.yaml.png)
+![application.yaml](./images/application.yaml.png)
 
 这两个变量在`application-dev.yaml`和`application-local.yaml`中并不相同：
 
-![db变量](.\images\db变量.png)
+![db变量](./images/db变量.png)
 
 在dev开发环境（也就是Docker部署时）采用了mysql作为地址，刚好是我们的mysql容器名，只要两者在一个网络，就一定能互相访问。
 
 我们将项目打包：
 
-![项目打包](.\images\项目打包.png)
+![项目打包](./images/项目打包.png)
 
 结果：
 
-![项目打包结果](.\images\项目打包结果.png)
+![项目打包结果](./images/项目打包结果.png)
 
 将`hm-service`目录下的`Dockerfile`和`hm-service/target`目录下的`hm-service.jar`一起上传到虚拟机的`root`目录：
 
-![hm-service上传到root目录](.\images\hm-service上传到root目录.png)
+![hm-service上传到root目录](./images/hm-service上传到root目录.png)
 
 部署项目：
 
@@ -870,7 +870,7 @@ docker run -d --name hmall --network hmall -p 8080:8080 hmall
 
 我们现在要做的就是把整个nginx目录上传到虚拟机的`/root`目录下：
 
-![html静态资源上传到root](.\images\html静态资源上传到root.png)
+![html静态资源上传到root](./images/html静态资源上传到root.png)
 
 然后创建nginx容器并完成两个挂载：
 
@@ -897,7 +897,7 @@ docker run -d \
 
 测试，通过浏览器访问：http://你的虚拟机ip:18080
 
-![访问黑马商城](.\images\访问黑马商城.png)
+![访问黑马商城](./images/访问黑马商城.png)
 
 ## DockerCompose
 
