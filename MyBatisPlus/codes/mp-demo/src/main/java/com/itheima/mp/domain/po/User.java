@@ -1,10 +1,15 @@
 package com.itheima.mp.domain.po;
 
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler;
+import com.itheima.mp.enums.UserStatus;
 import lombok.Data;
 
 import java.time.LocalDateTime;
 
 @Data
+@TableName(autoResultMap = true)
 public class User {
 
     /**
@@ -30,12 +35,13 @@ public class User {
     /**
      * 详细信息
      */
-    private String info;
+    @TableField(typeHandler = JacksonTypeHandler.class)
+    private UserInfo info;
 
     /**
      * 使用状态（1正常 2冻结）
      */
-    private Integer status;
+    private UserStatus status;
 
     /**
      * 账户余额
