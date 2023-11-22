@@ -5,31 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b15e1d95-a756-423a-8f57-e5be9119d1ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/config/MybatisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/domain/dto/PageDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/domain/dto/UserFormDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/domain/po/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/domain/query/PageQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/domain/query/UserQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/domain/vo/AddressVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/domain/vo/UserVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/enums/UserStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/service/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/itheima/mp/DbTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/itheima/mp/service/AddressServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/itheima/mp/service/UserServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MyBatisPlus.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../MyBatisPlus.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/mp/domain/po/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/domain/po/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/mp/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/mp/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/itheima/mp/mapper/UserMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/itheima/mp/mapper/UserMapperTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +28,8 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="E:\dev\maven\repository" />
-        <option name="mavenHome" value="E:/dev/maven/apache-maven-3.5.0" />
-        <option name="userSettingsFile" value="E:\dev\maven\apache-maven-3.5.0\conf\settings.xml" />
+        <option name="mavenHome" value="E:/dev/maven/apache-maven-3.9.5" />
+        <option name="userSettingsFile" value="E:\dev\maven\apache-maven-3.9.5\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -151,7 +127,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -166,6 +142,7 @@
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
+    <option name="openRunningConfigInTab" value="true" />
   </component>
   <component name="RunManager" selected="JUnit.UserServiceTest.testPageQuery">
     <configuration name="AddressServiceTest.testDeleteByLogic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -297,7 +274,10 @@
       <workItem from="1698917546591" duration="977000" />
       <workItem from="1698921148894" duration="15240000" />
       <workItem from="1699326950377" duration="1003000" />
-      <workItem from="1699328440699" duration="12915000" />
+      <workItem from="1699328440699" duration="15951000" />
+      <workItem from="1700576179990" duration="311000" />
+      <workItem from="1700576537686" duration="100000" />
+      <workItem from="1700578003981" duration="243000" />
     </task>
     <servers />
   </component>
