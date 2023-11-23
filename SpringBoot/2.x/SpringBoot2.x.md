@@ -1265,7 +1265,7 @@ spring:
 
 ​	注意观察，配置项中，在datasource下面并不是直接配置url这些属性的，而是先配置了一个druid节点，然后再配置的url这些东西。言外之意，url这个属性时druid下面的属性，那你能想到吗？除了这4个常规配置外，还有druid专用的其他配置。通过提示功能可以打开druid相关的配置查阅
 
-<img src="F:/BaiduNetdiskDownload/springboot2/1.基础篇/SpringBoot—资料/SpringBoot—资料/配套资源/img/image-20211129112610729.png" alt="image-20211129112610729" style="zoom:80%;" />
+<img src=".\images\druid可配置项.png" alt="druid可配置项"/>
 
 ​	与druid相关的配置超过200条以上，这就告诉你，如果想做druid相关的配置，使用这种格式就可以了，这里就不展开描述了，太多了。
 
