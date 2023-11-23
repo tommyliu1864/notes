@@ -1,0 +1,17 @@
+server:
+  port: 80
+
+lesson: "SpringBoot\t2.x"
+
+enterprise:
+  name: Google
+  age: 20
+  subject:
+    - Java
+    - Python
+    - C
+
+baseDir: /usr/local
+center:
+  dataDir: ${baseDir}/data
+  tempDir: ${baseDir}/tmp
