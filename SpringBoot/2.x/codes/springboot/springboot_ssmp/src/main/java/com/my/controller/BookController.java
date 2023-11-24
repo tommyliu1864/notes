@@ -7,12 +7,14 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.my.po.Book;
 import com.my.service.BookService;
 import com.my.vo.R;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.logging.log4j.util.Strings;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/books")
+@Slf4j
 public class BookController {
 
     @Autowired
@@ -20,6 +22,10 @@ public class BookController {
 
     @GetMapping
     public R getAll() {
+        log.debug("debug...");
+        log.info("info...");
+        log.warn("warn...");
+        log.error("error...");
         return new R(true, bookService.list());
     }
 
