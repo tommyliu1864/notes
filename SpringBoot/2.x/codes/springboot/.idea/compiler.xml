@@ -2,23 +2,38 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springboot_ssmp" />
         <module name="springboot_quickstart" />
-        <module name="springboot_mybatis" />
         <module name="springboot_mybatis_plus" />
+        <module name="springboot_configuration" />
+        <module name="springboot_ssmp" />
+        <module name="springboot_mybatis" />
+        <module name="springboot_test" />
+        <module name="springboot_sql" />
+        <module name="springboot_redis" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="11">
+      <module name="springboot_configuration (1)" target="11" />
+      <module name="springboot_configuration (2)" target="11" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springboot_configuration" options="-parameters" />
+      <module name="springboot_configuration (1)" options="-parameters" />
+      <module name="springboot_configuration (2)" options="-parameters" />
       <module name="springboot_mybatis" options="-parameters" />
       <module name="springboot_mybatis_plus" options="-parameters" />
       <module name="springboot_quickstart" options="-parameters" />
+      <module name="springboot_redis" options="-parameters" />
+      <module name="springboot_sql" options="-parameters" />
       <module name="springboot_ssmp" options="-parameters" />
+      <module name="springboot_test" options="-parameters" />
     </option>
   </component>
 </project>

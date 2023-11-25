@@ -9,6 +9,10 @@ spring:
       url: jdbc:mysql://localhost:3306/ssm_db?serverTimezone=UTC
       username: root
       password: root
+  devtools:
+    restart:
+      exclude: application.yml # 指定哪些文件的修改不参与热启动
+      enabled: false
 
 mybatis-plus:
   global-config:

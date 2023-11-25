@@ -1,0 +1,10 @@
+
+servers:
+  ip-address: 192.168.1.10
+  port: 3306
+  timeout: -1
+  serverTimeOut: 3
+  dataSize: 50
+
+datasource:
+  driverClassName: com.mysql.jdbc.Driver

@@ -26,6 +26,7 @@ public class BookController {
         log.info("info...");
         log.warn("warn...");
         log.error("error...");
+        log.warn("------------warn---------------");
         return new R(true, bookService.list());
     }
 
