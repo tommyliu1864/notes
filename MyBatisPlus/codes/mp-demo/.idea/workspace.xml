@@ -5,7 +5,321 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b15e1d95-a756-423a-8f57-e5be9119d1ab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../SpringSecurity/5.x/integration/codes/auth-system/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SpringSecurity/5.x/integration/codes/auth-system/common/common-util/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SpringSecurity/5.x/integration/codes/auth-system/common/common-util/src/main/java/com/my/common/result/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SpringSecurity/5.x/integration/codes/auth-system/common/common-util/src/main/java/com/my/common/result/ResultCodeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SpringSecurity/5.x/integration/codes/auth-system/common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SpringSecurity/5.x/integration/codes/auth-system/common/service-util/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SpringSecurity/5.x/integration/codes/auth-system/common/service-util/src/main/java/com/my/system/config/MyBatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SpringSecurity/5.x/integration/codes/auth-system/common/service-util/src/main/java/com/my/system/exception/CustomException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SpringSecurity/5.x/integration/codes/auth-system/common/service-util/src/main/java/com/my/system/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SpringSecurity/5.x/integration/codes/auth-system/common/spring-security/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SpringSecurity/5.x/integration/codes/auth-system/model/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SpringSecurity/5.x/integration/codes/auth-system/model/src/main/java/com/my/model/base/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SpringSecurity/5.x/integration/codes/auth-system/model/src/main/java/com/my/model/po/system/SysRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SpringSecurity/5.x/integration/codes/auth-system/model/src/main/java/com/my/model/vo/system/SysRoleQueryVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SpringSecurity/5.x/integration/codes/auth-system/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SpringSecurity/5.x/integration/codes/auth-system/service-system/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SpringSecurity/5.x/integration/codes/auth-system/service-system/src/main/java/com/my/MyApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SpringSecurity/5.x/integration/codes/auth-system/service-system/src/main/java/com/my/controller/SysRoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SpringSecurity/5.x/integration/codes/auth-system/service-system/src/main/java/com/my/dao/SysRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SpringSecurity/5.x/integration/codes/auth-system/service-system/src/main/java/com/my/service/SysRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SpringSecurity/5.x/integration/codes/auth-system/service-system/src/main/java/com/my/service/impl/SysRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SpringSecurity/5.x/integration/codes/auth-system/service-system/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SpringSecurity/5.x/integration/codes/auth-system/service-system/src/test/java/com/my/service/SysRoleServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/SpringSecurity.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_4_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_4_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__ch_qos_logback_logback_core_1_4_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__ch_qos_logback_logback_core_1_4_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_baomidou_mybatis_plus_3_5_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_baomidou_mybatis_plus_annotation_3_5_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_baomidou_mybatis_plus_boot_starter_3_5_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_baomidou_mybatis_plus_core_3_5_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_baomidou_mybatis_plus_extension_3_5_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_14_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_15_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_15_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_14_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_15_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_15_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_14_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_15_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_15_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_14_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_15_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_15_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_14_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_15_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_15_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_14_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_15_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_15_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_4_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_mysql_mysql_connector_j_8_0_33.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__com_zaxxer_HikariCP_5_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__io_lettuce_lettuce_core_6_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__io_micrometer_micrometer_commons_1_10_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__io_micrometer_micrometer_commons_1_11_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__io_micrometer_micrometer_commons_1_11_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__io_micrometer_micrometer_observation_1_10_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__io_micrometer_micrometer_observation_1_11_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__io_micrometer_micrometer_observation_1_11_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__io_netty_netty_buffer_4_1_92_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__io_netty_netty_codec_4_1_92_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__io_netty_netty_common_4_1_92_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__io_netty_netty_handler_4_1_92_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__io_netty_netty_resolver_4_1_92_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__io_netty_netty_transport_4_1_92_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_92_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__io_projectreactor_reactor_core_3_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_2_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_2_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_2_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_4_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_12_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_14_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_14_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_12_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_14_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_14_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__net_minidev_accessors_smart_2_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__net_minidev_accessors_smart_2_4_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__net_minidev_json_smart_2_4_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__net_minidev_json_smart_2_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_19_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_20_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_19_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_20_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_10_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_10_1_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_10_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_10_1_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_10_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_10_1_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_assertj_assertj_core_3_23_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_assertj_assertj_core_3_24_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_mockito_mockito_core_4_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_mockito_mockito_core_5_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_4_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_5_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_mybatis_mybatis_3_5_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_objenesis_objenesis_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_objenesis_objenesis_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_ow2_asm_asm_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_projectlombok_lombok_1_18_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_projectlombok_lombok_1_18_28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_2_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_slf4j_slf4j_api_2_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_3_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_3_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_3_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_3_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_3_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_3_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_3_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_3_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_3_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_3_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_3_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_3_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_3_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_3_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_3_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_3_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_3_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_3_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_3_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_3_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_3_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_3_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_3_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_3_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_data_spring_data_commons_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_data_spring_data_redis_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_security_spring_security_config_6_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_security_spring_security_config_6_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_security_spring_security_config_6_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_security_spring_security_core_6_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_security_spring_security_core_6_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_security_spring_security_core_6_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_6_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_6_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_6_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_security_spring_security_test_6_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_security_spring_security_test_6_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_security_spring_security_test_6_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_security_spring_security_web_6_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_security_spring_security_web_6_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_security_spring_security_web_6_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_aop_6_0_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_aop_6_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_aop_6_0_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_beans_6_0_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_beans_6_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_beans_6_0_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_context_6_0_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_context_6_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_context_6_0_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_context_support_6_0_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_core_6_0_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_core_6_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_core_6_0_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_expression_6_0_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_expression_6_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_expression_6_0_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_jcl_6_0_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_jcl_6_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_jcl_6_0_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_jdbc_6_0_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_jdbc_6_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_jdbc_6_0_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_oxm_6_0_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_test_6_0_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_test_6_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_test_6_0_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_tx_6_0_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_tx_6_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_tx_6_0_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_web_6_0_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_web_6_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_web_6_0_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_webmvc_6_0_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_webmvc_6_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_springframework_spring_webmvc_6_0_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/libraries/Maven__org_yaml_snakeyaml_1_33.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/jwt-study/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/jwt-study/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/jwt-study/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/jwt-study/src/main/java/com/example/jwtstudy/JwtStudyApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/jwt-study/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/jwt-study/src/test/java/com/example/jwtstudy/JwtStudyApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-auth/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-auth/src/main/java/com/example/springsecurityauth/SpringsecurityAuthApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-auth/src/main/java/com/example/springsecurityauth/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-auth/src/main/java/com/example/springsecurityauth/mapper/SysUserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-auth/src/main/java/com/example/springsecurityauth/pojo/SysUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-auth/src/main/java/com/example/springsecurityauth/service/MyUserDetailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-auth/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-auth/src/main/resources/static/error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-auth/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-auth/src/main/resources/static/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-auth/src/test/java/com/example/springsecurityauth/SpringsecurityAuthApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-basic/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-basic/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-basic/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-basic/src/main/java/com/example/springsecuritybasic/SpringsecurityBasicApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-basic/src/main/java/com/example/springsecuritybasic/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-basic/src/main/java/com/example/springsecuritybasic/controller/SecurityController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-basic/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-basic/src/main/resources/static/error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-basic/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-basic/src/main/resources/static/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-basic/src/test/java/com/example/springsecuritybasic/SpringsecurityBasicApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-demo/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-demo/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-demo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-demo/src/main/java/com/example/springsecuritydemo/SpringsecurityDemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-demo/src/main/java/com/example/springsecuritydemo/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-demo/src/main/java/com/example/springsecuritydemo/filter/JwtAuthenticationFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-demo/src/main/java/com/example/springsecuritydemo/mapper/OperatorMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-demo/src/main/java/com/example/springsecuritydemo/model/po/Operator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-demo/src/main/java/com/example/springsecuritydemo/model/vo/SecurityUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-demo/src/main/java/com/example/springsecuritydemo/service/impl/UserDetailsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-demo/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-demo/src/test/java/com/example/springsecuritydemo/SpringsecurityDemoApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-jwt/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-jwt/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-jwt/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-jwt/src/main/java/com/example/springsecurityjwt/SpringsecurityJwtApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-jwt/src/main/java/com/example/springsecurityjwt/common/ResponseUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-jwt/src/main/java/com/example/springsecurityjwt/common/ResultModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-jwt/src/main/java/com/example/springsecurityjwt/config/TokenSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-jwt/src/main/java/com/example/springsecurityjwt/filter/TokenLoginFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-jwt/src/main/java/com/example/springsecurityjwt/mapper/SysUserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-jwt/src/main/java/com/example/springsecurityjwt/model/po/SysUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-jwt/src/main/java/com/example/springsecurityjwt/model/vo/SecurityUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-jwt/src/main/java/com/example/springsecurityjwt/model/vo/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-jwt/src/main/java/com/example/springsecurityjwt/security/TokenManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-jwt/src/main/java/com/example/springsecurityjwt/security/UnAuthEntryPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-jwt/src/main/java/com/example/springsecurityjwt/service/impl/UserDetailsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-jwt/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-jwt/src/test/java/com/example/springsecurityjwt/SpringsecurityJwtApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-permit/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-permit/src/main/java/com/example/springsecuritypermit/SpringsecurityPermitApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-permit/src/main/java/com/example/springsecuritypermit/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-permit/src/main/java/com/example/springsecuritypermit/mapper/SysUserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-permit/src/main/java/com/example/springsecuritypermit/pojo/SysUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-permit/src/main/java/com/example/springsecuritypermit/service/MyUserDetailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-permit/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-permit/src/main/resources/static/error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-permit/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-permit/src/main/resources/static/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-permit/src/main/resources/static/no-permission.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-permit/src/main/resources/static/users.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-permit/src/test/java/com/example/springsecuritypermit/SpringsecurityPermitApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/codes/springsecurity-study/springsecurity-study.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/images/Spring Security + jwt 前后端分离的权限系统的时序图.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/images/jwttoken.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/images/jwt认证.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/images/login.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/images/springsecurity过滤器链.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/images/用户注销流程.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/images/自动生成的密码.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/images/自定义认证页面.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringSecurity/images/角色和权限时序.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../docker/资料/hmall/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +458,7 @@
     </option>
     <option name="openRunningConfigInTab" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest.testPageQuery">
+  <component name="RunManager" selected="JUnit.AddressServiceTest.testQuery">
     <configuration name="AddressServiceTest.testDeleteByLogic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mp-demo" />
       <extension name="coverage">
@@ -242,10 +556,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserServiceTest.testPageQuery" />
-        <item itemvalue="JUnit.UserServiceTest.testList" />
-        <item itemvalue="JUnit.UserMapperTest.testInsert" />
         <item itemvalue="JUnit.AddressServiceTest.testQuery" />
+        <item itemvalue="JUnit.UserServiceTest.testList" />
+        <item itemvalue="JUnit.UserServiceTest.testPageQuery" />
+        <item itemvalue="JUnit.UserMapperTest.testInsert" />
         <item itemvalue="JUnit.AddressServiceTest.testDeleteByLogic" />
       </list>
     </recent_temporary>
@@ -278,6 +592,9 @@
       <workItem from="1700576179990" duration="311000" />
       <workItem from="1700576537686" duration="100000" />
       <workItem from="1700578003981" duration="243000" />
+      <workItem from="1700983123492" duration="186000" />
+      <workItem from="1700986982455" duration="2466000" />
+      <workItem from="1701923519623" duration="6226000" />
     </task>
     <servers />
   </component>

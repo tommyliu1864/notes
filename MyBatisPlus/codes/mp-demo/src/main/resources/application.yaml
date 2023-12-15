@@ -11,7 +11,7 @@ logging:
     dateformat: HH:mm:ss
 
 mybatis-plus:
-  type-aliases-package: com.itheima.mp.domain.po
+  #type-aliases-package: com.itheima.mp.domain.po
   global-config:
     db-config:
       id-type: auto
@@ -22,6 +22,7 @@ mybatis-plus:
   configuration:
     default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler
 
+# 文档访问路径，http://localhost:8080/doc.html
 knife4j:
   enable: true
   openapi:

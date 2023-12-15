@@ -1,0 +1,30 @@
+
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/auth-system?serverTimezone=UTC
+      username: root
+      password: root
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    # time-zone: GMT+8
+  redis:
+    port: 6379
+    host: localhost
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-field: deleted  # 逻辑删除字段名称，不要用is_deleted，可能会导致失效
+      logic-delete-value: 1  # 已删除
+      logic-not-delete-value: 0  # 没有删除
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+logging:
+  level:
+    root: info
+    com.my: debug
+
