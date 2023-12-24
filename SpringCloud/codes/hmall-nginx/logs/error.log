@@ -1,0 +1,1 @@
+2023/12/22 11:25:17 [error] 8332#15356: *40 directory index of "F:\notes\SpringCloud\codes\hmall-nginx/html/hmall-admin/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:18081"
