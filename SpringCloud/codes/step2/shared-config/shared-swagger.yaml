@@ -1,0 +1,15 @@
+knife4j:
+  enable: true
+  openapi:
+    title: ${hm.swagger.title:黑马商城接口文档}
+    description: ${hm.swagger.description:黑马商城接口文档}
+    email: ${hm.swagger.email:xyz@gmail.com}
+    concat: ${hm.swagger.concat:Jason}
+    url: https://www.xxx.com
+    version: v1.0.0
+    group:
+      default:
+        group-name: default
+        api-rule: package
+        api-rule-resources:
+          - ${hm.swagger.package}
