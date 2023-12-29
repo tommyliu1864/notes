@@ -1,0 +1,898 @@
+09:30:36:129  INFO 21820 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "local"
+09:30:37:806  INFO 21820 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=181dbc15-87e1-362d-ade6-1d24497a5159
+09:30:37:917  INFO 21820 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:30:37:917  INFO 21820 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:30:37:918  INFO 21820 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:30:37:980  INFO 21820 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:30:37:984  INFO 21820 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:30:37:986  INFO 21820 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:30:37:987  INFO 21820 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$562/0x0000000800649c40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:30:37:988  INFO 21820 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:30:37:994  INFO 21820 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:30:38:000  INFO 21820 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:30:38:003  INFO 21820 --- [main] i.s.s.b.a.SeataAutoConfiguration         : Automatically configure Seata
+09:30:38:090  INFO 21820 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+09:30:38:098  INFO 21820 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+09:30:38:176  INFO 21820 --- [main] i.s.s.a.GlobalTransactionScanner         : Initializing Global Transaction Clients ... 
+09:30:38:256  INFO 21820 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+09:30:38:631  INFO 21820 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 7219eb73-264d-4f31-94bc-148933b9c0a6
+09:30:38:631  INFO 21820 --- [main] com.alibaba.nacos.common.remote.client   : [7219eb73-264d-4f31-94bc-148933b9c0a6] RpcClient init label, labels = {module=naming, source=sdk}
+09:30:38:634  INFO 21820 --- [main] com.alibaba.nacos.common.remote.client   : [7219eb73-264d-4f31-94bc-148933b9c0a6] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+09:30:38:634  INFO 21820 --- [main] com.alibaba.nacos.common.remote.client   : [7219eb73-264d-4f31-94bc-148933b9c0a6] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+09:30:38:635  INFO 21820 --- [main] com.alibaba.nacos.common.remote.client   : [7219eb73-264d-4f31-94bc-148933b9c0a6] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+09:30:38:636  INFO 21820 --- [main] com.alibaba.nacos.common.remote.client   : [7219eb73-264d-4f31-94bc-148933b9c0a6] Try to connect to server on start up, server: {serverIp = '43.133.192.187', server main port = 8848}
+09:30:39:026  INFO 21820 --- [main] com.alibaba.nacos.common.remote.client   : [7219eb73-264d-4f31-94bc-148933b9c0a6] Success to connect to server [43.133.192.187:8848] on start up, connectionId = 1703817038863_144.48.139.118_2914
+09:30:39:026  INFO 21820 --- [main] com.alibaba.nacos.common.remote.client   : [7219eb73-264d-4f31-94bc-148933b9c0a6] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+09:30:39:026  INFO 21820 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [7219eb73-264d-4f31-94bc-148933b9c0a6] Notify connected event to listeners.
+09:30:39:026  INFO 21820 --- [main] com.alibaba.nacos.common.remote.client   : [7219eb73-264d-4f31-94bc-148933b9c0a6] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$471/0x000000080042b040
+09:30:39:163  INFO 21820 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 43.133.192.187:8099
+09:30:39:694  INFO 21820 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [7219eb73-264d-4f31-94bc-148933b9c0a6] Receive server push request, request = NotifySubscriberRequest, requestId = 1145
+09:30:39:697  INFO 21820 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [7219eb73-264d-4f31-94bc-148933b9c0a6] Ack server push request, request = NotifySubscriberRequest, requestId = 1145
+09:30:39:755  INFO 21820 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:TMROLE,address:43.133.192.187:8099,msg:< RegisterTMRequest{applicationId='trade-service', transactionServiceGroup='hmall'} >
+09:30:40:722  INFO 21820 --- [main] i.s.c.rpc.netty.TmNettyRemotingClient    : register TM success. client version:1.5.2, server version:1.5.2,channel:[id: 0xf4d428d8, L:/192.168.0.102:2926 - R:/43.133.192.187:8099]
+09:30:40:728  INFO 21820 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 172 ms, version:1.5.2,role:TMROLE,channel:[id: 0xf4d428d8, L:/192.168.0.102:2926 - R:/43.133.192.187:8099]
+09:30:40:729  INFO 21820 --- [main] i.s.s.a.GlobalTransactionScanner         : Transaction Manager Client is initialized. applicationId[trade-service] txServiceGroup[hmall]
+09:30:40:740  INFO 21820 --- [main] io.seata.rm.datasource.AsyncWorker       : Async Commit Buffer Limit: 10000
+09:30:40:740  INFO 21820 --- [main] i.s.rm.datasource.xa.ResourceManagerXA   : ResourceManagerXA init ...
+09:30:40:749  INFO 21820 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+09:30:40:749  INFO 21820 --- [main] i.s.s.a.GlobalTransactionScanner         : Resource Manager is initialized. applicationId[trade-service] txServiceGroup[hmall]
+09:30:40:749  INFO 21820 --- [main] i.s.s.a.GlobalTransactionScanner         : Global Transaction Clients are initialized. 
+09:30:40:751  INFO 21820 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:30:41:062  INFO 21820 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:30:41:079  INFO 21820 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:30:41:772  INFO 21820 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+09:30:41:788  INFO 21820 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+09:30:41:788  INFO 21820 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+09:30:42:250  INFO 21820 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+09:30:42:251  INFO 21820 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6081 ms
+09:30:42:535  INFO 21820 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+09:30:44:097  INFO 21820 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+09:30:44:174  INFO 21820 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 43.133.192.187:8099
+09:30:44:174  INFO 21820 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : RM will register :jdbc:mysql://43.133.192.187:3306/hm-trade
+09:30:44:175  INFO 21820 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:RMROLE,address:43.133.192.187:8099,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://43.133.192.187:3306/hm-trade', applicationId='trade-service', transactionServiceGroup='hmall'} >
+09:30:44:418  INFO 21820 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : register RM success. client version:1.5.2, server version:1.5.2,channel:[id: 0xeb85a447, L:/192.168.0.102:2945 - R:/43.133.192.187:8099]
+09:30:44:418  INFO 21820 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 123 ms, version:1.5.2,role:RMROLE,channel:[id: 0xeb85a447, L:/192.168.0.102:2945 - R:/43.133.192.187:8099]
+09:30:45:271  INFO 21820 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+09:30:45:488  INFO 21820 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
+09:30:45:567  INFO 21820 --- [main] i.s.s.a.GlobalTransactionScanner         : Bean[com.hmall.trade.service.impl.OrderServiceImpl$$EnhancerBySpringCGLIB$$9a83222e] with name [orderServiceImpl] would use interceptor [io.seata.spring.annotation.GlobalTransactionalInterceptor]
+09:30:45:799  INFO 21820 --- [main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+09:30:46:896  INFO 21820 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+09:30:47:702  INFO 21820 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of d0dca157-f6b0-43de-aa1e-749505df4e7d
+09:30:47:703  INFO 21820 --- [main] com.alibaba.nacos.common.remote.client   : [d0dca157-f6b0-43de-aa1e-749505df4e7d] RpcClient init label, labels = {module=naming, source=sdk}
+09:30:47:704  INFO 21820 --- [main] com.alibaba.nacos.common.remote.client   : [d0dca157-f6b0-43de-aa1e-749505df4e7d] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+09:30:47:704  INFO 21820 --- [main] com.alibaba.nacos.common.remote.client   : [d0dca157-f6b0-43de-aa1e-749505df4e7d] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+09:30:47:704  INFO 21820 --- [main] com.alibaba.nacos.common.remote.client   : [d0dca157-f6b0-43de-aa1e-749505df4e7d] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+09:30:47:704  INFO 21820 --- [main] com.alibaba.nacos.common.remote.client   : [d0dca157-f6b0-43de-aa1e-749505df4e7d] Try to connect to server on start up, server: {serverIp = '43.133.192.187', server main port = 8848}
+09:30:48:092  INFO 21820 --- [main] com.alibaba.nacos.common.remote.client   : [d0dca157-f6b0-43de-aa1e-749505df4e7d] Success to connect to server [43.133.192.187:8848] on start up, connectionId = 1703817047932_144.48.139.118_2956
+09:30:48:092  INFO 21820 --- [main] com.alibaba.nacos.common.remote.client   : [d0dca157-f6b0-43de-aa1e-749505df4e7d] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+09:30:48:092  INFO 21820 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [d0dca157-f6b0-43de-aa1e-749505df4e7d] Notify connected event to listeners.
+09:30:48:092  INFO 21820 --- [main] com.alibaba.nacos.common.remote.client   : [d0dca157-f6b0-43de-aa1e-749505df4e7d] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$471/0x000000080042b040
+09:30:48:200  INFO 21820 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+09:30:48:297  INFO 21820 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP trade-service 192.168.0.102:8085 register finished
+09:30:48:683  INFO 21820 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [d0dca157-f6b0-43de-aa1e-749505df4e7d] Receive server push request, request = NotifySubscriberRequest, requestId = 1147
+09:30:48:686  INFO 21820 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [d0dca157-f6b0-43de-aa1e-749505df4e7d] Ack server push request, request = NotifySubscriberRequest, requestId = 1147
+09:30:48:920  INFO 21820 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+09:30:48:924  INFO 21820 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+09:30:48:949  INFO 21820 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+09:30:49:118  INFO 21820 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 21.602 seconds (JVM running for 23.935)
+09:30:49:128  INFO 21820 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=trade-service, group=DEFAULT_GROUP
+09:30:49:130  INFO 21820 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=trade-service-local.yaml, group=DEFAULT_GROUP
+09:30:49:131  INFO 21820 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=trade-service.yaml, group=DEFAULT_GROUP
+09:37:03:855  WARN 21820 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+09:37:03:855  WARN 21820 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+09:37:03:856  WARN 21820 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+09:37:03:856  WARN 21820 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+09:37:04:561  INFO 21820 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+09:37:04:652  INFO 21820 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+09:37:04:991  INFO 21820 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+09:37:04:991  INFO 21820 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@44dee34[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+09:37:04:992  INFO 21820 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1703817047932_144.48.139.118_2956
+09:37:04:997  INFO 21820 --- [SpringContextShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@6aa70b9c[Running, pool size = 3, active threads = 0, queued tasks = 0, completed tasks = 83]
+09:37:05:008  INFO 21820 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+09:37:05:939  INFO 21820 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+09:37:05:942  INFO 21820 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel inactive: [id: 0xeb85a447, L:/192.168.0.102:2945 ! R:/43.133.192.187:8099]
+09:37:05:942  INFO 21820 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.netty.NettyClientChannelManager  : return to pool, rm channel:[id: 0xeb85a447, L:/192.168.0.102:2945 ! R:/43.133.192.187:8099]
+09:37:05:942  INFO 21820 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0xeb85a447, L:/192.168.0.102:2945 ! R:/43.133.192.187:8099]
+09:37:05:943  INFO 21820 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0xeb85a447, L:/192.168.0.102:2945 ! R:/43.133.192.187:8099]
+09:37:05:944  INFO 21820 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xeb85a447, L:/192.168.0.102:2945 ! R:/43.133.192.187:8099]) will closed
+09:37:05:944  INFO 21820 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xeb85a447, L:/192.168.0.102:2945 ! R:/43.133.192.187:8099]) will closed
+09:37:20:450  INFO 32240 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "local"
+09:37:21:645  INFO 32240 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=181dbc15-87e1-362d-ade6-1d24497a5159
+09:37:21:711  INFO 32240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:37:21:711  INFO 32240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:37:21:712  INFO 32240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:37:21:744  INFO 32240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:37:21:747  INFO 32240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:37:21:748  INFO 32240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:37:21:749  INFO 32240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$562/0x0000000800664c40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:37:21:749  INFO 32240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:37:21:753  INFO 32240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:37:21:755  INFO 32240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:37:21:757  INFO 32240 --- [main] i.s.s.b.a.SeataAutoConfiguration         : Automatically configure Seata
+09:37:21:812  INFO 32240 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+09:37:21:816  INFO 32240 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+09:37:21:885  INFO 32240 --- [main] i.s.s.a.GlobalTransactionScanner         : Initializing Global Transaction Clients ... 
+09:37:21:985  INFO 32240 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+09:37:22:316  INFO 32240 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 8d461e2a-8be3-452e-9ed1-01a6fbaccb40
+09:37:22:316  INFO 32240 --- [main] com.alibaba.nacos.common.remote.client   : [8d461e2a-8be3-452e-9ed1-01a6fbaccb40] RpcClient init label, labels = {module=naming, source=sdk}
+09:37:22:318  INFO 32240 --- [main] com.alibaba.nacos.common.remote.client   : [8d461e2a-8be3-452e-9ed1-01a6fbaccb40] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+09:37:22:318  INFO 32240 --- [main] com.alibaba.nacos.common.remote.client   : [8d461e2a-8be3-452e-9ed1-01a6fbaccb40] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+09:37:22:319  INFO 32240 --- [main] com.alibaba.nacos.common.remote.client   : [8d461e2a-8be3-452e-9ed1-01a6fbaccb40] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+09:37:22:319  INFO 32240 --- [main] com.alibaba.nacos.common.remote.client   : [8d461e2a-8be3-452e-9ed1-01a6fbaccb40] Try to connect to server on start up, server: {serverIp = '43.133.192.187', server main port = 8848}
+09:37:22:718  INFO 32240 --- [main] com.alibaba.nacos.common.remote.client   : [8d461e2a-8be3-452e-9ed1-01a6fbaccb40] Success to connect to server [43.133.192.187:8848] on start up, connectionId = 1703817442547_144.48.139.118_3425
+09:37:22:719  INFO 32240 --- [main] com.alibaba.nacos.common.remote.client   : [8d461e2a-8be3-452e-9ed1-01a6fbaccb40] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+09:37:22:719  INFO 32240 --- [main] com.alibaba.nacos.common.remote.client   : [8d461e2a-8be3-452e-9ed1-01a6fbaccb40] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$471/0x0000000800423440
+09:37:22:719  INFO 32240 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [8d461e2a-8be3-452e-9ed1-01a6fbaccb40] Notify connected event to listeners.
+09:37:22:841  INFO 32240 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 43.133.192.187:8099
+09:37:23:231  INFO 32240 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:TMROLE,address:43.133.192.187:8099,msg:< RegisterTMRequest{applicationId='trade-service', transactionServiceGroup='hmall'} >
+09:37:23:374  INFO 32240 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [8d461e2a-8be3-452e-9ed1-01a6fbaccb40] Receive server push request, request = NotifySubscriberRequest, requestId = 1148
+09:37:23:376  INFO 32240 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [8d461e2a-8be3-452e-9ed1-01a6fbaccb40] Ack server push request, request = NotifySubscriberRequest, requestId = 1148
+09:37:23:933  INFO 32240 --- [main] i.s.c.rpc.netty.TmNettyRemotingClient    : register TM success. client version:1.5.2, server version:1.5.2,channel:[id: 0xc783036c, L:/192.168.0.102:3426 - R:/43.133.192.187:8099]
+09:37:23:938  INFO 32240 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 154 ms, version:1.5.2,role:TMROLE,channel:[id: 0xc783036c, L:/192.168.0.102:3426 - R:/43.133.192.187:8099]
+09:37:23:938  INFO 32240 --- [main] i.s.s.a.GlobalTransactionScanner         : Transaction Manager Client is initialized. applicationId[trade-service] txServiceGroup[hmall]
+09:37:23:948  INFO 32240 --- [main] io.seata.rm.datasource.AsyncWorker       : Async Commit Buffer Limit: 10000
+09:37:23:948  INFO 32240 --- [main] i.s.rm.datasource.xa.ResourceManagerXA   : ResourceManagerXA init ...
+09:37:23:956  INFO 32240 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+09:37:23:956  INFO 32240 --- [main] i.s.s.a.GlobalTransactionScanner         : Resource Manager is initialized. applicationId[trade-service] txServiceGroup[hmall]
+09:37:23:956  INFO 32240 --- [main] i.s.s.a.GlobalTransactionScanner         : Global Transaction Clients are initialized. 
+09:37:23:958  INFO 32240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:37:24:165  INFO 32240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:37:24:170  INFO 32240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:37:24:467  INFO 32240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+09:37:24:483  INFO 32240 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+09:37:24:483  INFO 32240 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+09:37:24:796  INFO 32240 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+09:37:24:796  INFO 32240 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4324 ms
+09:37:25:043  INFO 32240 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+09:37:26:689  INFO 32240 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+09:37:26:768  INFO 32240 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 43.133.192.187:8099
+09:37:26:768  INFO 32240 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : RM will register :jdbc:mysql://43.133.192.187:3306/hm-trade
+09:37:26:769  INFO 32240 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:RMROLE,address:43.133.192.187:8099,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://43.133.192.187:3306/hm-trade', applicationId='trade-service', transactionServiceGroup='hmall'} >
+09:37:26:949  INFO 32240 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : register RM success. client version:1.5.2, server version:1.5.2,channel:[id: 0xcbd3365f, L:/192.168.0.102:6204 - R:/43.133.192.187:8099]
+09:37:26:949  INFO 32240 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 91 ms, version:1.5.2,role:RMROLE,channel:[id: 0xcbd3365f, L:/192.168.0.102:6204 - R:/43.133.192.187:8099]
+09:37:27:820  INFO 32240 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+09:37:28:066  INFO 32240 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
+09:37:28:151  INFO 32240 --- [main] i.s.s.a.GlobalTransactionScanner         : Bean[com.hmall.trade.service.impl.OrderServiceImpl$$EnhancerBySpringCGLIB$$c5b339bc] with name [orderServiceImpl] would use interceptor [io.seata.spring.annotation.GlobalTransactionalInterceptor]
+09:37:28:385  INFO 32240 --- [main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+09:37:29:337  INFO 32240 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+09:37:30:113  INFO 32240 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of cdc377aa-4484-432e-ae6a-7dc7625407c1
+09:37:30:114  INFO 32240 --- [main] com.alibaba.nacos.common.remote.client   : [cdc377aa-4484-432e-ae6a-7dc7625407c1] RpcClient init label, labels = {module=naming, source=sdk}
+09:37:30:115  INFO 32240 --- [main] com.alibaba.nacos.common.remote.client   : [cdc377aa-4484-432e-ae6a-7dc7625407c1] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+09:37:30:115  INFO 32240 --- [main] com.alibaba.nacos.common.remote.client   : [cdc377aa-4484-432e-ae6a-7dc7625407c1] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+09:37:30:115  INFO 32240 --- [main] com.alibaba.nacos.common.remote.client   : [cdc377aa-4484-432e-ae6a-7dc7625407c1] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+09:37:30:116  INFO 32240 --- [main] com.alibaba.nacos.common.remote.client   : [cdc377aa-4484-432e-ae6a-7dc7625407c1] Try to connect to server on start up, server: {serverIp = '43.133.192.187', server main port = 8848}
+09:37:30:531  INFO 32240 --- [main] com.alibaba.nacos.common.remote.client   : [cdc377aa-4484-432e-ae6a-7dc7625407c1] Success to connect to server [43.133.192.187:8848] on start up, connectionId = 1703817450364_144.48.139.118_6211
+09:37:30:531  INFO 32240 --- [main] com.alibaba.nacos.common.remote.client   : [cdc377aa-4484-432e-ae6a-7dc7625407c1] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+09:37:30:531  INFO 32240 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [cdc377aa-4484-432e-ae6a-7dc7625407c1] Notify connected event to listeners.
+09:37:30:531  INFO 32240 --- [main] com.alibaba.nacos.common.remote.client   : [cdc377aa-4484-432e-ae6a-7dc7625407c1] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$471/0x0000000800423440
+09:37:30:652  INFO 32240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+09:37:30:783  INFO 32240 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP trade-service 192.168.0.102:8085 register finished
+09:37:31:172  INFO 32240 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [cdc377aa-4484-432e-ae6a-7dc7625407c1] Receive server push request, request = NotifySubscriberRequest, requestId = 1149
+09:37:31:176  INFO 32240 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [cdc377aa-4484-432e-ae6a-7dc7625407c1] Ack server push request, request = NotifySubscriberRequest, requestId = 1149
+09:37:31:478  INFO 32240 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+09:37:31:481  INFO 32240 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+09:37:31:507  INFO 32240 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+09:37:31:621  INFO 32240 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 16.612 seconds (JVM running for 18.241)
+09:37:31:628  INFO 32240 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=trade-service, group=DEFAULT_GROUP
+09:37:31:629  INFO 32240 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=trade-service-local.yaml, group=DEFAULT_GROUP
+09:37:31:630  INFO 32240 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=trade-service.yaml, group=DEFAULT_GROUP
+09:47:00:928  WARN 32240 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+09:47:00:929  WARN 32240 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+09:47:00:929  WARN 32240 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+09:47:00:931  WARN 32240 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+09:47:01:526  INFO 32240 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+09:47:01:625  INFO 32240 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+09:47:01:956  INFO 32240 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+09:47:01:956  INFO 32240 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@511538bc[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+09:47:01:956  INFO 32240 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1703817450364_144.48.139.118_6211
+09:47:01:962  INFO 32240 --- [SpringContextShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@3c8d44bd[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 126]
+09:47:01:973  INFO 32240 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+09:47:02:918  INFO 32240 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+09:47:02:923  INFO 32240 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel inactive: [id: 0xcbd3365f, L:/192.168.0.102:6204 ! R:/43.133.192.187:8099]
+09:47:02:923  INFO 32240 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.netty.NettyClientChannelManager  : return to pool, rm channel:[id: 0xcbd3365f, L:/192.168.0.102:6204 ! R:/43.133.192.187:8099]
+09:47:02:923  INFO 32240 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0xcbd3365f, L:/192.168.0.102:6204 ! R:/43.133.192.187:8099]
+09:47:02:924  INFO 32240 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0xcbd3365f, L:/192.168.0.102:6204 ! R:/43.133.192.187:8099]
+09:47:02:925  INFO 32240 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xcbd3365f, L:/192.168.0.102:6204 ! R:/43.133.192.187:8099]) will closed
+09:47:02:925  INFO 32240 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xcbd3365f, L:/192.168.0.102:6204 ! R:/43.133.192.187:8099]) will closed
+09:47:16:535  INFO 21976 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "local"
+09:47:17:699  INFO 21976 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=181dbc15-87e1-362d-ade6-1d24497a5159
+09:47:17:768  INFO 21976 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:47:17:769  INFO 21976 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:47:17:769  INFO 21976 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:47:17:806  INFO 21976 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:47:17:810  INFO 21976 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:47:17:811  INFO 21976 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:47:17:812  INFO 21976 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$562/0x0000000800664c40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:47:17:812  INFO 21976 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:47:17:815  INFO 21976 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:47:17:817  INFO 21976 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:47:17:820  INFO 21976 --- [main] i.s.s.b.a.SeataAutoConfiguration         : Automatically configure Seata
+09:47:17:877  INFO 21976 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+09:47:17:881  INFO 21976 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+09:47:17:954  INFO 21976 --- [main] i.s.s.a.GlobalTransactionScanner         : Initializing Global Transaction Clients ... 
+09:47:18:040  INFO 21976 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+09:47:18:377  INFO 21976 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 29cb1455-85d4-4e3d-8196-4b8b39c173af
+09:47:18:377  INFO 21976 --- [main] com.alibaba.nacos.common.remote.client   : [29cb1455-85d4-4e3d-8196-4b8b39c173af] RpcClient init label, labels = {module=naming, source=sdk}
+09:47:18:379  INFO 21976 --- [main] com.alibaba.nacos.common.remote.client   : [29cb1455-85d4-4e3d-8196-4b8b39c173af] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+09:47:18:379  INFO 21976 --- [main] com.alibaba.nacos.common.remote.client   : [29cb1455-85d4-4e3d-8196-4b8b39c173af] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+09:47:18:379  INFO 21976 --- [main] com.alibaba.nacos.common.remote.client   : [29cb1455-85d4-4e3d-8196-4b8b39c173af] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+09:47:18:380  INFO 21976 --- [main] com.alibaba.nacos.common.remote.client   : [29cb1455-85d4-4e3d-8196-4b8b39c173af] Try to connect to server on start up, server: {serverIp = '43.133.192.187', server main port = 8848}
+09:47:18:807  INFO 21976 --- [main] com.alibaba.nacos.common.remote.client   : [29cb1455-85d4-4e3d-8196-4b8b39c173af] Success to connect to server [43.133.192.187:8848] on start up, connectionId = 1703818038632_144.48.139.118_6926
+09:47:18:807  INFO 21976 --- [main] com.alibaba.nacos.common.remote.client   : [29cb1455-85d4-4e3d-8196-4b8b39c173af] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+09:47:18:807  INFO 21976 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [29cb1455-85d4-4e3d-8196-4b8b39c173af] Notify connected event to listeners.
+09:47:18:808  INFO 21976 --- [main] com.alibaba.nacos.common.remote.client   : [29cb1455-85d4-4e3d-8196-4b8b39c173af] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$471/0x0000000800423440
+09:47:18:943  INFO 21976 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 43.133.192.187:8099
+09:47:19:385  INFO 21976 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:TMROLE,address:43.133.192.187:8099,msg:< RegisterTMRequest{applicationId='trade-service', transactionServiceGroup='hmall'} >
+09:47:19:452  INFO 21976 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [29cb1455-85d4-4e3d-8196-4b8b39c173af] Receive server push request, request = NotifySubscriberRequest, requestId = 1150
+09:47:19:455  INFO 21976 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [29cb1455-85d4-4e3d-8196-4b8b39c173af] Ack server push request, request = NotifySubscriberRequest, requestId = 1150
+09:47:20:110  INFO 21976 --- [main] i.s.c.rpc.netty.TmNettyRemotingClient    : register TM success. client version:1.5.2, server version:1.5.2,channel:[id: 0xaf579405, L:/192.168.0.102:6928 - R:/43.133.192.187:8099]
+09:47:20:116  INFO 21976 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 147 ms, version:1.5.2,role:TMROLE,channel:[id: 0xaf579405, L:/192.168.0.102:6928 - R:/43.133.192.187:8099]
+09:47:20:117  INFO 21976 --- [main] i.s.s.a.GlobalTransactionScanner         : Transaction Manager Client is initialized. applicationId[trade-service] txServiceGroup[hmall]
+09:47:20:126  INFO 21976 --- [main] io.seata.rm.datasource.AsyncWorker       : Async Commit Buffer Limit: 10000
+09:47:20:126  INFO 21976 --- [main] i.s.rm.datasource.xa.ResourceManagerXA   : ResourceManagerXA init ...
+09:47:20:134  INFO 21976 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+09:47:20:134  INFO 21976 --- [main] i.s.s.a.GlobalTransactionScanner         : Resource Manager is initialized. applicationId[trade-service] txServiceGroup[hmall]
+09:47:20:134  INFO 21976 --- [main] i.s.s.a.GlobalTransactionScanner         : Global Transaction Clients are initialized. 
+09:47:20:136  INFO 21976 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:47:20:330  INFO 21976 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:47:20:334  INFO 21976 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:47:20:694  INFO 21976 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+09:47:20:711  INFO 21976 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+09:47:20:712  INFO 21976 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+09:47:21:048  INFO 21976 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+09:47:21:048  INFO 21976 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4489 ms
+09:47:21:303  INFO 21976 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+09:47:22:986  INFO 21976 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+09:47:23:065  INFO 21976 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 43.133.192.187:8099
+09:47:23:065  INFO 21976 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : RM will register :jdbc:mysql://43.133.192.187:3306/hm-trade
+09:47:23:067  INFO 21976 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:RMROLE,address:43.133.192.187:8099,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://43.133.192.187:3306/hm-trade', applicationId='trade-service', transactionServiceGroup='hmall'} >
+09:47:23:288  INFO 21976 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : register RM success. client version:1.5.2, server version:1.5.2,channel:[id: 0x3170c952, L:/192.168.0.102:6937 - R:/43.133.192.187:8099]
+09:47:23:288  INFO 21976 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 105 ms, version:1.5.2,role:RMROLE,channel:[id: 0x3170c952, L:/192.168.0.102:6937 - R:/43.133.192.187:8099]
+09:47:24:033  INFO 21976 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+09:47:24:258  INFO 21976 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
+09:47:24:333  INFO 21976 --- [main] i.s.s.a.GlobalTransactionScanner         : Bean[com.hmall.trade.service.impl.OrderServiceImpl$$EnhancerBySpringCGLIB$$3ee7d082] with name [orderServiceImpl] would use interceptor [io.seata.spring.annotation.GlobalTransactionalInterceptor]
+09:47:24:554  INFO 21976 --- [main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+09:47:25:547  INFO 21976 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+09:47:26:344  INFO 21976 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 946d8d6c-5cc4-44e6-b85e-1fd69398b2c1
+09:47:26:346  INFO 21976 --- [main] com.alibaba.nacos.common.remote.client   : [946d8d6c-5cc4-44e6-b85e-1fd69398b2c1] RpcClient init label, labels = {module=naming, source=sdk}
+09:47:26:346  INFO 21976 --- [main] com.alibaba.nacos.common.remote.client   : [946d8d6c-5cc4-44e6-b85e-1fd69398b2c1] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+09:47:26:346  INFO 21976 --- [main] com.alibaba.nacos.common.remote.client   : [946d8d6c-5cc4-44e6-b85e-1fd69398b2c1] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+09:47:26:346  INFO 21976 --- [main] com.alibaba.nacos.common.remote.client   : [946d8d6c-5cc4-44e6-b85e-1fd69398b2c1] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+09:47:26:346  INFO 21976 --- [main] com.alibaba.nacos.common.remote.client   : [946d8d6c-5cc4-44e6-b85e-1fd69398b2c1] Try to connect to server on start up, server: {serverIp = '43.133.192.187', server main port = 8848}
+09:47:26:768  INFO 21976 --- [main] com.alibaba.nacos.common.remote.client   : [946d8d6c-5cc4-44e6-b85e-1fd69398b2c1] Success to connect to server [43.133.192.187:8848] on start up, connectionId = 1703818046597_144.48.139.118_6949
+09:47:26:768  INFO 21976 --- [main] com.alibaba.nacos.common.remote.client   : [946d8d6c-5cc4-44e6-b85e-1fd69398b2c1] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+09:47:26:768  INFO 21976 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [946d8d6c-5cc4-44e6-b85e-1fd69398b2c1] Notify connected event to listeners.
+09:47:26:769  INFO 21976 --- [main] com.alibaba.nacos.common.remote.client   : [946d8d6c-5cc4-44e6-b85e-1fd69398b2c1] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$471/0x0000000800423440
+09:47:26:887  INFO 21976 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+09:47:26:992  INFO 21976 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP trade-service 192.168.0.102:8085 register finished
+09:47:27:444  INFO 21976 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [946d8d6c-5cc4-44e6-b85e-1fd69398b2c1] Receive server push request, request = NotifySubscriberRequest, requestId = 1151
+09:47:27:446  INFO 21976 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [946d8d6c-5cc4-44e6-b85e-1fd69398b2c1] Ack server push request, request = NotifySubscriberRequest, requestId = 1151
+09:47:27:530  INFO 21976 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+09:47:27:533  INFO 21976 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+09:47:27:555  INFO 21976 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+09:47:27:637  INFO 21976 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 16.469 seconds (JVM running for 18.011)
+09:47:27:644  INFO 21976 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=trade-service, group=DEFAULT_GROUP
+09:47:27:645  INFO 21976 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=trade-service-local.yaml, group=DEFAULT_GROUP
+09:47:27:647  INFO 21976 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=trade-service.yaml, group=DEFAULT_GROUP
+09:47:33:879  INFO 21976 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:47:33:879  INFO 21976 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+09:47:33:880  INFO 21976 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+09:48:11:213  WARN 21976 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+09:48:11:213  WARN 21976 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+09:48:11:213  WARN 21976 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+09:48:11:214  WARN 21976 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+09:48:11:796  INFO 21976 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+09:48:11:898  INFO 21976 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+09:48:12:232  INFO 21976 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+09:48:12:232  INFO 21976 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@4c63729e[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+09:48:12:232  INFO 21976 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1703818046597_144.48.139.118_6949
+09:48:12:238  INFO 21976 --- [SpringContextShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@609876d8[Running, pool size = 3, active threads = 0, queued tasks = 0, completed tasks = 17]
+09:48:12:247  INFO 21976 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+09:48:13:194  INFO 21976 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+09:48:13:197  INFO 21976 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel inactive: [id: 0x3170c952, L:/192.168.0.102:6937 ! R:/43.133.192.187:8099]
+09:48:13:197  INFO 21976 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.netty.NettyClientChannelManager  : return to pool, rm channel:[id: 0x3170c952, L:/192.168.0.102:6937 ! R:/43.133.192.187:8099]
+09:48:13:198  INFO 21976 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0x3170c952, L:/192.168.0.102:6937 ! R:/43.133.192.187:8099]
+09:48:13:198  INFO 21976 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x3170c952, L:/192.168.0.102:6937 ! R:/43.133.192.187:8099]
+09:48:13:199  INFO 21976 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x3170c952, L:/192.168.0.102:6937 ! R:/43.133.192.187:8099]) will closed
+09:48:13:199  INFO 21976 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x3170c952, L:/192.168.0.102:6937 ! R:/43.133.192.187:8099]) will closed
+09:48:24:427  INFO 82284 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "local"
+09:48:25:465  INFO 82284 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=181dbc15-87e1-362d-ade6-1d24497a5159
+09:48:25:527  INFO 82284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:48:25:527  INFO 82284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:48:25:528  INFO 82284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:48:25:573  INFO 82284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:48:25:576  INFO 82284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:48:25:577  INFO 82284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:48:25:578  INFO 82284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$562/0x0000000800664c40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:48:25:579  INFO 82284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:48:25:581  INFO 82284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:48:25:584  INFO 82284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:48:25:586  INFO 82284 --- [main] i.s.s.b.a.SeataAutoConfiguration         : Automatically configure Seata
+09:48:25:637  INFO 82284 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+09:48:25:643  INFO 82284 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+09:48:25:715  INFO 82284 --- [main] i.s.s.a.GlobalTransactionScanner         : Initializing Global Transaction Clients ... 
+09:48:25:801  INFO 82284 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+09:48:26:123  INFO 82284 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 7c54601b-ea38-4b66-8a0d-62e04305faff
+09:48:26:124  INFO 82284 --- [main] com.alibaba.nacos.common.remote.client   : [7c54601b-ea38-4b66-8a0d-62e04305faff] RpcClient init label, labels = {module=naming, source=sdk}
+09:48:26:125  INFO 82284 --- [main] com.alibaba.nacos.common.remote.client   : [7c54601b-ea38-4b66-8a0d-62e04305faff] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+09:48:26:126  INFO 82284 --- [main] com.alibaba.nacos.common.remote.client   : [7c54601b-ea38-4b66-8a0d-62e04305faff] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+09:48:26:126  INFO 82284 --- [main] com.alibaba.nacos.common.remote.client   : [7c54601b-ea38-4b66-8a0d-62e04305faff] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+09:48:26:127  INFO 82284 --- [main] com.alibaba.nacos.common.remote.client   : [7c54601b-ea38-4b66-8a0d-62e04305faff] Try to connect to server on start up, server: {serverIp = '43.133.192.187', server main port = 8848}
+09:48:26:529  INFO 82284 --- [main] com.alibaba.nacos.common.remote.client   : [7c54601b-ea38-4b66-8a0d-62e04305faff] Success to connect to server [43.133.192.187:8848] on start up, connectionId = 1703818106372_144.48.139.118_6423
+09:48:26:529  INFO 82284 --- [main] com.alibaba.nacos.common.remote.client   : [7c54601b-ea38-4b66-8a0d-62e04305faff] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+09:48:26:529  INFO 82284 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [7c54601b-ea38-4b66-8a0d-62e04305faff] Notify connected event to listeners.
+09:48:26:530  INFO 82284 --- [main] com.alibaba.nacos.common.remote.client   : [7c54601b-ea38-4b66-8a0d-62e04305faff] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$471/0x0000000800423440
+09:48:26:669  INFO 82284 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 43.133.192.187:8099
+09:48:27:067  INFO 82284 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:TMROLE,address:43.133.192.187:8099,msg:< RegisterTMRequest{applicationId='trade-service', transactionServiceGroup='hmall'} >
+09:48:27:209  INFO 82284 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [7c54601b-ea38-4b66-8a0d-62e04305faff] Receive server push request, request = NotifySubscriberRequest, requestId = 1152
+09:48:27:211  INFO 82284 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [7c54601b-ea38-4b66-8a0d-62e04305faff] Ack server push request, request = NotifySubscriberRequest, requestId = 1152
+09:48:27:766  INFO 82284 --- [main] i.s.c.rpc.netty.TmNettyRemotingClient    : register TM success. client version:1.5.2, server version:1.5.2,channel:[id: 0x39596e9c, L:/192.168.0.102:6425 - R:/43.133.192.187:8099]
+09:48:27:771  INFO 82284 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 158 ms, version:1.5.2,role:TMROLE,channel:[id: 0x39596e9c, L:/192.168.0.102:6425 - R:/43.133.192.187:8099]
+09:48:27:772  INFO 82284 --- [main] i.s.s.a.GlobalTransactionScanner         : Transaction Manager Client is initialized. applicationId[trade-service] txServiceGroup[hmall]
+09:48:27:781  INFO 82284 --- [main] io.seata.rm.datasource.AsyncWorker       : Async Commit Buffer Limit: 10000
+09:48:27:781  INFO 82284 --- [main] i.s.rm.datasource.xa.ResourceManagerXA   : ResourceManagerXA init ...
+09:48:27:788  INFO 82284 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+09:48:27:788  INFO 82284 --- [main] i.s.s.a.GlobalTransactionScanner         : Resource Manager is initialized. applicationId[trade-service] txServiceGroup[hmall]
+09:48:27:789  INFO 82284 --- [main] i.s.s.a.GlobalTransactionScanner         : Global Transaction Clients are initialized. 
+09:48:27:791  INFO 82284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:48:27:956  INFO 82284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:48:27:958  INFO 82284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:48:28:261  INFO 82284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+09:48:28:276  INFO 82284 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+09:48:28:276  INFO 82284 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+09:48:28:558  INFO 82284 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+09:48:28:559  INFO 82284 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4109 ms
+09:48:28:773  INFO 82284 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+09:48:30:557  INFO 82284 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+09:48:30:625  INFO 82284 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 43.133.192.187:8099
+09:48:30:626  INFO 82284 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : RM will register :jdbc:mysql://43.133.192.187:3306/hm-trade
+09:48:30:626  INFO 82284 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:RMROLE,address:43.133.192.187:8099,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://43.133.192.187:3306/hm-trade', applicationId='trade-service', transactionServiceGroup='hmall'} >
+09:48:30:823  INFO 82284 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : register RM success. client version:1.5.2, server version:1.5.2,channel:[id: 0x92d9300a, L:/192.168.0.102:6432 - R:/43.133.192.187:8099]
+09:48:30:824  INFO 82284 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 98 ms, version:1.5.2,role:RMROLE,channel:[id: 0x92d9300a, L:/192.168.0.102:6432 - R:/43.133.192.187:8099]
+09:48:31:578  INFO 82284 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+09:48:31:805  INFO 82284 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
+09:48:31:894  INFO 82284 --- [main] i.s.s.a.GlobalTransactionScanner         : Bean[com.hmall.trade.service.impl.OrderServiceImpl$$EnhancerBySpringCGLIB$$3ee7d082] with name [orderServiceImpl] would use interceptor [io.seata.spring.annotation.GlobalTransactionalInterceptor]
+09:48:32:118  INFO 82284 --- [main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+09:48:33:037  INFO 82284 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+09:48:33:747  INFO 82284 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 204d0585-4968-48a6-a18e-31ff77205e0f
+09:48:33:747  INFO 82284 --- [main] com.alibaba.nacos.common.remote.client   : [204d0585-4968-48a6-a18e-31ff77205e0f] RpcClient init label, labels = {module=naming, source=sdk}
+09:48:33:748  INFO 82284 --- [main] com.alibaba.nacos.common.remote.client   : [204d0585-4968-48a6-a18e-31ff77205e0f] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+09:48:33:748  INFO 82284 --- [main] com.alibaba.nacos.common.remote.client   : [204d0585-4968-48a6-a18e-31ff77205e0f] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+09:48:33:748  INFO 82284 --- [main] com.alibaba.nacos.common.remote.client   : [204d0585-4968-48a6-a18e-31ff77205e0f] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+09:48:33:749  INFO 82284 --- [main] com.alibaba.nacos.common.remote.client   : [204d0585-4968-48a6-a18e-31ff77205e0f] Try to connect to server on start up, server: {serverIp = '43.133.192.187', server main port = 8848}
+09:48:34:137  INFO 82284 --- [main] com.alibaba.nacos.common.remote.client   : [204d0585-4968-48a6-a18e-31ff77205e0f] Success to connect to server [43.133.192.187:8848] on start up, connectionId = 1703818113987_144.48.139.118_6438
+09:48:34:137  INFO 82284 --- [main] com.alibaba.nacos.common.remote.client   : [204d0585-4968-48a6-a18e-31ff77205e0f] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+09:48:34:137  INFO 82284 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [204d0585-4968-48a6-a18e-31ff77205e0f] Notify connected event to listeners.
+09:48:34:137  INFO 82284 --- [main] com.alibaba.nacos.common.remote.client   : [204d0585-4968-48a6-a18e-31ff77205e0f] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$471/0x0000000800423440
+09:48:34:246  INFO 82284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+09:48:34:345  INFO 82284 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP trade-service 192.168.0.102:8085 register finished
+09:48:34:795  INFO 82284 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [204d0585-4968-48a6-a18e-31ff77205e0f] Receive server push request, request = NotifySubscriberRequest, requestId = 1153
+09:48:34:797  INFO 82284 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [204d0585-4968-48a6-a18e-31ff77205e0f] Ack server push request, request = NotifySubscriberRequest, requestId = 1153
+09:48:34:883  INFO 82284 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+09:48:34:886  INFO 82284 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+09:48:34:908  INFO 82284 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+09:48:35:000  INFO 82284 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 15.658 seconds (JVM running for 17.205)
+09:48:35:009  INFO 82284 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=trade-service, group=DEFAULT_GROUP
+09:48:35:010  INFO 82284 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=trade-service-local.yaml, group=DEFAULT_GROUP
+09:48:35:012  INFO 82284 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=trade-service.yaml, group=DEFAULT_GROUP
+09:48:39:668  INFO 82284 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:48:39:668  INFO 82284 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+09:48:39:669  INFO 82284 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+09:48:39:946  INFO 82284 --- [http-nio-8085-exec-1] io.seata.tm.TransactionManagerHolder     : TransactionManager Singleton io.seata.tm.DefaultTransactionManager@3a585237
+09:48:40:061  INFO 82284 --- [http-nio-8085-exec-1] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [43.133.192.187:8099:36501117869121660]
+09:48:40:072 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120 HTTP/1.1
+09:48:40:073 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+09:48:40:073 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+09:48:40:803  INFO 82284 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [204d0585-4968-48a6-a18e-31ff77205e0f] Receive server push request, request = NotifySubscriberRequest, requestId = 1154
+09:48:40:804  INFO 82284 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [204d0585-4968-48a6-a18e-31ff77205e0f] Ack server push request, request = NotifySubscriberRequest, requestId = 1154
+09:48:40:985 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (911ms)
+09:48:40:985 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+09:48:40:985 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+09:48:40:985 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 29 Dec 2023 02:48:40 GMT
+09:48:40:985 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+09:48:40:985 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+09:48:40:985 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+09:48:40:986 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":964,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+09:48:40:987 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (382-byte body)
+09:48:41:186 DEBUG 82284 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+09:48:41:771 DEBUG 82284 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1740565470938603521(Long), 759000(Integer), 3(Integer), 1(Long), 1(Integer)
+09:48:42:684 DEBUG 82284 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+09:48:42:803 DEBUG 82284 --- [http-nio-8085-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+09:48:42:804 DEBUG 82284 --- [http-nio-8085-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1740565470938603521(Long), 8533120(Long), 2(Integer), 海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视(String), {}(String), 379500(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp(String)
+09:48:44:001 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=8533120 HTTP/1.1
+09:48:44:001 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+09:48:44:001 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+09:48:44:703  INFO 82284 --- [nacos-grpc-client-executor-12] com.alibaba.nacos.common.remote.client   : [204d0585-4968-48a6-a18e-31ff77205e0f] Receive server push request, request = NotifySubscriberRequest, requestId = 1155
+09:48:44:703  INFO 82284 --- [nacos-grpc-client-executor-12] com.alibaba.nacos.common.remote.client   : [204d0585-4968-48a6-a18e-31ff77205e0f] Ack server push request, request = NotifySubscriberRequest, requestId = 1155
+09:48:46:063 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200  (2061ms)
+09:48:46:063 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+09:48:46:063 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
+09:48:46:063 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Fri, 29 Dec 2023 02:48:46 GMT
+09:48:46:063 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+09:48:46:063 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
+09:48:46:071 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> PUT http://item-service/items/stock/deduct HTTP/1.1
+09:48:46:071 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Length: 30
+09:48:46:071 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Type: application/json
+09:48:46:071 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] user-info: 1
+09:48:46:071 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+09:48:46:071 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] [{"itemId":"8533120","num":2}]
+09:48:46:071 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> END HTTP (30-byte body)
+09:48:47:760 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- HTTP/1.1 200  (1688ms)
+09:48:47:760 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] connection: keep-alive
+09:48:47:760 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] content-length: 0
+09:48:47:760 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] date: Fri, 29 Dec 2023 02:48:47 GMT
+09:48:47:760 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] keep-alive: timeout=60
+09:48:47:760 DEBUG 82284 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- END HTTP (0-byte body)
+09:48:47:868  INFO 82284 --- [http-nio-8085-exec-1] i.seata.tm.api.DefaultGlobalTransaction  : Suspending current transaction, xid = 43.133.192.187:8099:36501117869121660
+09:48:47:868  INFO 82284 --- [http-nio-8085-exec-1] i.seata.tm.api.DefaultGlobalTransaction  : [43.133.192.187:8099:36501117869121660] commit status: Committed
+09:48:48:758  INFO 82284 --- [rpcDispatch_RMROLE_1_1_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=43.133.192.187:8099:36501117869121660,branchId=36501117869121661,branchType=AT,resourceId=jdbc:mysql://43.133.192.187:3306/hm-trade,applicationData={"skipCheckLock":true}
+09:48:48:760  INFO 82284 --- [rpcDispatch_RMROLE_1_1_16] io.seata.rm.AbstractRMHandler            : Branch committing: 43.133.192.187:8099:36501117869121660 36501117869121661 jdbc:mysql://43.133.192.187:3306/hm-trade {"skipCheckLock":true}
+09:48:48:761  INFO 82284 --- [rpcDispatch_RMROLE_1_1_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+09:48:48:858  INFO 82284 --- [rpcDispatch_RMROLE_1_2_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=43.133.192.187:8099:36501117869121660,branchId=36501117869121662,branchType=AT,resourceId=jdbc:mysql://43.133.192.187:3306/hm-trade,applicationData={"autoCommit":false,"skipCheckLock":true}
+09:48:48:858  INFO 82284 --- [rpcDispatch_RMROLE_1_2_16] io.seata.rm.AbstractRMHandler            : Branch committing: 43.133.192.187:8099:36501117869121660 36501117869121662 jdbc:mysql://43.133.192.187:3306/hm-trade {"autoCommit":false,"skipCheckLock":true}
+09:48:48:858  INFO 82284 --- [rpcDispatch_RMROLE_1_2_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+09:49:19:957  INFO 82284 --- [http-nio-8085-exec-2] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [43.133.192.187:8099:36501117869121665]
+09:49:19:958 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120 HTTP/1.1
+09:49:19:958 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+09:49:19:958 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+09:49:20:140 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (181ms)
+09:49:20:140 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+09:49:20:140 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+09:49:20:140 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 29 Dec 2023 02:49:20 GMT
+09:49:20:140 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+09:49:20:140 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+09:49:20:140 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+09:49:20:141 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":962,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+09:49:20:141 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (382-byte body)
+09:49:20:244 DEBUG 82284 --- [http-nio-8085-exec-2] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+09:49:20:246 DEBUG 82284 --- [http-nio-8085-exec-2] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1740565634763923457(Long), 759000(Integer), 3(Integer), 1(Long), 1(Integer)
+09:49:21:065 DEBUG 82284 --- [http-nio-8085-exec-2] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+09:49:21:173 DEBUG 82284 --- [http-nio-8085-exec-2] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+09:49:21:174 DEBUG 82284 --- [http-nio-8085-exec-2] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1740565634763923457(Long), 8533120(Long), 2(Integer), 海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视(String), {}(String), 379500(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp(String)
+09:49:21:906 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=8533120 HTTP/1.1
+09:49:21:906 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+09:49:21:906 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+09:49:22:635 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200  (729ms)
+09:49:22:636 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+09:49:22:636 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
+09:49:22:636 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Fri, 29 Dec 2023 02:49:22 GMT
+09:49:22:636 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+09:49:22:636 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
+09:49:22:637 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> PUT http://item-service/items/stock/deduct HTTP/1.1
+09:49:22:637 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Length: 30
+09:49:22:637 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Type: application/json
+09:49:22:637 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] user-info: 1
+09:49:22:637 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+09:49:22:637 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] [{"itemId":"8533120","num":2}]
+09:49:22:637 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> END HTTP (30-byte body)
+09:49:23:595 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- HTTP/1.1 200  (957ms)
+09:49:23:595 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] connection: keep-alive
+09:49:23:596 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] content-length: 0
+09:49:23:596 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] date: Fri, 29 Dec 2023 02:49:23 GMT
+09:49:23:596 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] keep-alive: timeout=60
+09:49:23:596 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- END HTTP (0-byte body)
+09:49:23:700  INFO 82284 --- [http-nio-8085-exec-2] i.seata.tm.api.DefaultGlobalTransaction  : Suspending current transaction, xid = 43.133.192.187:8099:36501117869121665
+09:49:23:700  INFO 82284 --- [http-nio-8085-exec-2] i.seata.tm.api.DefaultGlobalTransaction  : [43.133.192.187:8099:36501117869121665] commit status: Committed
+09:49:23:760  INFO 82284 --- [rpcDispatch_RMROLE_1_3_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=43.133.192.187:8099:36501117869121665,branchId=36501117869121666,branchType=AT,resourceId=jdbc:mysql://43.133.192.187:3306/hm-trade,applicationData={"skipCheckLock":true}
+09:49:23:761  INFO 82284 --- [rpcDispatch_RMROLE_1_3_16] io.seata.rm.AbstractRMHandler            : Branch committing: 43.133.192.187:8099:36501117869121665 36501117869121666 jdbc:mysql://43.133.192.187:3306/hm-trade {"skipCheckLock":true}
+09:49:23:761  INFO 82284 --- [rpcDispatch_RMROLE_1_3_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+09:49:23:857  INFO 82284 --- [rpcDispatch_RMROLE_1_4_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=43.133.192.187:8099:36501117869121665,branchId=36501117869121667,branchType=AT,resourceId=jdbc:mysql://43.133.192.187:3306/hm-trade,applicationData={"autoCommit":false,"skipCheckLock":true}
+09:49:23:857  INFO 82284 --- [rpcDispatch_RMROLE_1_4_16] io.seata.rm.AbstractRMHandler            : Branch committing: 43.133.192.187:8099:36501117869121665 36501117869121667 jdbc:mysql://43.133.192.187:3306/hm-trade {"autoCommit":false,"skipCheckLock":true}
+09:49:23:857  INFO 82284 --- [rpcDispatch_RMROLE_1_4_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+09:49:31:501  INFO 82284 --- [http-nio-8085-exec-3] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [43.133.192.187:8099:36501117869121669]
+09:49:31:502 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120 HTTP/1.1
+09:49:31:502 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+09:49:31:502 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+09:49:31:679 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (177ms)
+09:49:31:679 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+09:49:31:679 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+09:49:31:679 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 29 Dec 2023 02:49:31 GMT
+09:49:31:679 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+09:49:31:679 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+09:49:31:679 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+09:49:31:680 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":960,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+09:49:31:680 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (382-byte body)
+09:49:31:781 DEBUG 82284 --- [http-nio-8085-exec-3] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+09:49:31:782 DEBUG 82284 --- [http-nio-8085-exec-3] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1740565683212328961(Long), 759000(Integer), 3(Integer), 1(Long), 1(Integer)
+09:49:32:594 DEBUG 82284 --- [http-nio-8085-exec-3] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+09:49:32:693 DEBUG 82284 --- [http-nio-8085-exec-3] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+09:49:32:694 DEBUG 82284 --- [http-nio-8085-exec-3] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1740565683212328961(Long), 8533120(Long), 2(Integer), 海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视(String), {}(String), 379500(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp(String)
+09:49:33:398 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=8533120 HTTP/1.1
+09:49:33:399 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+09:49:33:399 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+09:49:34:114 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200  (714ms)
+09:49:34:114 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+09:49:34:114 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
+09:49:34:114 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Fri, 29 Dec 2023 02:49:34 GMT
+09:49:34:114 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+09:49:34:114 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
+09:49:34:115 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> PUT http://item-service/items/stock/deduct HTTP/1.1
+09:49:34:115 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Length: 30
+09:49:34:115 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Type: application/json
+09:49:34:115 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] user-info: 1
+09:49:34:115 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+09:49:34:115 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] [{"itemId":"8533120","num":2}]
+09:49:34:115 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> END HTTP (30-byte body)
+09:49:35:066 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- HTTP/1.1 200  (951ms)
+09:49:35:066 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] connection: keep-alive
+09:49:35:066 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] content-length: 0
+09:49:35:066 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] date: Fri, 29 Dec 2023 02:49:35 GMT
+09:49:35:066 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] keep-alive: timeout=60
+09:49:35:066 DEBUG 82284 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- END HTTP (0-byte body)
+09:49:35:175  INFO 82284 --- [http-nio-8085-exec-3] i.seata.tm.api.DefaultGlobalTransaction  : Suspending current transaction, xid = 43.133.192.187:8099:36501117869121669
+09:49:35:175  INFO 82284 --- [http-nio-8085-exec-3] i.seata.tm.api.DefaultGlobalTransaction  : [43.133.192.187:8099:36501117869121669] commit status: Committed
+09:49:35:755  INFO 82284 --- [rpcDispatch_RMROLE_1_5_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=43.133.192.187:8099:36501117869121669,branchId=36501117869121670,branchType=AT,resourceId=jdbc:mysql://43.133.192.187:3306/hm-trade,applicationData={"skipCheckLock":true}
+09:49:35:755  INFO 82284 --- [rpcDispatch_RMROLE_1_5_16] io.seata.rm.AbstractRMHandler            : Branch committing: 43.133.192.187:8099:36501117869121669 36501117869121670 jdbc:mysql://43.133.192.187:3306/hm-trade {"skipCheckLock":true}
+09:49:35:755  INFO 82284 --- [rpcDispatch_RMROLE_1_5_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+09:49:35:852  INFO 82284 --- [rpcDispatch_RMROLE_1_6_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=43.133.192.187:8099:36501117869121669,branchId=36501117869121671,branchType=AT,resourceId=jdbc:mysql://43.133.192.187:3306/hm-trade,applicationData={"autoCommit":false,"skipCheckLock":true}
+09:49:35:852  INFO 82284 --- [rpcDispatch_RMROLE_1_6_16] io.seata.rm.AbstractRMHandler            : Branch committing: 43.133.192.187:8099:36501117869121669 36501117869121671 jdbc:mysql://43.133.192.187:3306/hm-trade {"autoCommit":false,"skipCheckLock":true}
+09:49:35:852  INFO 82284 --- [rpcDispatch_RMROLE_1_6_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+09:49:57:757 DEBUG 82284 --- [http-nio-8085-exec-4] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+09:49:57:758 DEBUG 82284 --- [http-nio-8085-exec-4] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1740317681650462722(Long)
+09:49:57:871 DEBUG 82284 --- [http-nio-8085-exec-4] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+09:50:15:137  INFO 82284 --- [http-nio-8085-exec-5] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [43.133.192.187:8099:36501117869121673]
+09:50:15:138 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120 HTTP/1.1
+09:50:15:138 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+09:50:15:138 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+09:50:15:314 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (175ms)
+09:50:15:314 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+09:50:15:314 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+09:50:15:314 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 29 Dec 2023 02:50:15 GMT
+09:50:15:314 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+09:50:15:314 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+09:50:15:314 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+09:50:15:314 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":958,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+09:50:15:314 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (382-byte body)
+09:50:15:418 DEBUG 82284 --- [http-nio-8085-exec-5] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+09:50:15:419 DEBUG 82284 --- [http-nio-8085-exec-5] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1740565866197229569(Long), 379500(Integer), 3(Integer), 1(Long), 1(Integer)
+09:50:16:251 DEBUG 82284 --- [http-nio-8085-exec-5] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+09:50:16:354 DEBUG 82284 --- [http-nio-8085-exec-5] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+09:50:16:355 DEBUG 82284 --- [http-nio-8085-exec-5] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1740565866197229569(Long), 8533120(Long), 1(Integer), 海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视(String), {}(String), 379500(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp(String)
+09:50:17:094 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=8533120 HTTP/1.1
+09:50:17:094 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+09:50:17:094 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+09:50:18:003 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200  (909ms)
+09:50:18:003 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+09:50:18:003 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
+09:50:18:003 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Fri, 29 Dec 2023 02:50:18 GMT
+09:50:18:003 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+09:50:18:003 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
+09:50:18:004 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> PUT http://item-service/items/stock/deduct HTTP/1.1
+09:50:18:004 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Length: 30
+09:50:18:004 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Type: application/json
+09:50:18:004 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] user-info: 1
+09:50:18:004 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+09:50:18:004 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] [{"itemId":"8533120","num":1}]
+09:50:18:004 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> END HTTP (30-byte body)
+09:50:18:962 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- HTTP/1.1 200  (958ms)
+09:50:18:963 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] connection: keep-alive
+09:50:18:963 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] content-length: 0
+09:50:18:963 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] date: Fri, 29 Dec 2023 02:50:18 GMT
+09:50:18:963 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] keep-alive: timeout=60
+09:50:18:963 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- END HTTP (0-byte body)
+09:50:19:068  INFO 82284 --- [http-nio-8085-exec-5] i.seata.tm.api.DefaultGlobalTransaction  : Suspending current transaction, xid = 43.133.192.187:8099:36501117869121673
+09:50:19:068  INFO 82284 --- [http-nio-8085-exec-5] i.seata.tm.api.DefaultGlobalTransaction  : [43.133.192.187:8099:36501117869121673] commit status: Committed
+09:50:19:755  INFO 82284 --- [rpcDispatch_RMROLE_1_7_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=43.133.192.187:8099:36501117869121673,branchId=36501117869121674,branchType=AT,resourceId=jdbc:mysql://43.133.192.187:3306/hm-trade,applicationData={"skipCheckLock":true}
+09:50:19:755  INFO 82284 --- [rpcDispatch_RMROLE_1_7_16] io.seata.rm.AbstractRMHandler            : Branch committing: 43.133.192.187:8099:36501117869121673 36501117869121674 jdbc:mysql://43.133.192.187:3306/hm-trade {"skipCheckLock":true}
+09:50:19:755  INFO 82284 --- [rpcDispatch_RMROLE_1_7_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+09:50:19:851  INFO 82284 --- [rpcDispatch_RMROLE_1_8_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=43.133.192.187:8099:36501117869121673,branchId=36501117869121675,branchType=AT,resourceId=jdbc:mysql://43.133.192.187:3306/hm-trade,applicationData={"autoCommit":false,"skipCheckLock":true}
+09:50:19:851  INFO 82284 --- [rpcDispatch_RMROLE_1_8_16] io.seata.rm.AbstractRMHandler            : Branch committing: 43.133.192.187:8099:36501117869121673 36501117869121675 jdbc:mysql://43.133.192.187:3306/hm-trade {"autoCommit":false,"skipCheckLock":true}
+09:50:19:851  INFO 82284 --- [rpcDispatch_RMROLE_1_8_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+09:52:02:429  INFO 82284 --- [http-nio-8085-exec-8] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [43.133.192.187:8099:36501117869121678]
+09:52:02:430 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120 HTTP/1.1
+09:52:02:430 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+09:52:02:430 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+09:52:02:614 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (184ms)
+09:52:02:614 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+09:52:02:614 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+09:52:02:614 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 29 Dec 2023 02:52:02 GMT
+09:52:02:614 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+09:52:02:614 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+09:52:02:614 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+09:52:02:615 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":957,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+09:52:02:615 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (382-byte body)
+09:52:02:718 DEBUG 82284 --- [http-nio-8085-exec-8] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+09:52:02:720 DEBUG 82284 --- [http-nio-8085-exec-8] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1740566316258631681(Long), 379500(Integer), 3(Integer), 1(Long), 1(Integer)
+09:52:03:541 DEBUG 82284 --- [http-nio-8085-exec-8] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+09:52:03:646 DEBUG 82284 --- [http-nio-8085-exec-8] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+09:52:03:647 DEBUG 82284 --- [http-nio-8085-exec-8] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1740566316258631681(Long), 8533120(Long), 1(Integer), 海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视(String), {}(String), 379500(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp(String)
+09:52:04:377 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=8533120 HTTP/1.1
+09:52:04:377 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+09:52:04:377 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+09:52:05:421 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200  (1044ms)
+09:52:05:421 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+09:52:05:421 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
+09:52:05:421 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Fri, 29 Dec 2023 02:52:05 GMT
+09:52:05:422 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+09:52:05:422 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
+09:52:05:422 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> PUT http://item-service/items/stock/deduct HTTP/1.1
+09:52:05:422 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Length: 30
+09:52:05:422 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Type: application/json
+09:52:05:422 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] user-info: 1
+09:52:05:422 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+09:52:05:422 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] [{"itemId":"8533120","num":1}]
+09:52:05:422 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> END HTTP (30-byte body)
+09:52:06:362 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- HTTP/1.1 200  (939ms)
+09:52:06:362 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] connection: keep-alive
+09:52:06:362 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] content-length: 0
+09:52:06:362 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] date: Fri, 29 Dec 2023 02:52:06 GMT
+09:52:06:362 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] keep-alive: timeout=60
+09:52:06:362 DEBUG 82284 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- END HTTP (0-byte body)
+09:52:06:466  INFO 82284 --- [http-nio-8085-exec-8] i.seata.tm.api.DefaultGlobalTransaction  : Suspending current transaction, xid = 43.133.192.187:8099:36501117869121678
+09:52:06:466  INFO 82284 --- [http-nio-8085-exec-8] i.seata.tm.api.DefaultGlobalTransaction  : [43.133.192.187:8099:36501117869121678] commit status: Committed
+09:52:06:753  INFO 82284 --- [rpcDispatch_RMROLE_1_9_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=43.133.192.187:8099:36501117869121678,branchId=36501117869121679,branchType=AT,resourceId=jdbc:mysql://43.133.192.187:3306/hm-trade,applicationData={"skipCheckLock":true}
+09:52:06:753  INFO 82284 --- [rpcDispatch_RMROLE_1_9_16] io.seata.rm.AbstractRMHandler            : Branch committing: 43.133.192.187:8099:36501117869121678 36501117869121679 jdbc:mysql://43.133.192.187:3306/hm-trade {"skipCheckLock":true}
+09:52:06:753  INFO 82284 --- [rpcDispatch_RMROLE_1_9_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+09:52:06:848  INFO 82284 --- [rpcDispatch_RMROLE_1_10_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=43.133.192.187:8099:36501117869121678,branchId=36501117869121680,branchType=AT,resourceId=jdbc:mysql://43.133.192.187:3306/hm-trade,applicationData={"autoCommit":false,"skipCheckLock":true}
+09:52:06:849  INFO 82284 --- [rpcDispatch_RMROLE_1_10_16] io.seata.rm.AbstractRMHandler            : Branch committing: 43.133.192.187:8099:36501117869121678 36501117869121680 jdbc:mysql://43.133.192.187:3306/hm-trade {"autoCommit":false,"skipCheckLock":true}
+09:52:06:849  INFO 82284 --- [rpcDispatch_RMROLE_1_10_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+09:58:42:964  INFO 82284 --- [http-nio-8085-exec-10] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [43.133.192.187:8099:36501117869121683]
+09:58:42:965 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120 HTTP/1.1
+09:58:42:965 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+09:58:42:965 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+09:58:43:160 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (195ms)
+09:58:43:161 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+09:58:43:161 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+09:58:43:161 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 29 Dec 2023 02:58:43 GMT
+09:58:43:161 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+09:58:43:161 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+09:58:43:161 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+09:58:43:161 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":956,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+09:58:43:161 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (382-byte body)
+09:58:43:264 DEBUG 82284 --- [http-nio-8085-exec-10] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+09:58:43:265 DEBUG 82284 --- [http-nio-8085-exec-10] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1740567996249350146(Long), 379500(Integer), 3(Integer), 1(Long), 1(Integer)
+09:58:44:098 DEBUG 82284 --- [http-nio-8085-exec-10] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+09:58:44:202 DEBUG 82284 --- [http-nio-8085-exec-10] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+09:58:44:204 DEBUG 82284 --- [http-nio-8085-exec-10] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1740567996249350146(Long), 8533120(Long), 1(Integer), 海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视(String), {}(String), 379500(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp(String)
+09:58:44:922 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=8533120 HTTP/1.1
+09:58:44:922 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+09:58:44:922 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+09:58:45:843 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200  (921ms)
+09:58:45:843 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+09:58:45:843 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
+09:58:45:843 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Fri, 29 Dec 2023 02:58:45 GMT
+09:58:45:843 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+09:58:45:843 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
+09:58:45:844 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> PUT http://item-service/items/stock/deduct HTTP/1.1
+09:58:45:844 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Length: 30
+09:58:45:844 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Type: application/json
+09:58:45:844 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] user-info: 1
+09:58:45:844 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+09:58:45:844 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] [{"itemId":"8533120","num":1}]
+09:58:45:844 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> END HTTP (30-byte body)
+09:58:46:783 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- HTTP/1.1 200  (937ms)
+09:58:46:783 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] connection: keep-alive
+09:58:46:783 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] content-length: 0
+09:58:46:783 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] date: Fri, 29 Dec 2023 02:58:46 GMT
+09:58:46:783 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] keep-alive: timeout=60
+09:58:46:783 DEBUG 82284 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- END HTTP (0-byte body)
+09:58:46:886  INFO 82284 --- [http-nio-8085-exec-10] i.seata.tm.api.DefaultGlobalTransaction  : Suspending current transaction, xid = 43.133.192.187:8099:36501117869121683
+09:58:46:886  INFO 82284 --- [http-nio-8085-exec-10] i.seata.tm.api.DefaultGlobalTransaction  : [43.133.192.187:8099:36501117869121683] commit status: Committed
+09:58:47:747  INFO 82284 --- [rpcDispatch_RMROLE_1_11_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=43.133.192.187:8099:36501117869121683,branchId=36501117869121684,branchType=AT,resourceId=jdbc:mysql://43.133.192.187:3306/hm-trade,applicationData={"skipCheckLock":true}
+09:58:47:748  INFO 82284 --- [rpcDispatch_RMROLE_1_11_16] io.seata.rm.AbstractRMHandler            : Branch committing: 43.133.192.187:8099:36501117869121683 36501117869121684 jdbc:mysql://43.133.192.187:3306/hm-trade {"skipCheckLock":true}
+09:58:47:748  INFO 82284 --- [rpcDispatch_RMROLE_1_11_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+09:58:47:843  INFO 82284 --- [rpcDispatch_RMROLE_1_12_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=43.133.192.187:8099:36501117869121683,branchId=36501117869121685,branchType=AT,resourceId=jdbc:mysql://43.133.192.187:3306/hm-trade,applicationData={"autoCommit":false,"skipCheckLock":true}
+09:58:47:844  INFO 82284 --- [rpcDispatch_RMROLE_1_12_16] io.seata.rm.AbstractRMHandler            : Branch committing: 43.133.192.187:8099:36501117869121683 36501117869121685 jdbc:mysql://43.133.192.187:3306/hm-trade {"autoCommit":false,"skipCheckLock":true}
+09:58:47:844  INFO 82284 --- [rpcDispatch_RMROLE_1_12_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+10:01:36:137  INFO 82284 --- [http-nio-8085-exec-2] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [43.133.192.187:8099:36501117869121688]
+10:01:36:138 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120 HTTP/1.1
+10:01:36:138 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+10:01:36:138 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+10:01:36:361 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (223ms)
+10:01:36:361 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+10:01:36:362 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+10:01:36:362 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 29 Dec 2023 03:01:36 GMT
+10:01:36:362 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+10:01:36:362 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+10:01:36:362 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+10:01:36:362 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":955,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+10:01:36:362 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (382-byte body)
+10:01:36:468 DEBUG 82284 --- [http-nio-8085-exec-2] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+10:01:36:469 DEBUG 82284 --- [http-nio-8085-exec-2] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1740568722719580162(Long), 379500(Integer), 3(Integer), 1(Long), 1(Integer)
+10:01:37:345 DEBUG 82284 --- [http-nio-8085-exec-2] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+10:01:37:453 DEBUG 82284 --- [http-nio-8085-exec-2] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+10:01:37:453 DEBUG 82284 --- [http-nio-8085-exec-2] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1740568722719580162(Long), 8533120(Long), 1(Integer), 海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视(String), {}(String), 379500(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp(String)
+10:01:38:185 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=8533120 HTTP/1.1
+10:01:38:185 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+10:01:38:185 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+10:01:39:106 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200  (920ms)
+10:01:39:106 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+10:01:39:106 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
+10:01:39:106 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Fri, 29 Dec 2023 03:01:39 GMT
+10:01:39:106 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+10:01:39:106 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
+10:01:39:107 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> PUT http://item-service/items/stock/deduct HTTP/1.1
+10:01:39:107 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Length: 30
+10:01:39:107 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Type: application/json
+10:01:39:107 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] user-info: 1
+10:01:39:107 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+10:01:39:107 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] [{"itemId":"8533120","num":1}]
+10:01:39:107 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> END HTTP (30-byte body)
+10:01:40:026 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- HTTP/1.1 200  (919ms)
+10:01:40:027 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] connection: keep-alive
+10:01:40:027 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] content-length: 0
+10:01:40:027 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] date: Fri, 29 Dec 2023 03:01:40 GMT
+10:01:40:027 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] keep-alive: timeout=60
+10:01:40:027 DEBUG 82284 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- END HTTP (0-byte body)
+10:01:40:129  INFO 82284 --- [http-nio-8085-exec-2] i.seata.tm.api.DefaultGlobalTransaction  : Suspending current transaction, xid = 43.133.192.187:8099:36501117869121688
+10:01:40:129  INFO 82284 --- [http-nio-8085-exec-2] i.seata.tm.api.DefaultGlobalTransaction  : [43.133.192.187:8099:36501117869121688] commit status: Committed
+10:01:40:404 DEBUG 82284 --- [http-nio-8085-exec-3] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+10:01:40:405 DEBUG 82284 --- [http-nio-8085-exec-3] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1740568722719580162(Long)
+10:01:40:503 DEBUG 82284 --- [http-nio-8085-exec-3] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+10:01:40:745  INFO 82284 --- [rpcDispatch_RMROLE_1_13_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=43.133.192.187:8099:36501117869121688,branchId=36501117869121689,branchType=AT,resourceId=jdbc:mysql://43.133.192.187:3306/hm-trade,applicationData={"skipCheckLock":true}
+10:01:40:745  INFO 82284 --- [rpcDispatch_RMROLE_1_13_16] io.seata.rm.AbstractRMHandler            : Branch committing: 43.133.192.187:8099:36501117869121688 36501117869121689 jdbc:mysql://43.133.192.187:3306/hm-trade {"skipCheckLock":true}
+10:01:40:745  INFO 82284 --- [rpcDispatch_RMROLE_1_13_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+10:01:40:842  INFO 82284 --- [rpcDispatch_RMROLE_1_14_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=43.133.192.187:8099:36501117869121688,branchId=36501117869121690,branchType=AT,resourceId=jdbc:mysql://43.133.192.187:3306/hm-trade,applicationData={"autoCommit":false,"skipCheckLock":true}
+10:01:40:842  INFO 82284 --- [rpcDispatch_RMROLE_1_14_16] io.seata.rm.AbstractRMHandler            : Branch committing: 43.133.192.187:8099:36501117869121688 36501117869121690 jdbc:mysql://43.133.192.187:3306/hm-trade {"autoCommit":false,"skipCheckLock":true}
+10:01:40:842  INFO 82284 --- [rpcDispatch_RMROLE_1_14_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+10:04:30:733  INFO 82284 --- [http-nio-8085-exec-5] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [43.133.192.187:8099:36501117869121693]
+10:04:30:734 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120 HTTP/1.1
+10:04:30:734 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+10:04:30:734 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+10:04:30:943 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (209ms)
+10:04:30:943 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+10:04:30:943 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+10:04:30:943 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 29 Dec 2023 03:04:30 GMT
+10:04:30:943 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+10:04:30:943 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+10:04:30:943 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+10:04:30:944 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":954,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+10:04:30:944 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (382-byte body)
+10:04:30:945 DEBUG 82284 --- [http-nio-8085-exec-5] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+10:04:31:369 DEBUG 82284 --- [http-nio-8085-exec-5] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1740569454990532609(Long), 379500(Integer), 3(Integer), 1(Long), 1(Integer)
+10:04:32:198 DEBUG 82284 --- [http-nio-8085-exec-5] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+10:04:32:305 DEBUG 82284 --- [http-nio-8085-exec-5] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+10:04:32:305 DEBUG 82284 --- [http-nio-8085-exec-5] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1740569454990532609(Long), 8533120(Long), 1(Integer), 海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视(String), {}(String), 379500(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp(String)
+10:04:33:490 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=8533120 HTTP/1.1
+10:04:33:490 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+10:04:33:490 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+10:04:34:824 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200  (1332ms)
+10:04:34:824 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+10:04:34:824 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
+10:04:34:824 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Fri, 29 Dec 2023 03:04:34 GMT
+10:04:34:824 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+10:04:34:824 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
+10:04:34:825 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> PUT http://item-service/items/stock/deduct HTTP/1.1
+10:04:34:825 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Length: 30
+10:04:34:825 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Type: application/json
+10:04:34:825 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] user-info: 1
+10:04:34:825 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+10:04:34:825 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] [{"itemId":"8533120","num":1}]
+10:04:34:825 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> END HTTP (30-byte body)
+10:04:36:115 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- HTTP/1.1 200  (1290ms)
+10:04:36:115 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] connection: keep-alive
+10:04:36:115 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] content-length: 0
+10:04:36:115 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] date: Fri, 29 Dec 2023 03:04:36 GMT
+10:04:36:115 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] keep-alive: timeout=60
+10:04:36:115 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- END HTTP (0-byte body)
+10:04:36:217  INFO 82284 --- [http-nio-8085-exec-5] i.seata.tm.api.DefaultGlobalTransaction  : Suspending current transaction, xid = 43.133.192.187:8099:36501117869121693
+10:04:36:217  INFO 82284 --- [http-nio-8085-exec-5] i.seata.tm.api.DefaultGlobalTransaction  : [43.133.192.187:8099:36501117869121693] commit status: Committed
+10:04:36:744  INFO 82284 --- [rpcDispatch_RMROLE_1_15_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=43.133.192.187:8099:36501117869121693,branchId=36501117869121694,branchType=AT,resourceId=jdbc:mysql://43.133.192.187:3306/hm-trade,applicationData={"skipCheckLock":true}
+10:04:36:744  INFO 82284 --- [rpcDispatch_RMROLE_1_15_16] io.seata.rm.AbstractRMHandler            : Branch committing: 43.133.192.187:8099:36501117869121693 36501117869121694 jdbc:mysql://43.133.192.187:3306/hm-trade {"skipCheckLock":true}
+10:04:36:744  INFO 82284 --- [rpcDispatch_RMROLE_1_15_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+10:04:36:845  INFO 82284 --- [rpcDispatch_RMROLE_1_16_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=43.133.192.187:8099:36501117869121693,branchId=36501117869121695,branchType=AT,resourceId=jdbc:mysql://43.133.192.187:3306/hm-trade,applicationData={"autoCommit":false,"skipCheckLock":true}
+10:04:36:846  INFO 82284 --- [rpcDispatch_RMROLE_1_16_16] io.seata.rm.AbstractRMHandler            : Branch committing: 43.133.192.187:8099:36501117869121693 36501117869121695 jdbc:mysql://43.133.192.187:3306/hm-trade {"autoCommit":false,"skipCheckLock":true}
+10:04:36:846  INFO 82284 --- [rpcDispatch_RMROLE_1_16_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+10:05:12:980  INFO 82284 --- [http-nio-8085-exec-6] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [43.133.192.187:8099:36501117869121698]
+10:05:12:980 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120 HTTP/1.1
+10:05:12:980 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+10:05:12:981 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+10:05:13:193 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (212ms)
+10:05:13:193 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+10:05:13:193 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+10:05:13:193 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 29 Dec 2023 03:05:13 GMT
+10:05:13:193 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+10:05:13:193 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+10:05:13:194 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+10:05:13:194 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":953,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+10:05:13:194 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (382-byte body)
+10:05:13:299 DEBUG 82284 --- [http-nio-8085-exec-6] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+10:05:13:299 DEBUG 82284 --- [http-nio-8085-exec-6] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1740569632208265218(Long), 379500(Integer), 3(Integer), 1(Long), 1(Integer)
+10:05:14:137 DEBUG 82284 --- [http-nio-8085-exec-6] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+10:05:14:242 DEBUG 82284 --- [http-nio-8085-exec-6] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+10:05:14:243 DEBUG 82284 --- [http-nio-8085-exec-6] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1740569632208265218(Long), 8533120(Long), 1(Integer), 海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视(String), {}(String), 379500(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp(String)
+10:05:14:974 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=8533120 HTTP/1.1
+10:05:14:974 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+10:05:14:974 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+10:05:15:892 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200  (918ms)
+10:05:15:893 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+10:05:15:893 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
+10:05:15:893 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Fri, 29 Dec 2023 03:05:15 GMT
+10:05:15:893 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+10:05:15:893 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
+10:05:15:893 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> PUT http://item-service/items/stock/deduct HTTP/1.1
+10:05:15:893 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Length: 30
+10:05:15:893 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Type: application/json
+10:05:15:893 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] user-info: 1
+10:05:15:893 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+10:05:15:893 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] [{"itemId":"8533120","num":1}]
+10:05:15:894 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> END HTTP (30-byte body)
+10:05:16:803 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- HTTP/1.1 200  (908ms)
+10:05:16:803 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] connection: keep-alive
+10:05:16:803 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] content-length: 0
+10:05:16:803 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] date: Fri, 29 Dec 2023 03:05:16 GMT
+10:05:16:803 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] keep-alive: timeout=60
+10:05:16:803 DEBUG 82284 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- END HTTP (0-byte body)
+10:05:16:905  INFO 82284 --- [http-nio-8085-exec-6] i.seata.tm.api.DefaultGlobalTransaction  : Suspending current transaction, xid = 43.133.192.187:8099:36501117869121698
+10:05:16:905  INFO 82284 --- [http-nio-8085-exec-6] i.seata.tm.api.DefaultGlobalTransaction  : [43.133.192.187:8099:36501117869121698] commit status: Committed
+10:05:17:132 DEBUG 82284 --- [http-nio-8085-exec-7] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+10:05:17:132 DEBUG 82284 --- [http-nio-8085-exec-7] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1740569632208265218(Long)
+10:05:17:237 DEBUG 82284 --- [http-nio-8085-exec-7] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+10:05:17:742  INFO 82284 --- [rpcDispatch_RMROLE_1_1_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=43.133.192.187:8099:36501117869121698,branchId=36501117869121699,branchType=AT,resourceId=jdbc:mysql://43.133.192.187:3306/hm-trade,applicationData={"skipCheckLock":true}
+10:05:17:742  INFO 82284 --- [rpcDispatch_RMROLE_1_1_16] io.seata.rm.AbstractRMHandler            : Branch committing: 43.133.192.187:8099:36501117869121698 36501117869121699 jdbc:mysql://43.133.192.187:3306/hm-trade {"skipCheckLock":true}
+10:05:17:742  INFO 82284 --- [rpcDispatch_RMROLE_1_1_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+10:05:17:838  INFO 82284 --- [rpcDispatch_RMROLE_1_2_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=43.133.192.187:8099:36501117869121698,branchId=36501117869121700,branchType=AT,resourceId=jdbc:mysql://43.133.192.187:3306/hm-trade,applicationData={"autoCommit":false,"skipCheckLock":true}
+10:05:17:838  INFO 82284 --- [rpcDispatch_RMROLE_1_2_16] io.seata.rm.AbstractRMHandler            : Branch committing: 43.133.192.187:8099:36501117869121698 36501117869121700 jdbc:mysql://43.133.192.187:3306/hm-trade {"autoCommit":false,"skipCheckLock":true}
+10:05:17:838  INFO 82284 --- [rpcDispatch_RMROLE_1_2_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+10:09:12:029 DEBUG 82284 --- [http-nio-8085-exec-9] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+10:09:12:029 DEBUG 82284 --- [http-nio-8085-exec-9] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1740569632208265218(Long)
+10:09:12:135 DEBUG 82284 --- [http-nio-8085-exec-9] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+10:09:46:634 DEBUG 82284 --- [http-nio-8085-exec-10] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+10:09:46:634 DEBUG 82284 --- [http-nio-8085-exec-10] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1740569632208265218(Long)
+10:09:46:750 DEBUG 82284 --- [http-nio-8085-exec-10] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+10:15:40:208 DEBUG 82284 --- [http-nio-8085-exec-2] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+10:15:40:208 DEBUG 82284 --- [http-nio-8085-exec-2] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1740569632208265218(Long)
+10:15:40:314 DEBUG 82284 --- [http-nio-8085-exec-2] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+10:15:50:578 DEBUG 82284 --- [http-nio-8085-exec-3] c.h.trade.mapper.OrderMapper.updateById  : ==>  Preparing: UPDATE `order` SET status=?, pay_time=? WHERE id=?
+10:15:50:581 DEBUG 82284 --- [http-nio-8085-exec-3] c.h.trade.mapper.OrderMapper.updateById  : ==> Parameters: 2(Integer), 2023-12-29T10:15:50.469633300(LocalDateTime), 1740569632208265218(Long)
+10:15:50:780 DEBUG 82284 --- [http-nio-8085-exec-3] c.h.trade.mapper.OrderMapper.updateById  : <==    Updates: 1
+10:15:51:229 DEBUG 82284 --- [http-nio-8085-exec-4] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+10:15:51:229 DEBUG 82284 --- [http-nio-8085-exec-4] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1740569632208265218(Long)
+10:15:51:335 DEBUG 82284 --- [http-nio-8085-exec-4] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+10:16:03:724  INFO 82284 --- [http-nio-8085-exec-5] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [43.133.192.187:8099:36501117869121703]
+10:16:03:724 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120 HTTP/1.1
+10:16:03:725 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+10:16:03:725 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+10:16:03:936 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (210ms)
+10:16:03:936 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+10:16:03:936 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+10:16:03:936 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 29 Dec 2023 03:16:03 GMT
+10:16:03:937 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+10:16:03:937 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+10:16:03:937 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+10:16:03:937 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":952,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+10:16:03:937 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (382-byte body)
+10:16:04:042 DEBUG 82284 --- [http-nio-8085-exec-5] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+10:16:04:042 DEBUG 82284 --- [http-nio-8085-exec-5] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1740572361588678657(Long), 759000(Integer), 3(Integer), 1(Long), 1(Integer)
+10:16:04:870 DEBUG 82284 --- [http-nio-8085-exec-5] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+10:16:04:991 DEBUG 82284 --- [http-nio-8085-exec-5] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+10:16:04:991 DEBUG 82284 --- [http-nio-8085-exec-5] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1740572361588678657(Long), 8533120(Long), 2(Integer), 海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视(String), {}(String), 379500(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp(String)
+10:16:05:727 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=8533120 HTTP/1.1
+10:16:05:728 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+10:16:05:728 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+10:16:06:642 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200  (915ms)
+10:16:06:643 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+10:16:06:643 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
+10:16:06:643 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Fri, 29 Dec 2023 03:16:06 GMT
+10:16:06:643 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+10:16:06:643 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
+10:16:06:643 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> PUT http://item-service/items/stock/deduct HTTP/1.1
+10:16:06:643 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Length: 30
+10:16:06:643 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Type: application/json
+10:16:06:643 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] user-info: 1
+10:16:06:643 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+10:16:06:644 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] [{"itemId":"8533120","num":2}]
+10:16:06:644 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> END HTTP (30-byte body)
+10:16:07:574 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- HTTP/1.1 200  (929ms)
+10:16:07:574 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] connection: keep-alive
+10:16:07:574 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] content-length: 0
+10:16:07:574 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] date: Fri, 29 Dec 2023 03:16:07 GMT
+10:16:07:574 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] keep-alive: timeout=60
+10:16:07:574 DEBUG 82284 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- END HTTP (0-byte body)
+10:16:07:676  INFO 82284 --- [http-nio-8085-exec-5] i.seata.tm.api.DefaultGlobalTransaction  : Suspending current transaction, xid = 43.133.192.187:8099:36501117869121703
+10:16:07:676  INFO 82284 --- [http-nio-8085-exec-5] i.seata.tm.api.DefaultGlobalTransaction  : [43.133.192.187:8099:36501117869121703] commit status: Committed
+10:16:07:736  INFO 82284 --- [rpcDispatch_RMROLE_1_3_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=43.133.192.187:8099:36501117869121703,branchId=36501117869121704,branchType=AT,resourceId=jdbc:mysql://43.133.192.187:3306/hm-trade,applicationData={"skipCheckLock":true}
+10:16:07:736  INFO 82284 --- [rpcDispatch_RMROLE_1_3_16] io.seata.rm.AbstractRMHandler            : Branch committing: 43.133.192.187:8099:36501117869121703 36501117869121704 jdbc:mysql://43.133.192.187:3306/hm-trade {"skipCheckLock":true}
+10:16:07:736  INFO 82284 --- [rpcDispatch_RMROLE_1_3_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+10:16:07:836  INFO 82284 --- [rpcDispatch_RMROLE_1_4_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=43.133.192.187:8099:36501117869121703,branchId=36501117869121705,branchType=AT,resourceId=jdbc:mysql://43.133.192.187:3306/hm-trade,applicationData={"autoCommit":false,"skipCheckLock":true}
+10:16:07:836  INFO 82284 --- [rpcDispatch_RMROLE_1_4_16] io.seata.rm.AbstractRMHandler            : Branch committing: 43.133.192.187:8099:36501117869121703 36501117869121705 jdbc:mysql://43.133.192.187:3306/hm-trade {"autoCommit":false,"skipCheckLock":true}
+10:16:07:836  INFO 82284 --- [rpcDispatch_RMROLE_1_4_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+10:16:07:874 DEBUG 82284 --- [http-nio-8085-exec-6] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+10:16:07:874 DEBUG 82284 --- [http-nio-8085-exec-6] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1740572361588678657(Long)
+10:16:07:981 DEBUG 82284 --- [http-nio-8085-exec-6] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+10:16:13:848 DEBUG 82284 --- [http-nio-8085-exec-7] c.h.trade.mapper.OrderMapper.updateById  : ==>  Preparing: UPDATE `order` SET status=?, pay_time=? WHERE id=?
+10:16:13:848 DEBUG 82284 --- [http-nio-8085-exec-7] c.h.trade.mapper.OrderMapper.updateById  : ==> Parameters: 2(Integer), 2023-12-29T10:16:13.744965500(LocalDateTime), 1740572361588678657(Long)
+10:16:14:063 DEBUG 82284 --- [http-nio-8085-exec-7] c.h.trade.mapper.OrderMapper.updateById  : <==    Updates: 1
+10:16:14:466 DEBUG 82284 --- [http-nio-8085-exec-8] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+10:16:14:467 DEBUG 82284 --- [http-nio-8085-exec-8] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1740572361588678657(Long)
+10:16:14:571 DEBUG 82284 --- [http-nio-8085-exec-8] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1

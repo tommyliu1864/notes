@@ -1,0 +1,110 @@
+09:30:41:390  INFO 60120 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "local"
+09:30:42:878  INFO 60120 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=76e57b80-7ed3-3b2e-a63c-091990a9d6d1
+09:30:43:246  INFO 60120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+09:30:43:256  INFO 60120 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+09:30:43:257  INFO 60120 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+09:30:43:499  INFO 60120 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+09:30:43:500  INFO 60120 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2072 ms
+09:30:45:886  INFO 60120 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+09:30:46:913  INFO 60120 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of f2c90f2e-d6a2-4533-86a7-9263b857f86d
+09:30:46:914  INFO 60120 --- [main] com.alibaba.nacos.common.remote.client   : [f2c90f2e-d6a2-4533-86a7-9263b857f86d] RpcClient init label, labels = {module=naming, source=sdk}
+09:30:46:916  INFO 60120 --- [main] com.alibaba.nacos.common.remote.client   : [f2c90f2e-d6a2-4533-86a7-9263b857f86d] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+09:30:46:916  INFO 60120 --- [main] com.alibaba.nacos.common.remote.client   : [f2c90f2e-d6a2-4533-86a7-9263b857f86d] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+09:30:46:917  INFO 60120 --- [main] com.alibaba.nacos.common.remote.client   : [f2c90f2e-d6a2-4533-86a7-9263b857f86d] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+09:30:46:917  INFO 60120 --- [main] com.alibaba.nacos.common.remote.client   : [f2c90f2e-d6a2-4533-86a7-9263b857f86d] Try to connect to server on start up, server: {serverIp = '43.133.192.187', server main port = 8848}
+09:30:47:318  INFO 60120 --- [main] com.alibaba.nacos.common.remote.client   : [f2c90f2e-d6a2-4533-86a7-9263b857f86d] Success to connect to server [43.133.192.187:8848] on start up, connectionId = 1703817047152_144.48.139.118_2952
+09:30:47:318  INFO 60120 --- [main] com.alibaba.nacos.common.remote.client   : [f2c90f2e-d6a2-4533-86a7-9263b857f86d] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+09:30:47:318  INFO 60120 --- [main] com.alibaba.nacos.common.remote.client   : [f2c90f2e-d6a2-4533-86a7-9263b857f86d] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$471/0x0000000800423040
+09:30:47:318  INFO 60120 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [f2c90f2e-d6a2-4533-86a7-9263b857f86d] Notify connected event to listeners.
+09:30:47:458  INFO 60120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
+09:30:47:565  INFO 60120 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 192.168.0.102:8084 register finished
+09:30:48:002  INFO 60120 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [f2c90f2e-d6a2-4533-86a7-9263b857f86d] Receive server push request, request = NotifySubscriberRequest, requestId = 1146
+09:30:48:006  INFO 60120 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [f2c90f2e-d6a2-4533-86a7-9263b857f86d] Ack server push request, request = NotifySubscriberRequest, requestId = 1146
+09:30:48:151  INFO 60120 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+09:30:48:154  INFO 60120 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+09:30:48:176  INFO 60120 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+09:30:48:287  INFO 60120 --- [main] com.hmall.user.UserApplication           : Started UserApplication in 14.395 seconds (JVM running for 16.62)
+09:30:48:293  INFO 60120 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=user-service.yaml, group=DEFAULT_GROUP
+09:30:48:295  INFO 60120 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=user-service-local.yaml, group=DEFAULT_GROUP
+09:30:48:296  INFO 60120 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=user-service, group=DEFAULT_GROUP
+09:49:54:459  INFO 60120 --- [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:49:54:459  INFO 60120 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+09:49:54:460  INFO 60120 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+09:49:54:621  INFO 60120 --- [http-nio-8084-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+09:49:56:272  INFO 60120 --- [http-nio-8084-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+09:49:56:278 DEBUG 60120 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.selectList    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+09:49:56:300 DEBUG 60120 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.selectList    : ==> Parameters: jack(String)
+09:49:56:419 DEBUG 60120 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.selectList    : <==      Total: 1
+09:49:57:155 DEBUG 60120 --- [http-nio-8084-exec-2] c.h.user.mapper.UserMapper.selectList    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+09:49:57:155 DEBUG 60120 --- [http-nio-8084-exec-2] c.h.user.mapper.UserMapper.selectList    : ==> Parameters: jack(String)
+09:49:57:261 DEBUG 60120 --- [http-nio-8084-exec-2] c.h.user.mapper.UserMapper.selectList    : <==      Total: 1
+09:50:11:902 DEBUG 60120 --- [http-nio-8084-exec-3] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+09:50:11:902 DEBUG 60120 --- [http-nio-8084-exec-3] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 1(Long)
+09:50:12:000 DEBUG 60120 --- [http-nio-8084-exec-3] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 4
+09:51:59:044 DEBUG 60120 --- [http-nio-8084-exec-5] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+09:51:59:044 DEBUG 60120 --- [http-nio-8084-exec-5] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 1(Long)
+09:51:59:151 DEBUG 60120 --- [http-nio-8084-exec-5] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 4
+09:58:41:216 DEBUG 60120 --- [http-nio-8084-exec-7] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+09:58:41:216 DEBUG 60120 --- [http-nio-8084-exec-7] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 1(Long)
+09:58:41:315 DEBUG 60120 --- [http-nio-8084-exec-7] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 4
+09:59:16:894 DEBUG 60120 --- [http-nio-8084-exec-9] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+09:59:16:895 DEBUG 60120 --- [http-nio-8084-exec-9] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 1(Long)
+09:59:16:996 DEBUG 60120 --- [http-nio-8084-exec-9] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 4
+09:59:21:979 DEBUG 60120 --- [http-nio-8084-exec-8] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+09:59:21:980 DEBUG 60120 --- [http-nio-8084-exec-8] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 1(Long)
+09:59:22:078 DEBUG 60120 --- [http-nio-8084-exec-8] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 4
+09:59:22:277 DEBUG 60120 --- [http-nio-8084-exec-10] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+09:59:22:278 DEBUG 60120 --- [http-nio-8084-exec-10] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 1(Long)
+09:59:22:377 DEBUG 60120 --- [http-nio-8084-exec-10] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 4
+09:59:22:475 DEBUG 60120 --- [http-nio-8084-exec-1] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+09:59:22:475 DEBUG 60120 --- [http-nio-8084-exec-1] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 1(Long)
+09:59:22:576 DEBUG 60120 --- [http-nio-8084-exec-1] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 4
+09:59:22:635 DEBUG 60120 --- [http-nio-8084-exec-2] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+09:59:22:635 DEBUG 60120 --- [http-nio-8084-exec-2] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 1(Long)
+09:59:22:742 DEBUG 60120 --- [http-nio-8084-exec-2] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 4
+09:59:22:819 DEBUG 60120 --- [http-nio-8084-exec-3] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+09:59:22:820 DEBUG 60120 --- [http-nio-8084-exec-3] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 1(Long)
+09:59:22:918 DEBUG 60120 --- [http-nio-8084-exec-3] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 4
+10:00:59:407 DEBUG 60120 --- [http-nio-8084-exec-5] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+10:00:59:408 DEBUG 60120 --- [http-nio-8084-exec-5] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 1(Long)
+10:00:59:507 DEBUG 60120 --- [http-nio-8084-exec-5] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 4
+10:01:05:446 DEBUG 60120 --- [http-nio-8084-exec-6] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+10:01:05:447 DEBUG 60120 --- [http-nio-8084-exec-6] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 1(Long)
+10:01:05:547 DEBUG 60120 --- [http-nio-8084-exec-6] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 4
+10:01:06:554 DEBUG 60120 --- [http-nio-8084-exec-7] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+10:01:06:556 DEBUG 60120 --- [http-nio-8084-exec-7] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 1(Long)
+10:01:06:656 DEBUG 60120 --- [http-nio-8084-exec-7] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 4
+10:01:16:989 DEBUG 60120 --- [http-nio-8084-exec-9] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+10:01:16:989 DEBUG 60120 --- [http-nio-8084-exec-9] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 1(Long)
+10:01:17:089 DEBUG 60120 --- [http-nio-8084-exec-9] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 4
+10:01:34:218 DEBUG 60120 --- [http-nio-8084-exec-8] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+10:01:34:219 DEBUG 60120 --- [http-nio-8084-exec-8] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 1(Long)
+10:01:34:320 DEBUG 60120 --- [http-nio-8084-exec-8] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 4
+10:04:29:226 DEBUG 60120 --- [http-nio-8084-exec-1] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+10:04:29:226 DEBUG 60120 --- [http-nio-8084-exec-1] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 1(Long)
+10:04:29:327 DEBUG 60120 --- [http-nio-8084-exec-1] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 4
+10:04:45:498 DEBUG 60120 --- [http-nio-8084-exec-2] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+10:04:45:499 DEBUG 60120 --- [http-nio-8084-exec-2] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 1(Long)
+10:04:45:600 DEBUG 60120 --- [http-nio-8084-exec-2] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 4
+10:05:11:028 DEBUG 60120 --- [http-nio-8084-exec-3] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+10:05:11:028 DEBUG 60120 --- [http-nio-8084-exec-3] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 1(Long)
+10:05:11:129 DEBUG 60120 --- [http-nio-8084-exec-3] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 4
+10:15:49:628  INFO 60120 --- [http-nio-8084-exec-5] c.h.user.service.impl.UserServiceImpl    : 开始扣款
+10:15:49:728 DEBUG 60120 --- [http-nio-8084-exec-5] c.h.user.mapper.UserMapper.selectById    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE id=?
+10:15:49:728 DEBUG 60120 --- [http-nio-8084-exec-5] c.h.user.mapper.UserMapper.selectById    : ==> Parameters: 1(Long)
+10:15:49:829 DEBUG 60120 --- [http-nio-8084-exec-5] c.h.user.mapper.UserMapper.selectById    : <==      Total: 1
+10:15:49:926 DEBUG 60120 --- [http-nio-8084-exec-5] c.h.user.mapper.UserMapper.updateMoney   : ==>  Preparing: update user set balance = balance - 379500 where id = ?
+10:15:49:926 DEBUG 60120 --- [http-nio-8084-exec-5] c.h.user.mapper.UserMapper.updateMoney   : ==> Parameters: 1(Long)
+10:15:50:128 DEBUG 60120 --- [http-nio-8084-exec-5] c.h.user.mapper.UserMapper.updateMoney   : <==    Updates: 1
+10:15:50:128  INFO 60120 --- [http-nio-8084-exec-5] c.h.user.service.impl.UserServiceImpl    : 扣款成功
+10:16:02:040 DEBUG 60120 --- [http-nio-8084-exec-6] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+10:16:02:040 DEBUG 60120 --- [http-nio-8084-exec-6] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 1(Long)
+10:16:02:140 DEBUG 60120 --- [http-nio-8084-exec-6] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 4
+10:16:13:026  INFO 60120 --- [http-nio-8084-exec-7] c.h.user.service.impl.UserServiceImpl    : 开始扣款
+10:16:13:125 DEBUG 60120 --- [http-nio-8084-exec-7] c.h.user.mapper.UserMapper.selectById    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE id=?
+10:16:13:125 DEBUG 60120 --- [http-nio-8084-exec-7] c.h.user.mapper.UserMapper.selectById    : ==> Parameters: 1(Long)
+10:16:13:227 DEBUG 60120 --- [http-nio-8084-exec-7] c.h.user.mapper.UserMapper.selectById    : <==      Total: 1
+10:16:13:323 DEBUG 60120 --- [http-nio-8084-exec-7] c.h.user.mapper.UserMapper.updateMoney   : ==>  Preparing: update user set balance = balance - 759000 where id = ?
+10:16:13:324 DEBUG 60120 --- [http-nio-8084-exec-7] c.h.user.mapper.UserMapper.updateMoney   : ==> Parameters: 1(Long)
+10:16:13:523 DEBUG 60120 --- [http-nio-8084-exec-7] c.h.user.mapper.UserMapper.updateMoney   : <==    Updates: 1
+10:16:13:524  INFO 60120 --- [http-nio-8084-exec-7] c.h.user.service.impl.UserServiceImpl    : 扣款成功

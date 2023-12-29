@@ -1,0 +1,17 @@
+server:
+  port: 8084
+
+feign:
+  okhttp:
+    enabled: true # 开启OKHttp功能
+hm:
+  jwt:
+    location: classpath:hmall.jks
+    alias: hmall
+    password: hmall123
+    tokenTTL: 30m
+  db:
+    database: hm-user
+  swagger:
+    title: 用户服务接口文档
+    package: com.hmall.user.controller

@@ -1,0 +1,103 @@
+09:30:29:894  INFO 85016 --- [main] com.hmall.pay.PayApplication             : The following 1 profile is active: "local"
+09:30:32:004  INFO 85016 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=69d6fbad-acd2-3b65-949b-d4346c72a2e0
+09:30:32:746  INFO 85016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8087 (http)
+09:30:32:765  INFO 85016 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+09:30:32:765  INFO 85016 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+09:30:33:130  INFO 85016 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+09:30:33:131  INFO 85016 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3200 ms
+09:30:33:475  INFO 85016 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'user-service' URL not provided. Will try picking an instance via load-balancing.
+09:30:33:988  INFO 85016 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'trade-service' URL not provided. Will try picking an instance via load-balancing.
+09:30:37:091  INFO 85016 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+09:30:38:076  INFO 85016 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of e5d9283b-743b-4a5e-9639-191b6826f317
+09:30:38:076  INFO 85016 --- [main] com.alibaba.nacos.common.remote.client   : [e5d9283b-743b-4a5e-9639-191b6826f317] RpcClient init label, labels = {module=naming, source=sdk}
+09:30:38:082  INFO 85016 --- [main] com.alibaba.nacos.common.remote.client   : [e5d9283b-743b-4a5e-9639-191b6826f317] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+09:30:38:082  INFO 85016 --- [main] com.alibaba.nacos.common.remote.client   : [e5d9283b-743b-4a5e-9639-191b6826f317] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+09:30:38:083  INFO 85016 --- [main] com.alibaba.nacos.common.remote.client   : [e5d9283b-743b-4a5e-9639-191b6826f317] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+09:30:38:084  INFO 85016 --- [main] com.alibaba.nacos.common.remote.client   : [e5d9283b-743b-4a5e-9639-191b6826f317] Try to connect to server on start up, server: {serverIp = '43.133.192.187', server main port = 8848}
+09:30:38:504  INFO 85016 --- [main] com.alibaba.nacos.common.remote.client   : [e5d9283b-743b-4a5e-9639-191b6826f317] Success to connect to server [43.133.192.187:8848] on start up, connectionId = 1703817038325_144.48.139.118_2909
+09:30:38:504  INFO 85016 --- [main] com.alibaba.nacos.common.remote.client   : [e5d9283b-743b-4a5e-9639-191b6826f317] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+09:30:38:504  INFO 85016 --- [main] com.alibaba.nacos.common.remote.client   : [e5d9283b-743b-4a5e-9639-191b6826f317] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$471/0x0000000800423440
+09:30:38:504  INFO 85016 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [e5d9283b-743b-4a5e-9639-191b6826f317] Notify connected event to listeners.
+09:30:38:666  INFO 85016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8087 (http) with context path ''
+09:30:38:767  INFO 85016 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP pay-service 192.168.0.102:8087 register finished
+09:30:39:203  INFO 85016 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [e5d9283b-743b-4a5e-9639-191b6826f317] Receive server push request, request = NotifySubscriberRequest, requestId = 1144
+09:30:39:206  INFO 85016 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [e5d9283b-743b-4a5e-9639-191b6826f317] Ack server push request, request = NotifySubscriberRequest, requestId = 1144
+09:30:39:524  INFO 85016 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+09:30:39:527  INFO 85016 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+09:30:39:555  INFO 85016 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+09:30:39:677  INFO 85016 --- [main] com.hmall.pay.PayApplication             : Started PayApplication in 18.404 seconds (JVM running for 20.713)
+09:30:39:685  INFO 85016 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=pay-service, group=DEFAULT_GROUP
+09:30:39:686  INFO 85016 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=pay-service.yaml, group=DEFAULT_GROUP
+09:30:39:687  INFO 85016 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=pay-service-local.yaml, group=DEFAULT_GROUP
+10:06:47:549  INFO 85016 --- [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:06:47:549  INFO 85016 --- [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+10:06:47:551  INFO 85016 --- [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+10:07:40:627  INFO 85016 --- [http-nio-8087-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+10:07:42:450  INFO 85016 --- [http-nio-8087-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+10:07:42:457 DEBUG 85016 --- [http-nio-8087-exec-6] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order
+10:07:42:478 DEBUG 85016 --- [http-nio-8087-exec-6] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 
+10:07:42:641 DEBUG 85016 --- [http-nio-8087-exec-6] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 3
+10:15:40:619 DEBUG 85016 --- [http-nio-8087-exec-1] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:15:40:620 DEBUG 85016 --- [http-nio-8087-exec-1] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1740569632208265218(Long)
+10:15:40:727 DEBUG 85016 --- [http-nio-8087-exec-1] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 0
+10:15:40:734 DEBUG 85016 --- [http-nio-8087-exec-1] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:15:40:737 DEBUG 85016 --- [http-nio-8087-exec-1] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1740572264280842243(Long), 1740569632208265218(Long), 1740572264280842242(Long), 1(Long), balance(String), 379500(Integer), 5(Integer), 1(Integer), 2023-12-29T12:15:40.728550400(LocalDateTime)
+10:15:40:952 DEBUG 85016 --- [http-nio-8087-exec-1] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:15:49:270 DEBUG 85016 --- [http-nio-8087-exec-10] c.h.p.mapper.PayOrderMapper.selectById   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE id=?
+10:15:49:271 DEBUG 85016 --- [http-nio-8087-exec-10] c.h.p.mapper.PayOrderMapper.selectById   : ==> Parameters: 1740572264280842243(Long)
+10:15:49:380 DEBUG 85016 --- [http-nio-8087-exec-10] c.h.p.mapper.PayOrderMapper.selectById   : <==      Total: 1
+10:15:49:384 DEBUG 85016 --- [http-nio-8087-exec-10] com.hmall.api.client.UserClient          : [UserClient#deductMoney] ---> PUT http://user-service/users/money/deduct?pw=123&amount=379500 HTTP/1.1
+10:15:49:385 DEBUG 85016 --- [http-nio-8087-exec-10] com.hmall.api.client.UserClient          : [UserClient#deductMoney] user-info: 1
+10:15:49:385 DEBUG 85016 --- [http-nio-8087-exec-10] com.hmall.api.client.UserClient          : [UserClient#deductMoney] ---> END HTTP (0-byte body)
+10:15:50:078  INFO 85016 --- [nacos-grpc-client-executor-544] com.alibaba.nacos.common.remote.client   : [e5d9283b-743b-4a5e-9639-191b6826f317] Receive server push request, request = NotifySubscriberRequest, requestId = 1164
+10:15:50:078  INFO 85016 --- [nacos-grpc-client-executor-544] com.alibaba.nacos.common.remote.client   : [e5d9283b-743b-4a5e-9639-191b6826f317] Ack server push request, request = NotifySubscriberRequest, requestId = 1164
+10:15:50:139 DEBUG 85016 --- [http-nio-8087-exec-10] com.hmall.api.client.UserClient          : [UserClient#deductMoney] <--- HTTP/1.1 200  (752ms)
+10:15:50:139 DEBUG 85016 --- [http-nio-8087-exec-10] com.hmall.api.client.UserClient          : [UserClient#deductMoney] connection: keep-alive
+10:15:50:139 DEBUG 85016 --- [http-nio-8087-exec-10] com.hmall.api.client.UserClient          : [UserClient#deductMoney] content-length: 0
+10:15:50:139 DEBUG 85016 --- [http-nio-8087-exec-10] com.hmall.api.client.UserClient          : [UserClient#deductMoney] date: Fri, 29 Dec 2023 03:15:50 GMT
+10:15:50:139 DEBUG 85016 --- [http-nio-8087-exec-10] com.hmall.api.client.UserClient          : [UserClient#deductMoney] keep-alive: timeout=60
+10:15:50:139 DEBUG 85016 --- [http-nio-8087-exec-10] com.hmall.api.client.UserClient          : [UserClient#deductMoney] <--- END HTTP (0-byte body)
+10:15:50:144 DEBUG 85016 --- [http-nio-8087-exec-10] c.h.pay.mapper.PayOrderMapper.update     : ==>  Preparing: UPDATE pay_order SET status=?,pay_success_time=? WHERE (id = ? AND status IN (?,?))
+10:15:50:145 DEBUG 85016 --- [http-nio-8087-exec-10] c.h.pay.mapper.PayOrderMapper.update     : ==> Parameters: 3(Integer), 2023-12-29T10:15:50.139152700(LocalDateTime), 1740572264280842243(Long), 0(Integer), 1(Integer)
+10:15:50:355 DEBUG 85016 --- [http-nio-8087-exec-10] c.h.pay.mapper.PayOrderMapper.update     : <==    Updates: 1
+10:15:50:355 DEBUG 85016 --- [http-nio-8087-exec-10] com.hmall.api.client.TradeClient         : [TradeClient#markOrderPaySuccess] ---> PUT http://trade-service/orders/1740569632208265218 HTTP/1.1
+10:15:50:355 DEBUG 85016 --- [http-nio-8087-exec-10] com.hmall.api.client.TradeClient         : [TradeClient#markOrderPaySuccess] user-info: 1
+10:15:50:356 DEBUG 85016 --- [http-nio-8087-exec-10] com.hmall.api.client.TradeClient         : [TradeClient#markOrderPaySuccess] ---> END HTTP (0-byte body)
+10:15:50:781 DEBUG 85016 --- [http-nio-8087-exec-10] com.hmall.api.client.TradeClient         : [TradeClient#markOrderPaySuccess] <--- HTTP/1.1 200  (424ms)
+10:15:50:782 DEBUG 85016 --- [http-nio-8087-exec-10] com.hmall.api.client.TradeClient         : [TradeClient#markOrderPaySuccess] connection: keep-alive
+10:15:50:782 DEBUG 85016 --- [http-nio-8087-exec-10] com.hmall.api.client.TradeClient         : [TradeClient#markOrderPaySuccess] content-length: 0
+10:15:50:782 DEBUG 85016 --- [http-nio-8087-exec-10] com.hmall.api.client.TradeClient         : [TradeClient#markOrderPaySuccess] date: Fri, 29 Dec 2023 03:15:50 GMT
+10:15:50:782 DEBUG 85016 --- [http-nio-8087-exec-10] com.hmall.api.client.TradeClient         : [TradeClient#markOrderPaySuccess] keep-alive: timeout=60
+10:15:50:782 DEBUG 85016 --- [http-nio-8087-exec-10] com.hmall.api.client.TradeClient         : [TradeClient#markOrderPaySuccess] <--- END HTTP (0-byte body)
+10:15:50:978  INFO 85016 --- [nacos-grpc-client-executor-547] com.alibaba.nacos.common.remote.client   : [e5d9283b-743b-4a5e-9639-191b6826f317] Receive server push request, request = NotifySubscriberRequest, requestId = 1165
+10:15:50:978  INFO 85016 --- [nacos-grpc-client-executor-547] com.alibaba.nacos.common.remote.client   : [e5d9283b-743b-4a5e-9639-191b6826f317] Ack server push request, request = NotifySubscriberRequest, requestId = 1165
+10:16:08:102 DEBUG 85016 --- [http-nio-8087-exec-4] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:16:08:102 DEBUG 85016 --- [http-nio-8087-exec-4] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1740572361588678657(Long)
+10:16:08:209 DEBUG 85016 --- [http-nio-8087-exec-4] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 0
+10:16:08:211 DEBUG 85016 --- [http-nio-8087-exec-4] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:16:08:212 DEBUG 85016 --- [http-nio-8087-exec-4] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1740572379485790210(Long), 1740572361588678657(Long), 1740572379485790209(Long), 1(Long), balance(String), 759000(Integer), 5(Integer), 1(Integer), 2023-12-29T12:16:08.210416400(LocalDateTime)
+10:16:08:425 DEBUG 85016 --- [http-nio-8087-exec-4] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:16:12:892 DEBUG 85016 --- [http-nio-8087-exec-6] c.h.p.mapper.PayOrderMapper.selectById   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE id=?
+10:16:12:893 DEBUG 85016 --- [http-nio-8087-exec-6] c.h.p.mapper.PayOrderMapper.selectById   : ==> Parameters: 1740572379485790210(Long)
+10:16:13:000 DEBUG 85016 --- [http-nio-8087-exec-6] c.h.p.mapper.PayOrderMapper.selectById   : <==      Total: 1
+10:16:13:001 DEBUG 85016 --- [http-nio-8087-exec-6] com.hmall.api.client.UserClient          : [UserClient#deductMoney] ---> PUT http://user-service/users/money/deduct?pw=123&amount=759000 HTTP/1.1
+10:16:13:001 DEBUG 85016 --- [http-nio-8087-exec-6] com.hmall.api.client.UserClient          : [UserClient#deductMoney] user-info: 1
+10:16:13:001 DEBUG 85016 --- [http-nio-8087-exec-6] com.hmall.api.client.UserClient          : [UserClient#deductMoney] ---> END HTTP (0-byte body)
+10:16:13:525 DEBUG 85016 --- [http-nio-8087-exec-6] com.hmall.api.client.UserClient          : [UserClient#deductMoney] <--- HTTP/1.1 200  (523ms)
+10:16:13:525 DEBUG 85016 --- [http-nio-8087-exec-6] com.hmall.api.client.UserClient          : [UserClient#deductMoney] connection: keep-alive
+10:16:13:525 DEBUG 85016 --- [http-nio-8087-exec-6] com.hmall.api.client.UserClient          : [UserClient#deductMoney] content-length: 0
+10:16:13:525 DEBUG 85016 --- [http-nio-8087-exec-6] com.hmall.api.client.UserClient          : [UserClient#deductMoney] date: Fri, 29 Dec 2023 03:16:13 GMT
+10:16:13:525 DEBUG 85016 --- [http-nio-8087-exec-6] com.hmall.api.client.UserClient          : [UserClient#deductMoney] keep-alive: timeout=60
+10:16:13:525 DEBUG 85016 --- [http-nio-8087-exec-6] com.hmall.api.client.UserClient          : [UserClient#deductMoney] <--- END HTTP (0-byte body)
+10:16:13:528 DEBUG 85016 --- [http-nio-8087-exec-6] c.h.pay.mapper.PayOrderMapper.update     : ==>  Preparing: UPDATE pay_order SET status=?,pay_success_time=? WHERE (id = ? AND status IN (?,?))
+10:16:13:529 DEBUG 85016 --- [http-nio-8087-exec-6] c.h.pay.mapper.PayOrderMapper.update     : ==> Parameters: 3(Integer), 2023-12-29T10:16:13.525460700(LocalDateTime), 1740572379485790210(Long), 0(Integer), 1(Integer)
+10:16:13:739 DEBUG 85016 --- [http-nio-8087-exec-6] c.h.pay.mapper.PayOrderMapper.update     : <==    Updates: 1
+10:16:13:739 DEBUG 85016 --- [http-nio-8087-exec-6] com.hmall.api.client.TradeClient         : [TradeClient#markOrderPaySuccess] ---> PUT http://trade-service/orders/1740572361588678657 HTTP/1.1
+10:16:13:739 DEBUG 85016 --- [http-nio-8087-exec-6] com.hmall.api.client.TradeClient         : [TradeClient#markOrderPaySuccess] user-info: 1
+10:16:13:739 DEBUG 85016 --- [http-nio-8087-exec-6] com.hmall.api.client.TradeClient         : [TradeClient#markOrderPaySuccess] ---> END HTTP (0-byte body)
+10:16:14:064 DEBUG 85016 --- [http-nio-8087-exec-6] com.hmall.api.client.TradeClient         : [TradeClient#markOrderPaySuccess] <--- HTTP/1.1 200  (324ms)
+10:16:14:064 DEBUG 85016 --- [http-nio-8087-exec-6] com.hmall.api.client.TradeClient         : [TradeClient#markOrderPaySuccess] connection: keep-alive
+10:16:14:064 DEBUG 85016 --- [http-nio-8087-exec-6] com.hmall.api.client.TradeClient         : [TradeClient#markOrderPaySuccess] content-length: 0
+10:16:14:064 DEBUG 85016 --- [http-nio-8087-exec-6] com.hmall.api.client.TradeClient         : [TradeClient#markOrderPaySuccess] date: Fri, 29 Dec 2023 03:16:14 GMT
+10:16:14:064 DEBUG 85016 --- [http-nio-8087-exec-6] com.hmall.api.client.TradeClient         : [TradeClient#markOrderPaySuccess] keep-alive: timeout=60
+10:16:14:064 DEBUG 85016 --- [http-nio-8087-exec-6] com.hmall.api.client.TradeClient         : [TradeClient#markOrderPaySuccess] <--- END HTTP (0-byte body)

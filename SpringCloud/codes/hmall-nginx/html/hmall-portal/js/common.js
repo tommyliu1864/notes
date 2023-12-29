@@ -1,6 +1,6 @@
 // 设置后台服务地址
 axios.defaults.baseURL = "/api";
-axios.defaults.timeout = 2000;
+axios.defaults.timeout = 5000;
 // request拦截器
 axios.interceptors.request.use(
   config => {
@@ -12,7 +12,8 @@ axios.interceptors.request.use(
 axios.interceptors.response.use(
   response => response.data,
   err => {
-    if (err.response.status === 401) {
+	console.log({err});	  
+    if (err?.response?.status === 401) {
       // 认证失败，需要重新登录
       location.href = "/login.html";
     }

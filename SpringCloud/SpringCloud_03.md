@@ -1451,7 +1451,7 @@ public class DynamicRouteLoader {
             "args": {"_genkey_0":"/pay-orders/**"}
         }],
         "filters": [],
-        "uri": "lb://pau-service"
+        "uri": "lb://pay-service"
     }
 ]
 ```

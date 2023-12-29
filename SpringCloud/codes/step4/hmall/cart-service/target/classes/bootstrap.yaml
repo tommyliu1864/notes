@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: cart-service
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      server-addr: 43.133.192.187:8848 # nacos地址
+      config:
+        file-extension: yaml
+        shared-configs: # 共享配置
+          - data-id: shared-jdbc.yaml
+          - data-id: shared-log.yaml
+          - data-id: shared-swagger.yaml
+          - data-id: shared-seata.yaml
+    sentinel:
+      transport:
+        dashboard: localhost:8090
+      http-method-specify: true  # 开启请求方式前缀
+      datasource:
+        ds2:  # 可随意取名，这里从nacos配置中心获取服务降级的配置
+          nacos:
+            server-addr: 43.133.192.187:8848
+            data-id: degrade.json
+            group-id: DEFAULT_GROUP
+            rule-type: degrade
+
+

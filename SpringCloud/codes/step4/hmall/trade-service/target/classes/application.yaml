@@ -1,0 +1,14 @@
+server:
+  port: 8085
+
+feign:
+  okhttp:
+    enabled: true # 开启OKHttp功能
+  sentinel:
+    enabled: true # 开启feign对sentinel的整合
+hm:
+  db:
+    database: hm-trade
+  swagger:
+    title: 交易服务接口文档
+    package: com.hmall.trade.controller
