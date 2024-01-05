@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.heima</groupId>
+        <artifactId>hmall</artifactId>
+        <version>1.0.0</version>
+    </parent>
+    <artifactId>hm-api</artifactId>
+    <name>Archetype - hm-api</name>
+    <url>http://maven.apache.org</url>
+
+    <dependencies>
+        <!--open feign-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <!-- load balancer-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-loadbalancer</artifactId>
+        </dependency>
+        <!--OK http 的依赖 -->
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-okhttp</artifactId>
+        </dependency>
+        <!-- swagger 注解依赖 -->
+        <dependency>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-annotations</artifactId>
+            <version>1.6.6</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.heima</groupId>
+            <artifactId>hm-common</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
+</project>

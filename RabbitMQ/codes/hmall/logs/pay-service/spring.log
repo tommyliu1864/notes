@@ -1,0 +1,211 @@
+15:50:39:836  INFO 63692 --- [main] com.hmall.pay.PayApplication             : Starting PayApplication using Java 11.0.12 on DESKTOP-RLHUNOD with PID 63692 (F:\notes\RabbitMQ\codes\hmall\pay-service\target\classes started by jinlin in F:\notes\RabbitMQ\codes\hmall)
+15:50:39:844 DEBUG 63692 --- [main] com.hmall.pay.PayApplication             : Running with Spring Boot v2.7.12, Spring v5.3.27
+15:50:39:846  INFO 63692 --- [main] com.hmall.pay.PayApplication             : The following 1 profile is active: "local"
+15:50:42:077  INFO 63692 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5795c618-4093-3ce5-91f0-5b676213c30b
+15:50:42:591  INFO 63692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8087 (http)
+15:50:42:604  INFO 63692 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+15:50:42:605  INFO 63692 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+15:50:42:920  INFO 63692 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+15:50:42:921  INFO 63692 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2987 ms
+15:50:43:298  INFO 63692 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'user-service' URL not provided. Will try picking an instance via load-balancing.
+15:50:46:377  INFO 63692 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+15:50:47:422  INFO 63692 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 9fd5921a-e0ce-4cf1-9d8f-3c57286a3743
+15:50:47:485  INFO 63692 --- [main] org.reflections.Reflections              : Reflections took 34 ms to scan 1 urls, producing 3 keys and 6 values 
+15:50:47:531  INFO 63692 --- [main] org.reflections.Reflections              : Reflections took 20 ms to scan 1 urls, producing 4 keys and 9 values 
+15:50:47:551  INFO 63692 --- [main] org.reflections.Reflections              : Reflections took 15 ms to scan 1 urls, producing 3 keys and 10 values 
+15:50:47:555  WARN 63692 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+15:50:47:566  INFO 63692 --- [main] org.reflections.Reflections              : Reflections took 10 ms to scan 1 urls, producing 1 keys and 5 values 
+15:50:47:584  INFO 63692 --- [main] org.reflections.Reflections              : Reflections took 15 ms to scan 1 urls, producing 1 keys and 7 values 
+15:50:47:599  INFO 63692 --- [main] org.reflections.Reflections              : Reflections took 11 ms to scan 1 urls, producing 2 keys and 8 values 
+15:50:47:602  WARN 63692 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+15:50:47:605  INFO 63692 --- [main] com.alibaba.nacos.common.remote.client   : [9fd5921a-e0ce-4cf1-9d8f-3c57286a3743] RpcClient init label, labels = {module=naming, source=sdk}
+15:50:47:608  INFO 63692 --- [main] com.alibaba.nacos.common.remote.client   : [9fd5921a-e0ce-4cf1-9d8f-3c57286a3743] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+15:50:47:608  INFO 63692 --- [main] com.alibaba.nacos.common.remote.client   : [9fd5921a-e0ce-4cf1-9d8f-3c57286a3743] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+15:50:47:609  INFO 63692 --- [main] com.alibaba.nacos.common.remote.client   : [9fd5921a-e0ce-4cf1-9d8f-3c57286a3743] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+15:50:47:612  INFO 63692 --- [main] com.alibaba.nacos.common.remote.client   : [9fd5921a-e0ce-4cf1-9d8f-3c57286a3743] Try to connect to server on start up, server: {serverIp = '43.133.192.187', server main port = 8848}
+15:50:51:031  INFO 63692 --- [main] com.alibaba.nacos.common.remote.client   : [9fd5921a-e0ce-4cf1-9d8f-3c57286a3743] Success to connect to server [43.133.192.187:8848] on start up, connectionId = 1704444651000_144.48.139.118_3093
+15:50:51:037  INFO 63692 --- [main] com.alibaba.nacos.common.remote.client   : [9fd5921a-e0ce-4cf1-9d8f-3c57286a3743] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+15:50:51:033  INFO 63692 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [9fd5921a-e0ce-4cf1-9d8f-3c57286a3743] Notify connected event to listeners.
+15:50:51:040  INFO 63692 --- [main] com.alibaba.nacos.common.remote.client   : [9fd5921a-e0ce-4cf1-9d8f-3c57286a3743] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1069/0x000000080077ac40
+15:50:51:260  INFO 63692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8087 (http) with context path ''
+15:50:51:371  INFO 63692 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP pay-service 192.168.0.113:8087 register finished
+15:50:51:744  INFO 63692 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [9fd5921a-e0ce-4cf1-9d8f-3c57286a3743] Receive server push request, request = NotifySubscriberRequest, requestId = 1260
+15:50:51:751  INFO 63692 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [9fd5921a-e0ce-4cf1-9d8f-3c57286a3743] Ack server push request, request = NotifySubscriberRequest, requestId = 1260
+15:50:52:598  INFO 63692 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+15:50:52:603  INFO 63692 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+15:50:52:647  INFO 63692 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+15:50:52:851  INFO 63692 --- [main] com.hmall.pay.PayApplication             : Started PayApplication in 14.915 seconds (JVM running for 16.849)
+16:02:02:466  INFO 63692 --- [http-nio-8087-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:02:02:466  INFO 63692 --- [http-nio-8087-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+16:02:02:469  INFO 63692 --- [http-nio-8087-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+16:02:02:623  INFO 63692 --- [http-nio-8087-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+16:02:04:401  INFO 63692 --- [http-nio-8087-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+16:02:04:409 DEBUG 63692 --- [http-nio-8087-exec-3] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:02:04:429 DEBUG 63692 --- [http-nio-8087-exec-3] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743196136368967682(Long)
+16:02:04:546 DEBUG 63692 --- [http-nio-8087-exec-3] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 0
+16:02:04:552 DEBUG 63692 --- [http-nio-8087-exec-2] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:02:04:553 DEBUG 63692 --- [http-nio-8087-exec-2] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743196136368967682(Long)
+16:02:04:654 DEBUG 63692 --- [http-nio-8087-exec-2] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 0
+16:02:04:655 DEBUG 63692 --- [http-nio-8087-exec-3] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+16:02:04:658 DEBUG 63692 --- [http-nio-8087-exec-3] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1743196153192316931(Long), 1743196136368967682(Long), 1743196153192316930(Long), 1(Long), balance(String), 27400(Integer), 5(Integer), 1(Integer), 2024-01-05T18:02:04.595044500(LocalDateTime)
+16:02:04:872 DEBUG 63692 --- [http-nio-8087-exec-3] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+16:10:27:583 DEBUG 63692 --- [http-nio-8087-exec-10] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:10:27:584 DEBUG 63692 --- [http-nio-8087-exec-10] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743198255406858242(Long)
+16:10:27:622 DEBUG 63692 --- [http-nio-8087-exec-1] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:10:27:622 DEBUG 63692 --- [http-nio-8087-exec-1] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743198255406858242(Long)
+16:10:27:681 DEBUG 63692 --- [http-nio-8087-exec-10] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 0
+16:10:27:716 DEBUG 63692 --- [http-nio-8087-exec-1] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 0
+16:10:27:718 DEBUG 63692 --- [http-nio-8087-exec-1] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+16:10:27:719 DEBUG 63692 --- [http-nio-8087-exec-1] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1743198263401185283(Long), 1743198255406858242(Long), 1743198263401185282(Long), 1(Long), balance(String), 27400(Integer), 5(Integer), 1(Integer), 2024-01-05T18:10:27.717433900(LocalDateTime)
+16:10:27:870 DEBUG 63692 --- [http-nio-8087-exec-4] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:10:27:871 DEBUG 63692 --- [http-nio-8087-exec-4] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743198255406858242(Long)
+16:10:27:909 DEBUG 63692 --- [http-nio-8087-exec-1] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+16:10:27:976 DEBUG 63692 --- [http-nio-8087-exec-4] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 1
+16:10:28:188 DEBUG 63692 --- [http-nio-8087-exec-5] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:10:28:189 DEBUG 63692 --- [http-nio-8087-exec-5] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743198255406858242(Long)
+16:10:28:287 DEBUG 63692 --- [http-nio-8087-exec-5] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 1
+16:14:17:175 DEBUG 63692 --- [http-nio-8087-exec-2] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:14:17:176 DEBUG 63692 --- [http-nio-8087-exec-2] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743199218439958529(Long)
+16:14:17:211 DEBUG 63692 --- [http-nio-8087-exec-3] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:14:17:212 DEBUG 63692 --- [http-nio-8087-exec-3] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743199218439958529(Long)
+16:14:17:274 DEBUG 63692 --- [http-nio-8087-exec-2] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 0
+16:14:17:304 DEBUG 63692 --- [http-nio-8087-exec-3] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 0
+16:14:17:305 DEBUG 63692 --- [http-nio-8087-exec-3] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+16:14:17:306 DEBUG 63692 --- [http-nio-8087-exec-3] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1743199226358857730(Long), 1743199218439958529(Long), 1743199226358857729(Long), 1(Long), balance(String), 13700(Integer), 5(Integer), 1(Integer), 2024-01-05T18:14:17.305896100(LocalDateTime)
+16:14:17:456 DEBUG 63692 --- [http-nio-8087-exec-7] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:14:17:457 DEBUG 63692 --- [http-nio-8087-exec-7] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743199218439958529(Long)
+16:14:17:493 DEBUG 63692 --- [http-nio-8087-exec-3] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+16:14:17:560 DEBUG 63692 --- [http-nio-8087-exec-7] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 1
+16:14:17:751 DEBUG 63692 --- [http-nio-8087-exec-6] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:14:17:752 DEBUG 63692 --- [http-nio-8087-exec-6] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743199218439958529(Long)
+16:14:17:851 DEBUG 63692 --- [http-nio-8087-exec-6] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 1
+16:17:11:861 DEBUG 63692 --- [http-nio-8087-exec-4] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:17:11:861 DEBUG 63692 --- [http-nio-8087-exec-4] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743199893085437953(Long)
+16:17:11:960 DEBUG 63692 --- [http-nio-8087-exec-4] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 0
+16:17:43:346 DEBUG 63692 --- [http-nio-8087-exec-5] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:17:43:347 DEBUG 63692 --- [http-nio-8087-exec-5] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743199893085437953(Long)
+16:17:43:445 DEBUG 63692 --- [http-nio-8087-exec-5] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 0
+16:18:03:933 DEBUG 63692 --- [http-nio-8087-exec-9] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:18:03:934 DEBUG 63692 --- [http-nio-8087-exec-9] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743199893085437953(Long)
+16:18:04:032 DEBUG 63692 --- [http-nio-8087-exec-9] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 0
+16:25:14:612 DEBUG 63692 --- [http-nio-8087-exec-2] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:25:14:612 DEBUG 63692 --- [http-nio-8087-exec-2] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743201975599321089(Long)
+16:25:14:670 DEBUG 63692 --- [http-nio-8087-exec-3] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:25:14:670 DEBUG 63692 --- [http-nio-8087-exec-3] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743201975599321089(Long)
+16:25:14:713 DEBUG 63692 --- [http-nio-8087-exec-2] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 0
+16:25:14:766 DEBUG 63692 --- [http-nio-8087-exec-3] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 0
+16:25:14:768 DEBUG 63692 --- [http-nio-8087-exec-3] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+16:25:14:769 DEBUG 63692 --- [http-nio-8087-exec-3] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1743201983941771267(Long), 1743201975599321089(Long), 1743201983941771266(Long), 1(Long), balance(String), 13700(Integer), 5(Integer), 1(Integer), 2024-01-05T18:25:14.767026900(LocalDateTime)
+16:25:14:912 DEBUG 63692 --- [http-nio-8087-exec-7] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:25:14:913 DEBUG 63692 --- [http-nio-8087-exec-7] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743201975599321089(Long)
+16:25:14:958 DEBUG 63692 --- [http-nio-8087-exec-3] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+16:25:15:014 DEBUG 63692 --- [http-nio-8087-exec-7] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 1
+16:25:15:232 DEBUG 63692 --- [http-nio-8087-exec-6] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:25:15:232 DEBUG 63692 --- [http-nio-8087-exec-6] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743201975599321089(Long)
+16:25:15:333 DEBUG 63692 --- [http-nio-8087-exec-6] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 1
+16:27:34:332 DEBUG 63692 --- [http-nio-8087-exec-4] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:27:34:332 DEBUG 63692 --- [http-nio-8087-exec-4] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743202547643670529(Long)
+16:27:34:433 DEBUG 63692 --- [http-nio-8087-exec-4] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 0
+16:27:40:761 DEBUG 63692 --- [http-nio-8087-exec-5] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:27:40:761 DEBUG 63692 --- [http-nio-8087-exec-5] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743202547643670529(Long)
+16:27:40:860 DEBUG 63692 --- [http-nio-8087-exec-5] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 0
+16:27:56:312 DEBUG 63692 --- [http-nio-8087-exec-9] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:27:56:312 DEBUG 63692 --- [http-nio-8087-exec-9] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743202547643670529(Long)
+16:27:56:481 DEBUG 63692 --- [http-nio-8087-exec-9] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 0
+16:32:17:156 DEBUG 63692 --- [http-nio-8087-exec-2] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:32:17:156 DEBUG 63692 --- [http-nio-8087-exec-2] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743201975599321089(Long)
+16:32:17:252 DEBUG 63692 --- [http-nio-8087-exec-2] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 1
+16:32:32:114 DEBUG 63692 --- [http-nio-8087-exec-3] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:32:32:114 DEBUG 63692 --- [http-nio-8087-exec-3] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743203800582950914(Long)
+16:32:32:120 DEBUG 63692 --- [http-nio-8087-exec-7] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:32:32:120 DEBUG 63692 --- [http-nio-8087-exec-7] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743203800582950914(Long)
+16:32:32:209 DEBUG 63692 --- [http-nio-8087-exec-7] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 0
+16:32:32:209 DEBUG 63692 --- [http-nio-8087-exec-3] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 0
+16:32:32:212 DEBUG 63692 --- [http-nio-8087-exec-7] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+16:32:32:212 DEBUG 63692 --- [http-nio-8087-exec-7] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1743203818710695939(Long), 1743203800582950914(Long), 1743203818710695938(Long), 1(Long), balance(String), 27400(Integer), 5(Integer), 1(Integer), 2024-01-05T18:32:32.210311200(LocalDateTime)
+16:32:32:392 DEBUG 63692 --- [http-nio-8087-exec-7] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+16:32:46:264 DEBUG 63692 --- [http-nio-8087-exec-6] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:32:46:264 DEBUG 63692 --- [http-nio-8087-exec-6] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743203800582950914(Long)
+16:32:46:362 DEBUG 63692 --- [http-nio-8087-exec-6] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 1
+16:33:11:209 DEBUG 63692 --- [http-nio-8087-exec-10] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:33:11:209 DEBUG 63692 --- [http-nio-8087-exec-10] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743203800582950914(Long)
+16:33:11:306 DEBUG 63692 --- [http-nio-8087-exec-10] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 1
+16:35:13:645 DEBUG 63692 --- [http-nio-8087-exec-5] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:35:13:646 DEBUG 63692 --- [http-nio-8087-exec-5] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743204490306883586(Long)
+16:35:13:745 DEBUG 63692 --- [http-nio-8087-exec-5] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 0
+16:35:13:794 DEBUG 63692 --- [http-nio-8087-exec-9] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:35:13:795 DEBUG 63692 --- [http-nio-8087-exec-9] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743204490306883586(Long)
+16:35:13:883 DEBUG 63692 --- [http-nio-8087-exec-9] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 0
+16:35:13:884 DEBUG 63692 --- [http-nio-8087-exec-9] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+16:35:13:885 DEBUG 63692 --- [http-nio-8087-exec-9] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1743204496828989443(Long), 1743204490306883586(Long), 1743204496828989442(Long), 1(Long), balance(String), 27400(Integer), 5(Integer), 1(Integer), 2024-01-05T18:35:13.884848400(LocalDateTime)
+16:35:14:062 DEBUG 63692 --- [http-nio-8087-exec-9] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+16:35:24:108 DEBUG 63692 --- [http-nio-8087-exec-8] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:35:24:108 DEBUG 63692 --- [http-nio-8087-exec-8] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743204490306883586(Long)
+16:35:24:205 DEBUG 63692 --- [http-nio-8087-exec-8] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 1
+16:35:44:567 DEBUG 63692 --- [http-nio-8087-exec-2] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:35:44:567 DEBUG 63692 --- [http-nio-8087-exec-2] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743204490306883586(Long)
+16:35:44:663 DEBUG 63692 --- [http-nio-8087-exec-2] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 1
+16:36:12:684 DEBUG 63692 --- [http-nio-8087-exec-3] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:36:12:684 DEBUG 63692 --- [http-nio-8087-exec-3] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743204737884065794(Long)
+16:36:12:780 DEBUG 63692 --- [http-nio-8087-exec-3] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 0
+16:36:12:805 DEBUG 63692 --- [http-nio-8087-exec-7] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:36:12:805 DEBUG 63692 --- [http-nio-8087-exec-7] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743204737884065794(Long)
+16:36:12:893 DEBUG 63692 --- [http-nio-8087-exec-7] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 0
+16:36:12:894 DEBUG 63692 --- [http-nio-8087-exec-7] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+16:36:12:895 DEBUG 63692 --- [http-nio-8087-exec-7] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1743204744360034306(Long), 1743204737884065794(Long), 1743204744360034305(Long), 1(Long), balance(String), 27400(Integer), 5(Integer), 1(Integer), 2024-01-05T18:36:12.894295300(LocalDateTime)
+16:36:13:072 DEBUG 63692 --- [http-nio-8087-exec-7] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+16:36:15:076 DEBUG 63692 --- [http-nio-8087-exec-6] c.h.p.mapper.PayOrderMapper.selectById   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE id=?
+16:36:15:076 DEBUG 63692 --- [http-nio-8087-exec-6] c.h.p.mapper.PayOrderMapper.selectById   : ==> Parameters: 1743204744360034306(Long)
+16:36:15:179 DEBUG 63692 --- [http-nio-8087-exec-6] c.h.p.mapper.PayOrderMapper.selectById   : <==      Total: 1
+16:36:15:182 DEBUG 63692 --- [http-nio-8087-exec-6] com.hmall.api.client.UserClient          : [UserClient#deductMoney] ---> PUT http://user-service/users/money/deduct?pw=123&amount=27400 HTTP/1.1
+16:36:15:182 DEBUG 63692 --- [http-nio-8087-exec-6] com.hmall.api.client.UserClient          : [UserClient#deductMoney] user-info: 1
+16:36:15:182 DEBUG 63692 --- [http-nio-8087-exec-6] com.hmall.api.client.UserClient          : [UserClient#deductMoney] ---> END HTTP (0-byte body)
+16:36:15:926  INFO 63692 --- [nacos-grpc-client-executor-561] com.alibaba.nacos.common.remote.client   : [9fd5921a-e0ce-4cf1-9d8f-3c57286a3743] Receive server push request, request = NotifySubscriberRequest, requestId = 1340
+16:36:15:926  INFO 63692 --- [nacos-grpc-client-executor-561] com.alibaba.nacos.common.remote.client   : [9fd5921a-e0ce-4cf1-9d8f-3c57286a3743] Ack server push request, request = NotifySubscriberRequest, requestId = 1340
+16:36:15:936 DEBUG 63692 --- [http-nio-8087-exec-6] com.hmall.api.client.UserClient          : [UserClient#deductMoney] <--- HTTP/1.1 200  (754ms)
+16:36:15:936 DEBUG 63692 --- [http-nio-8087-exec-6] com.hmall.api.client.UserClient          : [UserClient#deductMoney] connection: keep-alive
+16:36:15:937 DEBUG 63692 --- [http-nio-8087-exec-6] com.hmall.api.client.UserClient          : [UserClient#deductMoney] content-length: 0
+16:36:15:937 DEBUG 63692 --- [http-nio-8087-exec-6] com.hmall.api.client.UserClient          : [UserClient#deductMoney] date: Fri, 05 Jan 2024 09:36:15 GMT
+16:36:15:937 DEBUG 63692 --- [http-nio-8087-exec-6] com.hmall.api.client.UserClient          : [UserClient#deductMoney] keep-alive: timeout=60
+16:36:15:937 DEBUG 63692 --- [http-nio-8087-exec-6] com.hmall.api.client.UserClient          : [UserClient#deductMoney] <--- END HTTP (0-byte body)
+16:36:15:942 DEBUG 63692 --- [http-nio-8087-exec-6] c.h.pay.mapper.PayOrderMapper.update     : ==>  Preparing: UPDATE pay_order SET status=?,pay_success_time=? WHERE (id = ? AND status IN (?,?))
+16:36:15:943 DEBUG 63692 --- [http-nio-8087-exec-6] c.h.pay.mapper.PayOrderMapper.update     : ==> Parameters: 3(Integer), 2024-01-05T16:36:15.937710100(LocalDateTime), 1743204744360034306(Long), 0(Integer), 1(Integer)
+16:36:16:132 DEBUG 63692 --- [http-nio-8087-exec-6] c.h.pay.mapper.PayOrderMapper.update     : <==    Updates: 1
+16:36:16:137  INFO 63692 --- [http-nio-8087-exec-6] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [43.133.192.187:5672]
+16:36:16:531  INFO 63692 --- [http-nio-8087-exec-6] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#5ca22e19:0/SimpleConnection@2b7d164f [delegate=amqp://hmall@43.133.192.187:5672//hmall, localPort= 5039]
+16:39:51:454 DEBUG 63692 --- [http-nio-8087-exec-4] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:39:51:455 DEBUG 63692 --- [http-nio-8087-exec-4] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743205655534866433(Long)
+16:39:51:553 DEBUG 63692 --- [http-nio-8087-exec-4] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 0
+16:39:51:592 DEBUG 63692 --- [http-nio-8087-exec-5] c.h.p.mapper.PayOrderMapper.selectList   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+16:39:51:592 DEBUG 63692 --- [http-nio-8087-exec-5] c.h.p.mapper.PayOrderMapper.selectList   : ==> Parameters: 1743205655534866433(Long)
+16:39:51:680 DEBUG 63692 --- [http-nio-8087-exec-5] c.h.p.mapper.PayOrderMapper.selectList   : <==      Total: 0
+16:39:51:682 DEBUG 63692 --- [http-nio-8087-exec-5] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+16:39:51:682 DEBUG 63692 --- [http-nio-8087-exec-5] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1743205661981474819(Long), 1743205655534866433(Long), 1743205661981474818(Long), 1(Long), balance(String), 13700(Integer), 5(Integer), 1(Integer), 2024-01-05T18:39:51.681743(LocalDateTime)
+16:39:51:861 DEBUG 63692 --- [http-nio-8087-exec-5] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+16:39:58:909 DEBUG 63692 --- [http-nio-8087-exec-9] c.h.p.mapper.PayOrderMapper.selectById   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE id=?
+16:39:58:909 DEBUG 63692 --- [http-nio-8087-exec-9] c.h.p.mapper.PayOrderMapper.selectById   : ==> Parameters: 1743205661981474819(Long)
+16:39:58:997 DEBUG 63692 --- [http-nio-8087-exec-9] c.h.p.mapper.PayOrderMapper.selectById   : <==      Total: 1
+16:39:58:998 DEBUG 63692 --- [http-nio-8087-exec-9] com.hmall.api.client.UserClient          : [UserClient#deductMoney] ---> PUT http://user-service/users/money/deduct?pw=123&amount=13700 HTTP/1.1
+16:39:58:998 DEBUG 63692 --- [http-nio-8087-exec-9] com.hmall.api.client.UserClient          : [UserClient#deductMoney] user-info: 1
+16:39:58:998 DEBUG 63692 --- [http-nio-8087-exec-9] com.hmall.api.client.UserClient          : [UserClient#deductMoney] ---> END HTTP (0-byte body)
+16:39:59:499 DEBUG 63692 --- [http-nio-8087-exec-9] com.hmall.api.client.UserClient          : [UserClient#deductMoney] <--- HTTP/1.1 200  (500ms)
+16:39:59:499 DEBUG 63692 --- [http-nio-8087-exec-9] com.hmall.api.client.UserClient          : [UserClient#deductMoney] connection: keep-alive
+16:39:59:499 DEBUG 63692 --- [http-nio-8087-exec-9] com.hmall.api.client.UserClient          : [UserClient#deductMoney] content-length: 0
+16:39:59:499 DEBUG 63692 --- [http-nio-8087-exec-9] com.hmall.api.client.UserClient          : [UserClient#deductMoney] date: Fri, 05 Jan 2024 09:39:59 GMT
+16:39:59:499 DEBUG 63692 --- [http-nio-8087-exec-9] com.hmall.api.client.UserClient          : [UserClient#deductMoney] keep-alive: timeout=60
+16:39:59:499 DEBUG 63692 --- [http-nio-8087-exec-9] com.hmall.api.client.UserClient          : [UserClient#deductMoney] <--- END HTTP (0-byte body)
+16:39:59:502 DEBUG 63692 --- [http-nio-8087-exec-9] c.h.pay.mapper.PayOrderMapper.update     : ==>  Preparing: UPDATE pay_order SET status=?,pay_success_time=? WHERE (id = ? AND status IN (?,?))
+16:39:59:502 DEBUG 63692 --- [http-nio-8087-exec-9] c.h.pay.mapper.PayOrderMapper.update     : ==> Parameters: 3(Integer), 2024-01-05T16:39:59.499594300(LocalDateTime), 1743205661981474819(Long), 0(Integer), 1(Integer)
+16:39:59:696 DEBUG 63692 --- [http-nio-8087-exec-9] c.h.pay.mapper.PayOrderMapper.update     : <==    Updates: 1
+16:50:07:817  WARN 63692 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+16:50:07:817  WARN 63692 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+16:50:07:817  WARN 63692 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+16:50:07:818  WARN 63692 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+16:50:08:545  INFO 63692 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+16:50:08:638  INFO 63692 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+16:50:08:959  INFO 63692 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+16:50:08:959  INFO 63692 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@caa6427[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+16:50:08:959  INFO 63692 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1704444651000_144.48.139.118_3093
+16:50:08:966  INFO 63692 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@3369e910[Running, pool size = 3, active threads = 0, queued tasks = 0, completed tasks = 728]
+16:50:08:970  INFO 63692 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+16:50:09:919  INFO 63692 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

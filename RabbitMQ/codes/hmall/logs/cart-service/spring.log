@@ -1,0 +1,575 @@
+15:50:14:580  INFO 14552 --- [main] com.hmall.cart.CartApplication           : Starting CartApplication using Java 11.0.12 on DESKTOP-RLHUNOD with PID 14552 (F:\notes\RabbitMQ\codes\hmall\cart-service\target\classes started by jinlin in F:\notes\RabbitMQ\codes\hmall)
+15:50:14:591 DEBUG 14552 --- [main] com.hmall.cart.CartApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+15:50:14:592  INFO 14552 --- [main] com.hmall.cart.CartApplication           : The following 1 profile is active: "local"
+15:50:16:571  INFO 14552 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7ebd723c-f833-3f79-abeb-62f376dddd61
+15:50:17:287  INFO 14552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+15:50:17:316  INFO 14552 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+15:50:17:316  INFO 14552 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+15:50:17:659  INFO 14552 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+15:50:17:660  INFO 14552 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2980 ms
+15:50:18:044  INFO 14552 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+15:50:20:925  INFO 14552 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+15:50:22:012  INFO 14552 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 5b4c9361-c5e5-4db9-b219-8299db29c639
+15:50:22:081  INFO 14552 --- [main] org.reflections.Reflections              : Reflections took 35 ms to scan 1 urls, producing 3 keys and 6 values 
+15:50:22:116  INFO 14552 --- [main] org.reflections.Reflections              : Reflections took 12 ms to scan 1 urls, producing 4 keys and 9 values 
+15:50:22:138  INFO 14552 --- [main] org.reflections.Reflections              : Reflections took 17 ms to scan 1 urls, producing 3 keys and 10 values 
+15:50:22:141  WARN 14552 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+15:50:22:154  INFO 14552 --- [main] org.reflections.Reflections              : Reflections took 12 ms to scan 1 urls, producing 1 keys and 5 values 
+15:50:22:183  INFO 14552 --- [main] org.reflections.Reflections              : Reflections took 24 ms to scan 1 urls, producing 1 keys and 7 values 
+15:50:22:228  INFO 14552 --- [main] org.reflections.Reflections              : Reflections took 36 ms to scan 1 urls, producing 2 keys and 8 values 
+15:50:22:231  WARN 14552 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+15:50:22:232  INFO 14552 --- [main] com.alibaba.nacos.common.remote.client   : [5b4c9361-c5e5-4db9-b219-8299db29c639] RpcClient init label, labels = {module=naming, source=sdk}
+15:50:22:235  INFO 14552 --- [main] com.alibaba.nacos.common.remote.client   : [5b4c9361-c5e5-4db9-b219-8299db29c639] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+15:50:22:235  INFO 14552 --- [main] com.alibaba.nacos.common.remote.client   : [5b4c9361-c5e5-4db9-b219-8299db29c639] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+15:50:22:236  INFO 14552 --- [main] com.alibaba.nacos.common.remote.client   : [5b4c9361-c5e5-4db9-b219-8299db29c639] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+15:50:22:239  INFO 14552 --- [main] com.alibaba.nacos.common.remote.client   : [5b4c9361-c5e5-4db9-b219-8299db29c639] Try to connect to server on start up, server: {serverIp = '43.133.192.187', server main port = 8848}
+15:50:25:807  INFO 14552 --- [main] com.alibaba.nacos.common.remote.client   : [5b4c9361-c5e5-4db9-b219-8299db29c639] Success to connect to server [43.133.192.187:8848] on start up, connectionId = 1704444625699_144.48.139.118_2919
+15:50:25:808  INFO 14552 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [5b4c9361-c5e5-4db9-b219-8299db29c639] Notify connected event to listeners.
+15:50:25:810  INFO 14552 --- [main] com.alibaba.nacos.common.remote.client   : [5b4c9361-c5e5-4db9-b219-8299db29c639] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+15:50:25:810  INFO 14552 --- [main] com.alibaba.nacos.common.remote.client   : [5b4c9361-c5e5-4db9-b219-8299db29c639] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$989/0x0000000800860040
+15:50:26:113  INFO 14552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+15:50:26:251  INFO 14552 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP cart-service 192.168.0.113:8082 register finished
+15:50:26:542  INFO 14552 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [5b4c9361-c5e5-4db9-b219-8299db29c639] Receive server push request, request = NotifySubscriberRequest, requestId = 1254
+15:50:26:578  INFO 14552 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [5b4c9361-c5e5-4db9-b219-8299db29c639] Ack server push request, request = NotifySubscriberRequest, requestId = 1254
+15:50:27:575  INFO 14552 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+15:50:27:581  INFO 14552 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+15:50:27:645  INFO 14552 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+15:50:27:903  INFO 14552 --- [main] com.hmall.cart.CartApplication           : Started CartApplication in 15.119 seconds (JVM running for 16.725)
+15:57:19:618  INFO 14552 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:57:19:618  INFO 14552 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+15:57:19:620  INFO 14552 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+15:57:19:740  INFO 14552 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+15:57:21:538  INFO 14552 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+15:57:21:545 DEBUG 14552 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+15:57:21:568 DEBUG 14552 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+15:57:21:689 DEBUG 14552 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 0
+15:57:23:370 DEBUG 14552 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+15:57:23:370 DEBUG 14552 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+15:57:23:473 DEBUG 14552 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 0
+15:57:25:374 DEBUG 14552 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+15:57:25:375 DEBUG 14552 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+15:57:25:476 DEBUG 14552 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 0
+15:57:36:661 DEBUG 14552 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) AS total FROM cart WHERE (user_id = ? AND item_id = ?)
+15:57:36:662 DEBUG 14552 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long), 100000004580(Long)
+15:57:36:766 DEBUG 14552 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+15:57:36:768 DEBUG 14552 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) AS total FROM cart WHERE (user_id = ?)
+15:57:36:768 DEBUG 14552 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long)
+15:57:36:885 DEBUG 14552 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+15:57:36:922 DEBUG 14552 --- [http-nio-8082-exec-6] com.hmall.cart.mapper.CartMapper.insert  : ==>  Preparing: INSERT INTO cart ( user_id, item_id, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ? )
+15:57:36:923 DEBUG 14552 --- [http-nio-8082-exec-6] com.hmall.cart.mapper.CartMapper.insert  : ==> Parameters: 1(Long), 100000004580(Long), 薇妮(viney)女士单肩包 时尚牛皮女包百搭斜挎包女士手提大包(经典黑)(String), {"颜色": "黑色"}(String), 87900(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t5590/64/5811657380/234462/5398e856/5965e173N34179777.jpg!q70.jpg.webp(String)
+15:57:37:130 DEBUG 14552 --- [http-nio-8082-exec-6] com.hmall.cart.mapper.CartMapper.insert  : <==    Updates: 1
+15:57:37:197 DEBUG 14552 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+15:57:37:197 DEBUG 14552 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+15:57:37:304 DEBUG 14552 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+15:57:37:308 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=100000004580 HTTP/1.1
+15:57:37:309 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+15:57:37:309 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+15:57:37:770 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (460ms)
+15:57:37:770 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+15:57:37:770 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+15:57:37:770 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 05 Jan 2024 08:57:37 GMT
+15:57:37:770 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+15:57:37:771 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+15:57:37:771 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+15:57:37:772 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"100000004580","name":"薇妮(viney)女士单肩包 时尚牛皮女包百搭斜挎包女士手提大包(经典黑)","price":87900,"stock":9993,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t5590/64/5811657380/234462/5398e856/5965e173N34179777.jpg!q70.jpg.webp","category":"真皮包","brand":"viney","spec":"{\"颜色\": \"黑色\"}","sold":22233,"commentCount":2223232,"isAD":false,"status":1}]
+15:57:37:772 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (412-byte body)
+15:57:38:063  INFO 14552 --- [nacos-grpc-client-executor-104] com.alibaba.nacos.common.remote.client   : [5b4c9361-c5e5-4db9-b219-8299db29c639] Receive server push request, request = NotifySubscriberRequest, requestId = 1266
+15:57:38:064  INFO 14552 --- [nacos-grpc-client-executor-104] com.alibaba.nacos.common.remote.client   : [5b4c9361-c5e5-4db9-b219-8299db29c639] Ack server push request, request = NotifySubscriberRequest, requestId = 1266
+15:57:41:634 DEBUG 14552 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.updateById    : ==>  Preparing: UPDATE cart SET num=? WHERE id=?
+15:57:41:634 DEBUG 14552 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.updateById    : ==> Parameters: 2(Integer), 54(Long)
+15:57:41:840 DEBUG 14552 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.updateById    : <==    Updates: 1
+15:57:41:946 DEBUG 14552 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+15:57:41:947 DEBUG 14552 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+15:57:42:052 DEBUG 14552 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+15:57:42:053 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=100000004580 HTTP/1.1
+15:57:42:053 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+15:57:42:053 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+15:57:42:249 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (196ms)
+15:57:42:250 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+15:57:42:250 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+15:57:42:250 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 05 Jan 2024 08:57:42 GMT
+15:57:42:250 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+15:57:42:250 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+15:57:42:250 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+15:57:42:250 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"100000004580","name":"薇妮(viney)女士单肩包 时尚牛皮女包百搭斜挎包女士手提大包(经典黑)","price":87900,"stock":9993,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t5590/64/5811657380/234462/5398e856/5965e173N34179777.jpg!q70.jpg.webp","category":"真皮包","brand":"viney","spec":"{\"颜色\": \"黑色\"}","sold":22233,"commentCount":2223232,"isAD":false,"status":1}]
+15:57:42:251 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (412-byte body)
+15:57:45:642 DEBUG 14552 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+15:57:45:643 DEBUG 14552 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+15:57:45:745 DEBUG 14552 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+15:57:45:746 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=100000004580 HTTP/1.1
+15:57:45:746 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+15:57:45:746 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+15:57:45:932 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (185ms)
+15:57:45:932 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+15:57:45:932 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+15:57:45:932 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 05 Jan 2024 08:57:45 GMT
+15:57:45:933 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+15:57:45:933 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+15:57:45:933 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+15:57:45:933 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"100000004580","name":"薇妮(viney)女士单肩包 时尚牛皮女包百搭斜挎包女士手提大包(经典黑)","price":87900,"stock":9993,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t5590/64/5811657380/234462/5398e856/5965e173N34179777.jpg!q70.jpg.webp","category":"真皮包","brand":"viney","spec":"{\"颜色\": \"黑色\"}","sold":22233,"commentCount":2223232,"isAD":false,"status":1}]
+15:57:45:934 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (412-byte body)
+15:57:50:661 DEBUG 14552 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) AS total FROM cart WHERE (user_id = ? AND item_id = ?)
+15:57:50:661 DEBUG 14552 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long), 100001511821(Long)
+15:57:50:764 DEBUG 14552 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+15:57:50:765 DEBUG 14552 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) AS total FROM cart WHERE (user_id = ?)
+15:57:50:765 DEBUG 14552 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long)
+15:57:50:868 DEBUG 14552 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+15:57:50:870 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.cart.mapper.CartMapper.insert  : ==>  Preparing: INSERT INTO cart ( user_id, item_id, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ? )
+15:57:50:871 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.cart.mapper.CartMapper.insert  : ==> Parameters: 1(Long), 100001511821(Long), HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30(String), {"颜色": "蓝色", "尺码": "30"}(String), 13700(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp(String)
+15:57:51:077 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.cart.mapper.CartMapper.insert  : <==    Updates: 1
+15:57:51:133 DEBUG 14552 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+15:57:51:134 DEBUG 14552 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+15:57:51:238 DEBUG 14552 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 2
+15:57:51:239 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=100000004580&ids=100001511821 HTTP/1.1
+15:57:51:239 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+15:57:51:239 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+15:57:51:422 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (183ms)
+15:57:51:423 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+15:57:51:423 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+15:57:51:423 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 05 Jan 2024 08:57:51 GMT
+15:57:51:423 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+15:57:51:423 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+15:57:51:423 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+15:57:51:423 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"100000004580","name":"薇妮(viney)女士单肩包 时尚牛皮女包百搭斜挎包女士手提大包(经典黑)","price":87900,"stock":9993,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t5590/64/5811657380/234462/5398e856/5965e173N34179777.jpg!q70.jpg.webp","category":"真皮包","brand":"viney","spec":"{\"颜色\": \"黑色\"}","sold":22233,"commentCount":2223232,"isAD":false,"status":1},{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+15:57:51:423 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (871-byte body)
+15:58:01:058 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.cart.mapper.CartMapper.delete  : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?,?))
+15:58:01:060 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.cart.mapper.CartMapper.delete  : ==> Parameters: 1(Long), 100000004580(Long), 100001511821(Long)
+15:58:01:267 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.cart.mapper.CartMapper.delete  : <==    Updates: 2
+16:01:35:706 DEBUG 14552 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:01:35:707 DEBUG 14552 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:01:35:809 DEBUG 14552 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 0
+16:01:49:257 DEBUG 14552 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:01:49:258 DEBUG 14552 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:01:49:362 DEBUG 14552 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 0
+16:01:52:724 DEBUG 14552 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) AS total FROM cart WHERE (user_id = ? AND item_id = ?)
+16:01:52:724 DEBUG 14552 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long), 100001511821(Long)
+16:01:52:832 DEBUG 14552 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+16:01:52:834 DEBUG 14552 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) AS total FROM cart WHERE (user_id = ?)
+16:01:52:834 DEBUG 14552 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long)
+16:01:52:937 DEBUG 14552 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+16:01:52:938 DEBUG 14552 --- [http-nio-8082-exec-2] com.hmall.cart.mapper.CartMapper.insert  : ==>  Preparing: INSERT INTO cart ( user_id, item_id, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ? )
+16:01:52:939 DEBUG 14552 --- [http-nio-8082-exec-2] com.hmall.cart.mapper.CartMapper.insert  : ==> Parameters: 1(Long), 100001511821(Long), HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30(String), {"颜色": "蓝色", "尺码": "30"}(String), 13700(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp(String)
+16:01:53:146 DEBUG 14552 --- [http-nio-8082-exec-2] com.hmall.cart.mapper.CartMapper.insert  : <==    Updates: 1
+16:01:53:219 DEBUG 14552 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:01:53:220 DEBUG 14552 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:01:53:333 DEBUG 14552 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+16:01:53:335 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=100001511821 HTTP/1.1
+16:01:53:335 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+16:01:53:335 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+16:01:53:527 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (192ms)
+16:01:53:527 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+16:01:53:527 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+16:01:53:527 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 05 Jan 2024 09:01:53 GMT
+16:01:53:527 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+16:01:53:527 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+16:01:53:527 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+16:01:53:528 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":9999,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+16:01:53:528 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (459-byte body)
+16:01:55:286 DEBUG 14552 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.updateById    : ==>  Preparing: UPDATE cart SET num=? WHERE id=?
+16:01:55:287 DEBUG 14552 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.updateById    : ==> Parameters: 2(Integer), 56(Long)
+16:01:55:493 DEBUG 14552 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.updateById    : <==    Updates: 1
+16:01:55:506 DEBUG 14552 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:01:55:507 DEBUG 14552 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:01:55:614 DEBUG 14552 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+16:01:55:616 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=100001511821 HTTP/1.1
+16:01:55:616 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+16:01:55:616 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+16:01:55:812 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (194ms)
+16:01:55:812 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+16:01:55:812 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+16:01:55:812 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 05 Jan 2024 09:01:55 GMT
+16:01:55:812 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+16:01:55:812 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+16:01:55:812 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+16:01:55:813 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":9999,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+16:01:55:813 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (459-byte body)
+16:02:01:271 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.cart.mapper.CartMapper.delete  : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+16:02:01:272 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.cart.mapper.CartMapper.delete  : ==> Parameters: 1(Long), 100001511821(Long)
+16:02:01:480 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.cart.mapper.CartMapper.delete  : <==    Updates: 1
+16:05:20:368  INFO 14552 --- [nacos-grpc-client-executor-196] com.alibaba.nacos.common.remote.client   : [5b4c9361-c5e5-4db9-b219-8299db29c639] Receive server push request, request = NotifySubscriberRequest, requestId = 1277
+16:05:20:371  INFO 14552 --- [nacos-grpc-client-executor-196] com.alibaba.nacos.common.remote.client   : [5b4c9361-c5e5-4db9-b219-8299db29c639] Ack server push request, request = NotifySubscriberRequest, requestId = 1277
+16:06:48:211 DEBUG 14552 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:06:48:211 DEBUG 14552 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:06:48:314 DEBUG 14552 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 0
+16:10:11:454 DEBUG 14552 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:10:11:454 DEBUG 14552 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:10:11:555 DEBUG 14552 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 0
+16:10:15:844 DEBUG 14552 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) AS total FROM cart WHERE (user_id = ? AND item_id = ?)
+16:10:15:844 DEBUG 14552 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long), 100001511821(Long)
+16:10:15:945 DEBUG 14552 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+16:10:15:946 DEBUG 14552 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) AS total FROM cart WHERE (user_id = ?)
+16:10:15:946 DEBUG 14552 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long)
+16:10:16:047 DEBUG 14552 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+16:10:16:048 DEBUG 14552 --- [http-nio-8082-exec-2] com.hmall.cart.mapper.CartMapper.insert  : ==>  Preparing: INSERT INTO cart ( user_id, item_id, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ? )
+16:10:16:049 DEBUG 14552 --- [http-nio-8082-exec-2] com.hmall.cart.mapper.CartMapper.insert  : ==> Parameters: 1(Long), 100001511821(Long), HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30(String), {"颜色": "蓝色", "尺码": "30"}(String), 13700(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp(String)
+16:10:16:253 DEBUG 14552 --- [http-nio-8082-exec-2] com.hmall.cart.mapper.CartMapper.insert  : <==    Updates: 1
+16:10:16:307 DEBUG 14552 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:10:16:307 DEBUG 14552 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:10:16:409 DEBUG 14552 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+16:10:16:410 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=100001511821 HTTP/1.1
+16:10:16:410 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+16:10:16:410 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+16:10:16:593 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (182ms)
+16:10:16:593 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+16:10:16:593 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+16:10:16:593 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 05 Jan 2024 09:10:16 GMT
+16:10:16:594 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+16:10:16:594 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+16:10:16:594 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+16:10:16:594 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":9997,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+16:10:16:594 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (459-byte body)
+16:10:19:192 DEBUG 14552 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.updateById    : ==>  Preparing: UPDATE cart SET num=? WHERE id=?
+16:10:19:193 DEBUG 14552 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.updateById    : ==> Parameters: 2(Integer), 57(Long)
+16:10:19:395 DEBUG 14552 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.updateById    : <==    Updates: 1
+16:10:19:406 DEBUG 14552 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:10:19:406 DEBUG 14552 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:10:19:509 DEBUG 14552 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+16:10:19:510 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=100001511821 HTTP/1.1
+16:10:19:510 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+16:10:19:510 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+16:10:19:691 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (181ms)
+16:10:19:691 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+16:10:19:691 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+16:10:19:691 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 05 Jan 2024 09:10:19 GMT
+16:10:19:691 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+16:10:19:691 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+16:10:19:692 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+16:10:19:692 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":9997,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+16:10:19:692 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (459-byte body)
+16:10:26:447 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.cart.mapper.CartMapper.delete  : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+16:10:26:447 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.cart.mapper.CartMapper.delete  : ==> Parameters: 1(Long), 100001511821(Long)
+16:10:26:655 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.cart.mapper.CartMapper.delete  : <==    Updates: 1
+16:14:06:667 DEBUG 14552 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:14:06:667 DEBUG 14552 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:14:06:769 DEBUG 14552 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 0
+16:14:09:137 DEBUG 14552 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) AS total FROM cart WHERE (user_id = ? AND item_id = ?)
+16:14:09:138 DEBUG 14552 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long), 100001511821(Long)
+16:14:09:241 DEBUG 14552 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+16:14:09:242 DEBUG 14552 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) AS total FROM cart WHERE (user_id = ?)
+16:14:09:242 DEBUG 14552 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long)
+16:14:09:345 DEBUG 14552 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+16:14:09:347 DEBUG 14552 --- [http-nio-8082-exec-6] com.hmall.cart.mapper.CartMapper.insert  : ==>  Preparing: INSERT INTO cart ( user_id, item_id, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ? )
+16:14:09:347 DEBUG 14552 --- [http-nio-8082-exec-6] com.hmall.cart.mapper.CartMapper.insert  : ==> Parameters: 1(Long), 100001511821(Long), HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30(String), {"颜色": "蓝色", "尺码": "30"}(String), 13700(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp(String)
+16:14:09:554 DEBUG 14552 --- [http-nio-8082-exec-6] com.hmall.cart.mapper.CartMapper.insert  : <==    Updates: 1
+16:14:09:610 DEBUG 14552 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:14:09:610 DEBUG 14552 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:14:09:712 DEBUG 14552 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+16:14:09:713 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=100001511821 HTTP/1.1
+16:14:09:713 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+16:14:09:713 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+16:14:09:895 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (181ms)
+16:14:09:896 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+16:14:09:896 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+16:14:09:896 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 05 Jan 2024 09:14:09 GMT
+16:14:09:896 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+16:14:09:896 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+16:14:09:896 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+16:14:09:896 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":9995,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+16:14:09:896 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (459-byte body)
+16:14:16:036 DEBUG 14552 --- [http-nio-8082-exec-2] com.hmall.cart.mapper.CartMapper.delete  : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+16:14:16:036 DEBUG 14552 --- [http-nio-8082-exec-2] com.hmall.cart.mapper.CartMapper.delete  : ==> Parameters: 1(Long), 100001511821(Long)
+16:14:16:259 DEBUG 14552 --- [http-nio-8082-exec-2] com.hmall.cart.mapper.CartMapper.delete  : <==    Updates: 1
+16:16:08:747  INFO 14552 --- [nacos-grpc-client-executor-324] com.alibaba.nacos.common.remote.client   : [5b4c9361-c5e5-4db9-b219-8299db29c639] Receive server push request, request = NotifySubscriberRequest, requestId = 1301
+16:16:08:750  INFO 14552 --- [nacos-grpc-client-executor-324] com.alibaba.nacos.common.remote.client   : [5b4c9361-c5e5-4db9-b219-8299db29c639] Ack server push request, request = NotifySubscriberRequest, requestId = 1301
+16:16:24:861  INFO 14552 --- [nacos-grpc-client-executor-327] com.alibaba.nacos.common.remote.client   : [5b4c9361-c5e5-4db9-b219-8299db29c639] Receive server push request, request = NotifySubscriberRequest, requestId = 1303
+16:16:24:864  INFO 14552 --- [nacos-grpc-client-executor-327] com.alibaba.nacos.common.remote.client   : [5b4c9361-c5e5-4db9-b219-8299db29c639] Ack server push request, request = NotifySubscriberRequest, requestId = 1303
+16:16:39:981 DEBUG 14552 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:16:39:981 DEBUG 14552 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:16:40:083 DEBUG 14552 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 0
+16:16:44:866 DEBUG 14552 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) AS total FROM cart WHERE (user_id = ? AND item_id = ?)
+16:16:44:867 DEBUG 14552 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long), 100001511821(Long)
+16:16:44:970 DEBUG 14552 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+16:16:44:970 DEBUG 14552 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) AS total FROM cart WHERE (user_id = ?)
+16:16:44:971 DEBUG 14552 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long)
+16:16:45:073 DEBUG 14552 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+16:16:45:076 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.cart.mapper.CartMapper.insert  : ==>  Preparing: INSERT INTO cart ( user_id, item_id, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ? )
+16:16:45:077 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.cart.mapper.CartMapper.insert  : ==> Parameters: 1(Long), 100001511821(Long), HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30(String), {"颜色": "蓝色", "尺码": "30"}(String), 13700(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp(String)
+16:16:45:283 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.cart.mapper.CartMapper.insert  : <==    Updates: 1
+16:16:45:356 DEBUG 14552 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:16:45:356 DEBUG 14552 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:16:45:460 DEBUG 14552 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+16:16:45:462 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=100001511821 HTTP/1.1
+16:16:45:462 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+16:16:45:462 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+16:16:45:663 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (200ms)
+16:16:45:663 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+16:16:45:663 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+16:16:45:663 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 05 Jan 2024 09:16:45 GMT
+16:16:45:663 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+16:16:45:663 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+16:16:45:663 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+16:16:45:664 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":9994,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+16:16:45:664 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (459-byte body)
+16:16:49:196 DEBUG 14552 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.updateById    : ==>  Preparing: UPDATE cart SET num=? WHERE id=?
+16:16:49:196 DEBUG 14552 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.updateById    : ==> Parameters: 2(Integer), 59(Long)
+16:16:49:403 DEBUG 14552 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.updateById    : <==    Updates: 1
+16:16:49:414 DEBUG 14552 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:16:49:414 DEBUG 14552 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:16:49:519 DEBUG 14552 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+16:16:49:519 DEBUG 14552 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=100001511821 HTTP/1.1
+16:16:49:521 DEBUG 14552 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+16:16:49:521 DEBUG 14552 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+16:16:49:709 DEBUG 14552 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (189ms)
+16:16:49:709 DEBUG 14552 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+16:16:49:709 DEBUG 14552 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+16:16:49:709 DEBUG 14552 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 05 Jan 2024 09:16:49 GMT
+16:16:49:709 DEBUG 14552 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+16:16:49:709 DEBUG 14552 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+16:16:49:709 DEBUG 14552 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+16:16:49:710 DEBUG 14552 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":9994,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+16:16:49:710 DEBUG 14552 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (459-byte body)
+16:16:56:937 DEBUG 14552 --- [http-nio-8082-exec-6] com.hmall.cart.mapper.CartMapper.delete  : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+16:16:56:937 DEBUG 14552 --- [http-nio-8082-exec-6] com.hmall.cart.mapper.CartMapper.delete  : ==> Parameters: 1(Long), 100001511821(Long)
+16:16:57:147 DEBUG 14552 --- [http-nio-8082-exec-6] com.hmall.cart.mapper.CartMapper.delete  : <==    Updates: 1
+16:25:03:911 DEBUG 14552 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:25:03:912 DEBUG 14552 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:25:04:015 DEBUG 14552 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 0
+16:25:06:706 DEBUG 14552 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) AS total FROM cart WHERE (user_id = ? AND item_id = ?)
+16:25:06:707 DEBUG 14552 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long), 100001511821(Long)
+16:25:06:808 DEBUG 14552 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+16:25:06:811 DEBUG 14552 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) AS total FROM cart WHERE (user_id = ?)
+16:25:06:811 DEBUG 14552 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long)
+16:25:06:913 DEBUG 14552 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+16:25:06:914 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.cart.mapper.CartMapper.insert  : ==>  Preparing: INSERT INTO cart ( user_id, item_id, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ? )
+16:25:06:915 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.cart.mapper.CartMapper.insert  : ==> Parameters: 1(Long), 100001511821(Long), HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30(String), {"颜色": "蓝色", "尺码": "30"}(String), 13700(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp(String)
+16:25:07:122 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.cart.mapper.CartMapper.insert  : <==    Updates: 1
+16:25:07:205 DEBUG 14552 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:25:07:206 DEBUG 14552 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:25:07:308 DEBUG 14552 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+16:25:07:309 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=100001511821 HTTP/1.1
+16:25:07:309 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+16:25:07:309 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+16:25:07:518 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (208ms)
+16:25:07:518 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+16:25:07:518 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+16:25:07:518 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 05 Jan 2024 09:25:07 GMT
+16:25:07:518 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+16:25:07:519 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+16:25:07:519 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+16:25:07:519 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":9994,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+16:25:07:519 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (459-byte body)
+16:25:13:452 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.cart.mapper.CartMapper.delete  : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+16:25:13:454 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.cart.mapper.CartMapper.delete  : ==> Parameters: 1(Long), 100001511821(Long)
+16:25:13:659 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.cart.mapper.CartMapper.delete  : <==    Updates: 1
+16:27:21:345 DEBUG 14552 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:27:21:346 DEBUG 14552 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:27:21:438 DEBUG 14552 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 0
+16:27:24:587 DEBUG 14552 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) AS total FROM cart WHERE (user_id = ? AND item_id = ?)
+16:27:24:587 DEBUG 14552 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long), 100001511821(Long)
+16:27:24:676 DEBUG 14552 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+16:27:24:678 DEBUG 14552 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) AS total FROM cart WHERE (user_id = ?)
+16:27:24:678 DEBUG 14552 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long)
+16:27:24:766 DEBUG 14552 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+16:27:24:767 DEBUG 14552 --- [http-nio-8082-exec-6] com.hmall.cart.mapper.CartMapper.insert  : ==>  Preparing: INSERT INTO cart ( user_id, item_id, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ? )
+16:27:24:768 DEBUG 14552 --- [http-nio-8082-exec-6] com.hmall.cart.mapper.CartMapper.insert  : ==> Parameters: 1(Long), 100001511821(Long), HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30(String), {"颜色": "蓝色", "尺码": "30"}(String), 13700(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp(String)
+16:27:24:948 DEBUG 14552 --- [http-nio-8082-exec-6] com.hmall.cart.mapper.CartMapper.insert  : <==    Updates: 1
+16:27:25:032 DEBUG 14552 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:27:25:032 DEBUG 14552 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:27:25:123 DEBUG 14552 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+16:27:25:125 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=100001511821 HTTP/1.1
+16:27:25:125 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+16:27:25:125 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+16:27:25:319 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (194ms)
+16:27:25:319 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+16:27:25:319 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+16:27:25:319 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 05 Jan 2024 09:27:25 GMT
+16:27:25:320 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+16:27:25:320 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+16:27:25:320 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+16:27:25:320 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":9994,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+16:27:25:320 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (459-byte body)
+16:27:29:738 DEBUG 14552 --- [http-nio-8082-exec-2] com.hmall.cart.mapper.CartMapper.delete  : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+16:27:29:739 DEBUG 14552 --- [http-nio-8082-exec-2] com.hmall.cart.mapper.CartMapper.delete  : ==> Parameters: 1(Long), 100001511821(Long)
+16:27:29:925 DEBUG 14552 --- [http-nio-8082-exec-2] com.hmall.cart.mapper.CartMapper.delete  : <==    Updates: 1
+16:32:17:418 DEBUG 14552 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:32:17:418 DEBUG 14552 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:32:17:508 DEBUG 14552 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 0
+16:32:21:851 DEBUG 14552 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) AS total FROM cart WHERE (user_id = ? AND item_id = ?)
+16:32:21:852 DEBUG 14552 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long), 100001511821(Long)
+16:32:21:940 DEBUG 14552 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+16:32:21:941 DEBUG 14552 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) AS total FROM cart WHERE (user_id = ?)
+16:32:21:942 DEBUG 14552 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long)
+16:32:22:030 DEBUG 14552 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+16:32:22:031 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.cart.mapper.CartMapper.insert  : ==>  Preparing: INSERT INTO cart ( user_id, item_id, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ? )
+16:32:22:031 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.cart.mapper.CartMapper.insert  : ==> Parameters: 1(Long), 100001511821(Long), HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30(String), {"颜色": "蓝色", "尺码": "30"}(String), 13700(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp(String)
+16:32:22:212 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.cart.mapper.CartMapper.insert  : <==    Updates: 1
+16:32:22:297 DEBUG 14552 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:32:22:297 DEBUG 14552 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:32:22:387 DEBUG 14552 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+16:32:22:388 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=100001511821 HTTP/1.1
+16:32:22:388 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+16:32:22:389 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+16:32:22:581 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (192ms)
+16:32:22:581 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+16:32:22:581 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+16:32:22:581 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 05 Jan 2024 09:32:22 GMT
+16:32:22:581 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+16:32:22:581 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+16:32:22:581 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+16:32:22:582 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":9994,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+16:32:22:582 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (459-byte body)
+16:32:23:497 DEBUG 14552 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.updateById    : ==>  Preparing: UPDATE cart SET num=? WHERE id=?
+16:32:23:497 DEBUG 14552 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.updateById    : ==> Parameters: 2(Integer), 62(Long)
+16:32:23:677 DEBUG 14552 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.updateById    : <==    Updates: 1
+16:32:23:700 DEBUG 14552 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:32:23:701 DEBUG 14552 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:32:23:790 DEBUG 14552 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+16:32:23:793 DEBUG 14552 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=100001511821 HTTP/1.1
+16:32:23:793 DEBUG 14552 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+16:32:23:793 DEBUG 14552 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+16:32:23:979 DEBUG 14552 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (186ms)
+16:32:23:979 DEBUG 14552 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+16:32:23:979 DEBUG 14552 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+16:32:23:979 DEBUG 14552 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 05 Jan 2024 09:32:23 GMT
+16:32:23:979 DEBUG 14552 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+16:32:23:979 DEBUG 14552 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+16:32:23:979 DEBUG 14552 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+16:32:23:980 DEBUG 14552 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":9994,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+16:32:23:980 DEBUG 14552 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (459-byte body)
+16:32:28:499 DEBUG 14552 --- [http-nio-8082-exec-6] com.hmall.cart.mapper.CartMapper.delete  : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+16:32:28:499 DEBUG 14552 --- [http-nio-8082-exec-6] com.hmall.cart.mapper.CartMapper.delete  : ==> Parameters: 1(Long), 100001511821(Long)
+16:32:28:679 DEBUG 14552 --- [http-nio-8082-exec-6] com.hmall.cart.mapper.CartMapper.delete  : <==    Updates: 1
+16:34:37:998 DEBUG 14552 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:34:37:998 DEBUG 14552 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:34:38:086 DEBUG 14552 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 0
+16:34:43:390 DEBUG 14552 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) AS total FROM cart WHERE (user_id = ? AND item_id = ?)
+16:34:43:390 DEBUG 14552 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long), 100001511821(Long)
+16:34:43:479 DEBUG 14552 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+16:34:43:480 DEBUG 14552 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) AS total FROM cart WHERE (user_id = ?)
+16:34:43:480 DEBUG 14552 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long)
+16:34:43:569 DEBUG 14552 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+16:34:43:570 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.cart.mapper.CartMapper.insert  : ==>  Preparing: INSERT INTO cart ( user_id, item_id, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ? )
+16:34:43:570 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.cart.mapper.CartMapper.insert  : ==> Parameters: 1(Long), 100001511821(Long), HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30(String), {"颜色": "蓝色", "尺码": "30"}(String), 13700(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp(String)
+16:34:43:750 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.cart.mapper.CartMapper.insert  : <==    Updates: 1
+16:34:43:829 DEBUG 14552 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:34:43:829 DEBUG 14552 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:34:43:918 DEBUG 14552 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+16:34:43:919 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=100001511821 HTTP/1.1
+16:34:43:919 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+16:34:43:919 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+16:34:44:109 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (189ms)
+16:34:44:109 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+16:34:44:109 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+16:34:44:109 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 05 Jan 2024 09:34:44 GMT
+16:34:44:109 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+16:34:44:109 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+16:34:44:109 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+16:34:44:109 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":9994,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+16:34:44:109 DEBUG 14552 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (459-byte body)
+16:34:45:486 DEBUG 14552 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.updateById    : ==>  Preparing: UPDATE cart SET num=? WHERE id=?
+16:34:45:487 DEBUG 14552 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.updateById    : ==> Parameters: 2(Integer), 63(Long)
+16:34:45:681 DEBUG 14552 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.updateById    : <==    Updates: 1
+16:34:45:710 DEBUG 14552 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:34:45:710 DEBUG 14552 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:34:45:799 DEBUG 14552 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+16:34:45:800 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=100001511821 HTTP/1.1
+16:34:45:800 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+16:34:45:800 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+16:34:45:984 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (185ms)
+16:34:45:985 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+16:34:45:985 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+16:34:45:985 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 05 Jan 2024 09:34:45 GMT
+16:34:45:985 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+16:34:45:985 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+16:34:45:985 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+16:34:45:985 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":9994,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+16:34:45:985 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (459-byte body)
+16:35:12:823 DEBUG 14552 --- [http-nio-8082-exec-5] com.hmall.cart.mapper.CartMapper.delete  : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+16:35:12:823 DEBUG 14552 --- [http-nio-8082-exec-5] com.hmall.cart.mapper.CartMapper.delete  : ==> Parameters: 1(Long), 100001511821(Long)
+16:35:13:003 DEBUG 14552 --- [http-nio-8082-exec-5] com.hmall.cart.mapper.CartMapper.delete  : <==    Updates: 1
+16:35:56:961 DEBUG 14552 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:35:56:961 DEBUG 14552 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:35:57:050 DEBUG 14552 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 0
+16:35:59:449 DEBUG 14552 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:35:59:450 DEBUG 14552 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:35:59:539 DEBUG 14552 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 0
+16:36:02:080 DEBUG 14552 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:36:02:081 DEBUG 14552 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:36:02:169 DEBUG 14552 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 0
+16:36:05:847 DEBUG 14552 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) AS total FROM cart WHERE (user_id = ? AND item_id = ?)
+16:36:05:847 DEBUG 14552 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long), 100001511821(Long)
+16:36:05:936 DEBUG 14552 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+16:36:05:937 DEBUG 14552 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) AS total FROM cart WHERE (user_id = ?)
+16:36:05:937 DEBUG 14552 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long)
+16:36:06:026 DEBUG 14552 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+16:36:06:027 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.cart.mapper.CartMapper.insert  : ==>  Preparing: INSERT INTO cart ( user_id, item_id, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ? )
+16:36:06:027 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.cart.mapper.CartMapper.insert  : ==> Parameters: 1(Long), 100001511821(Long), HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30(String), {"颜色": "蓝色", "尺码": "30"}(String), 13700(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp(String)
+16:36:06:209 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.cart.mapper.CartMapper.insert  : <==    Updates: 1
+16:36:06:258 DEBUG 14552 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:36:06:259 DEBUG 14552 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:36:06:348 DEBUG 14552 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+16:36:06:349 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=100001511821 HTTP/1.1
+16:36:06:349 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+16:36:06:349 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+16:36:06:537 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (187ms)
+16:36:06:537 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+16:36:06:537 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+16:36:06:537 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 05 Jan 2024 09:36:06 GMT
+16:36:06:537 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+16:36:06:537 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+16:36:06:537 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+16:36:06:537 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":9994,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+16:36:06:537 DEBUG 14552 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (459-byte body)
+16:36:08:089 DEBUG 14552 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.updateById    : ==>  Preparing: UPDATE cart SET num=? WHERE id=?
+16:36:08:089 DEBUG 14552 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.updateById    : ==> Parameters: 2(Integer), 64(Long)
+16:36:08:271 DEBUG 14552 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.updateById    : <==    Updates: 1
+16:36:08:281 DEBUG 14552 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:36:08:281 DEBUG 14552 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:36:08:370 DEBUG 14552 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+16:36:08:371 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=100001511821 HTTP/1.1
+16:36:08:371 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+16:36:08:371 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+16:36:08:556 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (185ms)
+16:36:08:556 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+16:36:08:556 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+16:36:08:556 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 05 Jan 2024 09:36:08 GMT
+16:36:08:556 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+16:36:08:556 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+16:36:08:556 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+16:36:08:556 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":9994,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+16:36:08:557 DEBUG 14552 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (459-byte body)
+16:36:11:870 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.cart.mapper.CartMapper.delete  : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+16:36:11:870 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.cart.mapper.CartMapper.delete  : ==> Parameters: 1(Long), 100001511821(Long)
+16:36:12:050 DEBUG 14552 --- [http-nio-8082-exec-1] com.hmall.cart.mapper.CartMapper.delete  : <==    Updates: 1
+16:39:37:868 DEBUG 14552 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:39:37:869 DEBUG 14552 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:39:37:957 DEBUG 14552 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 0
+16:39:40:351 DEBUG 14552 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) AS total FROM cart WHERE (user_id = ? AND item_id = ?)
+16:39:40:352 DEBUG 14552 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long), 100001511821(Long)
+16:39:40:443 DEBUG 14552 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+16:39:40:444 DEBUG 14552 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) AS total FROM cart WHERE (user_id = ?)
+16:39:40:444 DEBUG 14552 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long)
+16:39:40:534 DEBUG 14552 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+16:39:40:535 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.cart.mapper.CartMapper.insert  : ==>  Preparing: INSERT INTO cart ( user_id, item_id, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ? )
+16:39:40:535 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.cart.mapper.CartMapper.insert  : ==> Parameters: 1(Long), 100001511821(Long), HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30(String), {"颜色": "蓝色", "尺码": "30"}(String), 13700(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp(String)
+16:39:40:714 DEBUG 14552 --- [http-nio-8082-exec-3] com.hmall.cart.mapper.CartMapper.insert  : <==    Updates: 1
+16:39:40:778 DEBUG 14552 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:39:40:778 DEBUG 14552 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:39:40:870 DEBUG 14552 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+16:39:40:871 DEBUG 14552 --- [http-nio-8082-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=100001511821 HTTP/1.1
+16:39:40:872 DEBUG 14552 --- [http-nio-8082-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+16:39:40:872 DEBUG 14552 --- [http-nio-8082-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+16:39:41:060 DEBUG 14552 --- [http-nio-8082-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (188ms)
+16:39:41:060 DEBUG 14552 --- [http-nio-8082-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+16:39:41:060 DEBUG 14552 --- [http-nio-8082-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+16:39:41:060 DEBUG 14552 --- [http-nio-8082-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 05 Jan 2024 09:39:41 GMT
+16:39:41:060 DEBUG 14552 --- [http-nio-8082-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+16:39:41:060 DEBUG 14552 --- [http-nio-8082-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+16:39:41:060 DEBUG 14552 --- [http-nio-8082-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+16:39:41:060 DEBUG 14552 --- [http-nio-8082-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"100001511821","name":"HMDIME 牛仔背带裤女2018秋冬新品 韩版学院风潮流百搭弹力修身补丁学生吊带长裤女 AXNZ369 深蓝 30","price":13700,"stock":9992,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30892/263/313055374/557791/c98e9abc/5bef811aN036f7c3b.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"30\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+16:39:41:060 DEBUG 14552 --- [http-nio-8082-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (459-byte body)
+16:39:50:630 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.cart.mapper.CartMapper.delete  : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+16:39:50:631 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.cart.mapper.CartMapper.delete  : ==> Parameters: 1(Long), 100001511821(Long)
+16:39:50:811 DEBUG 14552 --- [http-nio-8082-exec-9] com.hmall.cart.mapper.CartMapper.delete  : <==    Updates: 1
+16:50:08:027  WARN 14552 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+16:50:08:027  WARN 14552 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+16:50:08:027  WARN 14552 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+16:50:08:028  WARN 14552 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+16:50:08:760  INFO 14552 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+16:50:08:848  INFO 14552 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+16:50:09:181  INFO 14552 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+16:50:09:181  INFO 14552 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@6185cf4f[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+16:50:09:181  INFO 14552 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1704444625699_144.48.139.118_2919
+16:50:09:187  INFO 14552 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@ee2e17a[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 732]
+16:50:09:190  INFO 14552 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+16:50:10:150  INFO 14552 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
