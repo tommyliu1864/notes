@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="33ebaa79-c938-45e4-a9b0-4c252e0e5526" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/jedis_demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jedis_demo/src/main/java/com/my/jedis/JedisConnectionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jedis_demo/src/test/java/JedisTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_data_redis_demo/src/main/java/com/my/redis/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_data_redis_demo/src/main/java/com/my/redis/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_data_redis_demo/src/test/java/com/my/redis/StringRedisTemplateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloud/codes/hmall-nginx/logs/access.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SpringCloud/codes/hmall-nginx/logs/access.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloud/codes/hmall-nginx/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SpringCloud/codes/hmall-nginx/logs/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloud/codes/hmall-nginx/logs/nginx.pid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloud/codes/step4/hmall/logs/cart-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SpringCloud/codes/step4/hmall/logs/cart-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloud/codes/step4/hmall/logs/gateway/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SpringCloud/codes/step4/hmall/logs/gateway/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloud/codes/step4/hmall/logs/item-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SpringCloud/codes/step4/hmall/logs/item-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloud/codes/step4/hmall/logs/pay-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SpringCloud/codes/step4/hmall/logs/pay-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloud/codes/step4/hmall/logs/trade-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SpringCloud/codes/step4/hmall/logs/trade-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloud/codes/step4/hmall/logs/user-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SpringCloud/codes/step4/hmall/logs/user-service/spring.log" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2alHI9QjMOPjyp6OnzGBJ6xAhRd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "F:/BaiduNetdiskDownload/Redis入门到实战教程/01-入门篇/代码/redis-demo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RunManager" selected="JUnit.StringRedisTemplateTest.testHash">
+    <configuration name="RedisTemplateTest.testString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_data_redis_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.my.redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.my.redis" />
+      <option name="MAIN_CLASS_NAME" value="com.my.redis.RedisTemplateTest" />
+      <option name="METHOD_NAME" value="testString" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisTemplateTest.testUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_data_redis_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.my.redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.my.redis" />
+      <option name="MAIN_CLASS_NAME" value="com.my.redis.RedisTemplateTest" />
+      <option name="METHOD_NAME" value="testUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringRedisTemplateTest.testHash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_data_redis_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.my.redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.my.redis" />
+      <option name="MAIN_CLASS_NAME" value="com.my.redis.StringRedisTemplateTest" />
+      <option name="METHOD_NAME" value="testHash" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringRedisTemplateTest.testString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_data_redis_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.my.redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.my.redis" />
+      <option name="MAIN_CLASS_NAME" value="com.my.redis.StringRedisTemplateTest" />
+      <option name="METHOD_NAME" value="testString" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringRedisTemplateTest.testUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_data_redis_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.my.redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.my.redis" />
+      <option name="MAIN_CLASS_NAME" value="com.my.redis.StringRedisTemplateTest" />
+      <option name="METHOD_NAME" value="testUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringDataRedisDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring_data_redis_demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.my.redis.SpringDataRedisDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.StringRedisTemplateTest.testHash" />
+        <item itemvalue="JUnit.StringRedisTemplateTest.testUser" />
+        <item itemvalue="JUnit.StringRedisTemplateTest.testString" />
+        <item itemvalue="JUnit.RedisTemplateTest.testUser" />
+        <item itemvalue="JUnit.RedisTemplateTest.testString" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="33ebaa79-c938-45e4-a9b0-4c252e0e5526" name="Changes" comment="" />
+      <created>1704886165118</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704886165118</updated>
+      <workItem from="1704886166291" duration="3609000" />
+      <workItem from="1704941458073" duration="398000" />
+      <workItem from="1704941868461" duration="3230000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
