@@ -346,6 +346,22 @@ systemctl status redis
 systemctl enable redis
 ```
 
+#### 3.3.6.使用docker安装redis
+
+创建配置文件`redis.conf`：
+
+```
+bind 0.0.0.0
+requirepass 123321
+port 6381
+```
+
+启动命令：
+
+```shell
+docker run -d --name redis3 -p 6381:6381 -v ~/redis3/redis.conf:/etc/redis/redis.conf redis:6.2.6 redis-server /etc/redis/redis.conf
+```
+
 ### 3.4.Redis桌面客户端
 
 安装完成Redis，我们就可以操作Redis，实现数据的CRUD了。这需要用到Redis客户端，包括：

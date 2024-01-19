@@ -5,13 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33ebaa79-c938-45e4-a9b0-4c252e0e5526" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/jedis_demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jedis_demo/src/main/java/com/my/jedis/JedisConnectionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jedis_demo/src/test/java/JedisTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_data_redis_demo/src/main/java/com/my/redis/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_data_redis_demo/src/main/java/com/my/redis/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_data_redis_demo/src/test/java/com/my/redis/StringRedisTemplateTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../SpringCloud/codes/hmall-nginx/logs/access.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SpringCloud/codes/hmall-nginx/logs/access.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../SpringCloud/codes/hmall-nginx/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SpringCloud/codes/hmall-nginx/logs/error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../SpringCloud/codes/hmall-nginx/logs/nginx.pid" beforeDir="false" />
@@ -56,7 +49,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "F:/BaiduNetdiskDownload/Redis入门到实战教程/01-入门篇/代码/redis-demo",
+    "last_opened_file_path": "F:/notes/redis/codes/hm-dianping",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -175,7 +168,7 @@
       <updated>1704886165118</updated>
       <workItem from="1704886166291" duration="3609000" />
       <workItem from="1704941458073" duration="398000" />
-      <workItem from="1704941868461" duration="3230000" />
+      <workItem from="1704941868461" duration="4046000" />
     </task>
     <servers />
   </component>
