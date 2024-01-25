@@ -12,6 +12,7 @@ spring:
     host: 43.133.192.187
     port: 6379
     password: 123321
+    timeout: 20s
     lettuce:
       pool:
         max-active: 10
