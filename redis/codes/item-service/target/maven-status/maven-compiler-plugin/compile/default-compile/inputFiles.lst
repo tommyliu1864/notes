@@ -1,0 +1,12 @@
+F:\notes\redis\codes\item-service\src\main\java\com\heima\item\service\impl\ItemService.java
+F:\notes\redis\codes\item-service\src\main\java\com\heima\item\config\CaffeineConfig.java
+F:\notes\redis\codes\item-service\src\main\java\com\heima\item\mapper\ItemMapper.java
+F:\notes\redis\codes\item-service\src\main\java\com\heima\item\pojo\Item.java
+F:\notes\redis\codes\item-service\src\main\java\com\heima\item\service\impl\ItemStockService.java
+F:\notes\redis\codes\item-service\src\main\java\com\heima\item\mapper\ItemStockMapper.java
+F:\notes\redis\codes\item-service\src\main\java\com\heima\item\service\IItemService.java
+F:\notes\redis\codes\item-service\src\main\java\com\heima\item\pojo\ItemStock.java
+F:\notes\redis\codes\item-service\src\main\java\com\heima\item\ItemApplication.java
+F:\notes\redis\codes\item-service\src\main\java\com\heima\item\service\IItemStockService.java
+F:\notes\redis\codes\item-service\src\main\java\com\heima\item\web\ItemController.java
+F:\notes\redis\codes\item-service\src\main\java\com\heima\item\pojo\PageDTO.java

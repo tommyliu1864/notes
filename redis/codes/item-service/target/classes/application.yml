@@ -1,0 +1,30 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: itemservice
+  datasource:
+    url: jdbc:mysql://43.133.192.187:3306/heima?useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  redis:
+    host: 43.133.192.187
+    port: 6379
+canal:
+  destination: heima # canal的集群名字，要与安装canal时设置的名称一致
+  server: 43.133.192.187:11111 # canal服务地址
+
+mybatis-plus:
+  type-aliases-package: com.heima.item.pojo
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      update-strategy: not_null
+      id-type: auto
+logging:
+  level:
+    com.heima: debug
+  pattern:
+    dateformat: HH:mm:ss:SSS

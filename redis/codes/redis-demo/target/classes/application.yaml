@@ -1,0 +1,22 @@
+logging:
+  level:
+    io.lettuce.core: debug
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS
+
+spring:
+  redis:
+#    sentinel:
+#      master: mymaster
+#      nodes:
+#        - 43.133.192.187:27001
+#        - 43.133.192.187:27002
+#        - 43.133.192.187:27003
+    cluster:
+      nodes:
+        - 43.133.192.187:7001
+        - 43.133.192.187:7002
+        - 43.133.192.187:7003
+        - 43.133.192.187:8001
+        - 43.133.192.187:8002
+        - 43.133.192.187:8003
