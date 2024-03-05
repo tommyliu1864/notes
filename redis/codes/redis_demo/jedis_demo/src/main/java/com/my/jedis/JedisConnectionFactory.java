@@ -16,7 +16,8 @@ public class JedisConnectionFactory {
         poolConfig.setMinIdle(0);
         poolConfig.setMaxWaitMillis(1000);
         // 创建连接池对象
-        jedisPool = new JedisPool(poolConfig, "43.133.192.187", 6379, 1000, "123321");
+        // jedisPool = new JedisPool(poolConfig, "43.133.192.187", 6379, 1000, "123321");
+        jedisPool = new JedisPool(poolConfig, "127.0.0.1", 6379, 1000);
     }
 
     public static Jedis getJedis(){
