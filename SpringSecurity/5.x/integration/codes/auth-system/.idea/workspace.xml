@@ -5,75 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0557a1f1-9ad2-4fdb-97b8-153f513ea098" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-util/target/classes/com/my/common/result/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/target/classes/com/my/common/result/Result.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-util/target/classes/com/my/common/result/ResultCodeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/target/classes/com/my/common/result/ResultCodeEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-util/target/classes/com/my/common/utils/IpUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/target/classes/com/my/common/utils/IpUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-util/target/classes/com/my/common/utils/JwtHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/target/classes/com/my/common/utils/JwtHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-util/target/classes/com/my/common/utils/ResponseUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/target/classes/com/my/common/utils/ResponseUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/service-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/service-util/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/service-util/target/classes/com/my/system/config/Knife4jConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/service-util/target/classes/com/my/system/config/Knife4jConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/service-util/target/classes/com/my/system/config/MyBatisPlusConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/service-util/target/classes/com/my/system/config/MyBatisPlusConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/service-util/target/classes/com/my/system/exception/CustomException.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/service-util/target/classes/com/my/system/exception/CustomException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/service-util/target/classes/com/my/system/exception/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/service-util/target/classes/com/my/system/exception/GlobalExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/spring-security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/spring-security/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/spring-security/target/classes/com/my/security/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/spring-security/target/classes/com/my/security/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/spring-security/target/classes/com/my/security/custom/SecurityUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/spring-security/target/classes/com/my/security/custom/SecurityUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/spring-security/target/classes/com/my/security/custom/Sha1PasswordEncoder.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/spring-security/target/classes/com/my/security/custom/Sha1PasswordEncoder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/spring-security/target/classes/com/my/security/dao/SysLoginLogMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/spring-security/target/classes/com/my/security/dao/SysLoginLogMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/spring-security/target/classes/com/my/security/filter/SecurityAuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/spring-security/target/classes/com/my/security/filter/SecurityAuthenticationFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/spring-security/target/classes/com/my/security/filter/SecurityLoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/spring-security/target/classes/com/my/security/filter/SecurityLoginFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/spring-security/target/classes/com/my/security/service/SysLoginLogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/spring-security/target/classes/com/my/security/service/SysLoginLogService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/spring-security/target/classes/com/my/security/service/impl/SysLoginLogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/spring-security/target/classes/com/my/security/service/impl/SysLoginLogServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/model/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/my/model/base/BaseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/my/model/base/BaseEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/my/model/po/system/SysLoginLog.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/my/model/po/system/SysLoginLog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/my/model/po/system/SysMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/my/model/po/system/SysMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/my/model/po/system/SysOperLog.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/my/model/po/system/SysOperLog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/my/model/po/system/SysRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/my/model/po/system/SysRole.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/my/model/po/system/SysRoleMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/my/model/po/system/SysRoleMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/my/model/po/system/SysUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/my/model/po/system/SysUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/my/model/po/system/SysUserRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/my/model/po/system/SysUserRole.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/my/model/vo/system/AssignMenuVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/my/model/vo/system/AssignMenuVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/my/model/vo/system/AssignRoleVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/my/model/vo/system/AssignRoleVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/my/model/vo/system/AuthorityVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/my/model/vo/system/AuthorityVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/my/model/vo/system/LoginVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/my/model/vo/system/LoginVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/my/model/vo/system/MetaVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/my/model/vo/system/MetaVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/my/model/vo/system/RouterVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/my/model/vo/system/RouterVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/my/model/vo/system/SysLoginLogQueryVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/my/model/vo/system/SysLoginLogQueryVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/my/model/vo/system/SysOperLogQueryVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/my/model/vo/system/SysOperLogQueryVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/my/model/vo/system/SysRoleQueryVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/my/model/vo/system/SysRoleQueryVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/my/model/vo/system/SysUserAuthVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/my/model/vo/system/SysUserAuthVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/my/model/vo/system/SysUserQueryVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/my/model/vo/system/SysUserQueryVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/my/model/vo/system/SysUserRoleResultVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/my/model/vo/system/SysUserRoleResultVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-system/target/classes/com/my/MyApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/target/classes/com/my/MyApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-system/target/classes/com/my/system/aop/LogAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/target/classes/com/my/system/aop/LogAspect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-system/target/classes/com/my/system/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/target/classes/com/my/system/controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-system/target/classes/com/my/system/controller/SysLoginLogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/target/classes/com/my/system/controller/SysLoginLogController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-system/target/classes/com/my/system/controller/SysMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/target/classes/com/my/system/controller/SysMenuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-system/target/classes/com/my/system/controller/SysOperLogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/target/classes/com/my/system/controller/SysOperLogController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-system/target/classes/com/my/system/controller/SysRoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/target/classes/com/my/system/controller/SysRoleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../MySQL/MySQL_02.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../MySQL/MySQL_02.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-system/src/main/java/com/my/system/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/src/main/java/com/my/system/controller/SysUserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-system/target/classes/com/my/system/controller/SysUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/target/classes/com/my/system/controller/SysUserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-system/target/classes/com/my/system/dao/SysMenuMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/target/classes/com/my/system/dao/SysMenuMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-system/target/classes/com/my/system/dao/SysOperLogMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/target/classes/com/my/system/dao/SysOperLogMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-system/target/classes/com/my/system/dao/SysRoleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/target/classes/com/my/system/dao/SysRoleMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-system/target/classes/com/my/system/dao/SysRoleMenuMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/target/classes/com/my/system/dao/SysRoleMenuMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-system/target/classes/com/my/system/dao/SysUserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/target/classes/com/my/system/dao/SysUserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-system/target/classes/com/my/system/dao/SysUserRoleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/target/classes/com/my/system/dao/SysUserRoleMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-system/target/classes/com/my/system/service/SysMenuService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/target/classes/com/my/system/service/SysMenuService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-system/target/classes/com/my/system/service/SysOperLogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/target/classes/com/my/system/service/SysOperLogService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-system/target/classes/com/my/system/service/SysRoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/target/classes/com/my/system/service/SysRoleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-system/target/classes/com/my/system/service/SysUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/target/classes/com/my/system/service/SysUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-system/target/classes/com/my/system/service/impl/SecurityUserDetailsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/target/classes/com/my/system/service/impl/SecurityUserDetailsServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-system/target/classes/com/my/system/service/impl/SysMenuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/target/classes/com/my/system/service/impl/SysMenuServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-system/target/classes/com/my/system/service/impl/SysOperLogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/target/classes/com/my/system/service/impl/SysOperLogServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-system/target/classes/com/my/system/service/impl/SysRoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/target/classes/com/my/system/service/impl/SysRoleServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-system/target/classes/com/my/system/service/impl/SysUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/target/classes/com/my/system/service/impl/SysUserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-system/target/classes/com/my/system/utils/MenuHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/target/classes/com/my/system/utils/MenuHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-system/target/classes/com/my/system/utils/RouterHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-system/target/classes/com/my/system/utils/RouterHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../docker/docker.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../docker/docker.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../redis/codes/nginx-1.18.0/html/hmdp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../redis/codes/nginx-1.18.0/html/hmdp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../redis/codes/秒杀抢购.jmx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../redis/codes/秒杀抢购.jmx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,6 +186,10 @@
       <workItem from="1702545341382" duration="22642000" />
       <workItem from="1702901645406" duration="431000" />
       <workItem from="1702902090336" duration="933000" />
+      <workItem from="1717854034766" duration="728000" />
+      <workItem from="1718680438224" duration="35000" />
+      <workItem from="1718680551466" duration="9448000" />
+      <workItem from="1718941435957" duration="2542000" />
     </task>
     <servers />
   </component>

@@ -9,6 +9,7 @@ import com.my.model.po.system.SysUser;
 import com.my.model.vo.system.AssignRoleVO;
 import com.my.model.vo.system.SysUserQueryVO;
 import com.my.model.vo.system.SysUserRoleResultVO;
+import com.my.security.custom.Sha1PasswordEncoder;
 import com.my.system.service.SysUserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -27,6 +28,8 @@ public class SysUserController {
 
     @Autowired
     private SysUserService sysUserService;
+    @Autowired
+    private Sha1PasswordEncoder passwordEncoder;
 
     @PreAuthorize("hasAuthority('bnt.sysUser.list')")
     @ApiOperation("条件分页查询")
@@ -51,6 +54,10 @@ public class SysUserController {
     @ApiOperation("添加用户")
     @PostMapping("save")
     public Result save(@RequestBody SysUser sysUser) {
+        // 对密码进行加密
+        sysUser.setPassword(passwordEncoder.encode(sysUser.getPassword()));
+        // 设置默认的头像
+        sysUser.setHeadUrl("https://p.qqan.com/up/2023-12/2023121281748142.jpg");
         if (sysUserService.save(sysUser)) {
             return Result.ok();
         } else {
